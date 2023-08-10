@@ -121,6 +121,10 @@ namespace Ant.MetaVerse
         ///     }
         ///     userService.GetFriends(HandleFriendsResult);
         /// }
+        /// </code>
+        /// </example>
+        /// <remarks>
+        /// </remarks>
         void GetFriends(Action<Exception, List<Friend>> callback);
     }
 }
