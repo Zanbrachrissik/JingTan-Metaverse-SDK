@@ -1,3 +1,5 @@
+using System;
+
 namespace Ant.MetaVerse
 {
 
@@ -16,7 +18,7 @@ namespace Ant.MetaVerse
         public string Gender { get; set; }
 
         /// <summary>当前数字形像的性别是否是真实性别。</summary>
-        public boolean IsRealGender { get; set; }
+        public bool IsRealGender { get; set; }
 
         /// <summary>描述数字人外形的 JSON 字符串。</summary>
         public string Profile { get; set; }
@@ -39,5 +41,6 @@ namespace Ant.MetaVerse
         /// </example>
         /// <remarks>
         /// </remarks>
-        void GetAvatar(string sceneId, Action<Exception, Object> callback);
+        void GetAvatar(string sceneId, Action<Exception, UnityEngine.Object> callback);
+    }
 }

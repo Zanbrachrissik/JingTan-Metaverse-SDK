@@ -1,3 +1,6 @@
+using System;
+using System.Collections.Generic;
+
 namespace Ant.MetaVerse
 {
     /// <summary>
@@ -76,7 +79,7 @@ namespace Ant.MetaVerse
         ///         Debug.WriteLine("The service is not found.");
         ///         return;
         ///     }
-        ///     var date = new DateOnly(2015, 10, 21);
+        ///     var date = new DateTime(2015, 10, 21);
         ///     userService.GetHealthData(date, HandleFitnessInfoResult);
         /// }
         /// </code>
@@ -90,7 +93,7 @@ namespace Ant.MetaVerse
         /// 4. 调用 `GetHealthData()` 获取获取加密后的报文数据。
         /// 5. 客户端把上一步获取到的密文发送给服务端，参考 <a href="https://opendocs.alipay.com/common/02mse3">接口内容加密方式</a> 进行验签解密。
         /// </remarks>
-        void GetHealthData(DateOnly date, Action<Exception, string> callback);
+        void GetHealthData(DateTime date, Action<Exception, string> callback);
 
         /// <summary>
         /// 获取支付宝好友列表。
