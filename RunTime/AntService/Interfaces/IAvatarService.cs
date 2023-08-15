@@ -41,6 +41,6 @@ namespace Ant.MetaVerse
         /// </example>
         /// <remarks>
         /// </remarks>
-        void GetAvatar(string sceneId, Action<Exception, UnityEngine.Object> callback);
+        void GetAvatar(string sceneId, Action<Exception, UnityEngine.GameObject> callback);
     }
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Ant.MetaVerse
 {
-    public class PaymentService : IPaymentService, IService
+    public class PaymentService : IPaymentService
     {
         public void Pay(string transactionId, Action<Exception> callback)
         {
@@ -21,7 +21,7 @@ namespace Ant.MetaVerse
         }
     }
 
-    public class UserService : IUserService, IService
+    public class UserService : IUserService
     {
         public void GetAuthCode(Action<Exception, string> callback)
         {
