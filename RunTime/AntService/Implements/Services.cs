@@ -15,10 +15,6 @@ namespace Ant.MetaVerse
                 callback(e);
             }
         }
-
-        ~PaymentService(){
-            Debug.Log("PaymentService's destructor");
-        }
     }
 
     public class UserService : IUserService
@@ -52,10 +48,6 @@ namespace Ant.MetaVerse
             catch(Exception e){
                 callback(e, null);
             }
-        }
-
-        ~UserService(){
-            Debug.Log("UserService's destructor");
         }
     }
 
