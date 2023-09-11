@@ -7,7 +7,8 @@ namespace Ant.MetaVerse
     public interface IPaymentService
     {
         /// <summary>支付</summary>
-        /// <param name="transactionId">支付宝交易号，注意 参数有大小写区分。</param>
+        /// <param name="transactionId">游戏开发者自定义的唯一订单号，订单支付成功后通过服务端支付结果回调回传必须具有唯一性，如果不传或重复传相同值，则会报错</param>
+        /// <param name="buyQuantity">金币购买数量，金币数量必须满足：金币数量*金币单价 = 限定价格等级</param>
         /// <param name="action">支付结果回调</param>
         /// <example>
         /// <code>
@@ -29,7 +30,7 @@ namespace Ant.MetaVerse
         /// 2. 在 SDK 调用具体的接口前需要进行 alipayClient 对象初始化。alipayClient 对象只需要初始化一次，后续调用不同的接口都可以使用同一个 alipayClient 对象。具体可参考文档 <a href="https://opendocs.alipay.com/mini/05xmim?pathHash=e9ca29c2#%E6%8E%A5%E5%8F%A3%E8%B0%83%E7%94%A8%E9%85%8D%E7%BD%AE">接口调用配置</a>。
         /// 3. 通过服务端调用 统一收单交易创建接口（alipay.trade.create）获取 trade_no，此值即为 支付宝交易号，具体可参考文档 <a href="https://opendocs.alipay.com/mini/05x9ku?pathHash=a7b61cca#%E5%88%9B%E5%BB%BA%E4%BA%A4%E6%98%93%E8%AE%A2%E5%8D%95">创建交易订单</a>。
         /// </remarks>
-        public void Pay(string transactionId, Action<Exception> action);
+        public void Pay(string transactionId, int buyQuantity, Action<Exception, string> action);
     }
 
 }

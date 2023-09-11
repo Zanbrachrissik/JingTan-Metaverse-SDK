@@ -48,7 +48,8 @@ namespace Ant.MetaVerse
         /// 5. 服务端使用授权码，调用 <a href="https://opendocs.alipay.com/open/02xtla">alipay.system.oauth.token</a> 取得 user_id 和 token（授权令牌）。
         /// 6. 服务端继续使用所取得的 token 调用 <a href="https://opendocs.alipay.com/open/02xtlb">alipay.user.info.share</a> 最终获得用户信息。
         /// </remarks>
-        void GetAuthCode(Action<Exception, string> callback);
+        void GetMemberAuthCode(Action<Exception, string> callback);
+        void GetBaseAuthCode(Action<Exception, string> callback);
 
         /// <summary>
         /// 获取运动健康相关数据。
