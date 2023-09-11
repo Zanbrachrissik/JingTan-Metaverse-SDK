@@ -61,39 +61,6 @@ namespace Ant.MetaVerse
     //分享、会员信息、广告
     public class UserService : IUserService
     {
-        /// <summary>
-        /// 授权获取支付宝会员唯一标识（user_id）。此方式为静默授权，不会弹出授权浮窗。
-        /// </summary>
-        /// <param name="callback"></param>
-        public void GetBaseAuthCode(Action<Exception, string> callback)
-        {
-            try{
-                GetAuthCode("auth_base", authCode => {
-                    callback(null, authCode);
-                });
-            }
-            catch(Exception e){
-                callback(e, null);
-            }
-        }
-
-
-        /// <summary>
-        /// 授权获取支付宝会员信息
-        /// </summary>
-        /// <param name="callback"></param>
-        public void GetMemberAuthCode(Action<Exception, string> callback)
-        {
-            try{
-                GetAuthCode("auth_user", authCode => {
-                    callback(null, authCode);
-                });
-            }
-            catch(Exception e){
-                callback(e, null);
-            }
-        }
-
         public void GetHealthData(DateTime date, Action<Exception, string> callback)
         {
             try{
@@ -125,20 +92,25 @@ namespace Ant.MetaVerse
             }
         }
 
-        private void GetAuthCode(string scope, Action<string> callback)
+        public void GetAuthCode(string scope, Action<Exception, string> callback)
         {
-            string[] scopes = new string[]{scope};
-            AlipaySDK.API.GetAuthCode(scopes, result =>
-            {
-                Debug.Log(string.Format("GetAuthCode scope: {0}, result: {1}", scope, result));
-                AuthResponse response = JsonConvert.DeserializeObject<AuthResponse>(result);
-                Debug.Log(string.Format("GetAuthCode after deserialization: {0}. Authcode: {1}", response, response.authCode));
-                if(response.error != 0){
-                    Debug.Log(string.Format("GetAuthCode error: {0}, message: {1}", response.error, response.errorMessage));
-                    throw new Exception(response.error + response.errorMessage);
-                }
-                callback(response.authCode);
-            });
+            try{
+                string[] scopes = new string[]{scope};
+                AlipaySDK.API.GetAuthCode(scopes, result =>
+                {
+                    Debug.Log(string.Format("GetAuthCode scope: {0}, result: {1}", scope, result));
+                    AuthResponse response = JsonConvert.DeserializeObject<AuthResponse>(result);
+                    Debug.Log(string.Format("GetAuthCode after deserialization: {0}. Authcode: {1}", response, response.authCode));
+                    if(response.error != 0){
+                        Debug.Log(string.Format("GetAuthCode error: {0}, message: {1}", response.error, response.errorMessage));
+                        callback(new Exception(response.error + response.errorMessage), null);
+                    }
+                    callback(null, response.authCode);
+                });
+            }
+            catch(Exception e){
+                callback(e, null);
+            }
         }
     }
 

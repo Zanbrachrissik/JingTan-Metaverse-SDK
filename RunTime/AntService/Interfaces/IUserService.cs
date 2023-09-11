@@ -11,6 +11,7 @@ namespace Ant.MetaVerse
         /// <summary>
         /// 请求获取用户信息的授权码。
         /// </summary>
+        /// <param name="scope"> scope 为 `auth_user` 时，授权获取支付宝会员信息。为 `auth_base` 时，表示授权获取支付宝会员唯一标识（user_id）。此方式为静默授权，不会弹出授权浮窗。</param>
         /// <param name="callback">
         /// 回调函数，第一个参数为异常信息，如果异常信息为 `NULL` 则表示接口调用成功返回，
         /// 返回结果存储在第二个参数中。如果异常信息不为 `NULL` 则表示接口调用失败，第二个参数为 `NULL`。
@@ -29,14 +30,14 @@ namespace Ant.MetaVerse
         ///
         /// void OnButtonClick()
         /// {
-        ///     var userService = Factory.GetService&lt;IUserService&gt;();
-        ///     if (userService == null)
-        ///     {
-        ///         Debug.WriteLine("The service is not found.");
-        ///         return;
-        ///     }
-        ///     userService.GetAuthCode(HandleAuthCodeResult);
-        /// }
+        ///    var userService = Factory.GetService<IUserService>();
+        ///    if (userService == null)
+        ///    {
+        ///        Debug.WriteLine("The service is not found.");
+        ///        return;
+        ///    }
+        ///        userService.GetAuthCode("auth_user", HandleAuthCodeResult);
+        ///    }
         /// </code>
         /// </example>
         /// <remarks>
@@ -48,8 +49,7 @@ namespace Ant.MetaVerse
         /// 5. 服务端使用授权码，调用 <a href="https://opendocs.alipay.com/open/02xtla">alipay.system.oauth.token</a> 取得 user_id 和 token（授权令牌）。
         /// 6. 服务端继续使用所取得的 token 调用 <a href="https://opendocs.alipay.com/open/02xtlb">alipay.user.info.share</a> 最终获得用户信息。
         /// </remarks>
-        void GetMemberAuthCode(Action<Exception, string> callback);
-        void GetBaseAuthCode(Action<Exception, string> callback);
+        void GetAuthCode(string scope, Action<Exception, string> callback);
 
         /// <summary>
         /// 获取运动健康相关数据。
