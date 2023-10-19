@@ -7,6 +7,29 @@ using Newtonsoft.Json.Linq;
 
 namespace Ant.MetaVerse
 {
+    public class CommonService : ICommonService
+    {
+        public void HideLoadingView()
+        {
+            Debug.Log("HideLoadingView");
+            AlipaySDK.API.HideLoadingView();
+        }
+
+        public void GetSystemInfo(Action<Exception, string> callback)
+        {
+            try{
+                AlipaySDK.API.GetSystemInfo(result =>
+                {
+                    Debug.Log("GetSystemInfo result: " + result);
+                    callback(null, result);
+                });
+            }
+            catch(Exception e){
+                callback(e, null);
+            }
+        }
+    }
+
     public class PaymentService : IPaymentService
     {
         public void Pay(string transactionId, int buyQuantity, Action<Exception, string> callback)

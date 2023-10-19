@@ -1,0 +1,14 @@
+{
+  "displayName": "AlipaySDK",
+  "name": "com.alipay.alipaysdk",
+  "version": "1.0.1",
+  "description": "Alipay Unity Develop SDK",
+  "keywords": [],
+  "category": "Libraries",
+  "links": [
+    {
+      "label": "Document | 文档",
+      "url": "https://www.yuque.com/xiaolvgreen/dzygd2/wfoqrm4yntmzx4r4"
+    }
+  ]
+}
