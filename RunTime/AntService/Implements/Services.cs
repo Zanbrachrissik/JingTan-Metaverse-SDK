@@ -2,8 +2,11 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using Newtonsoft.Json;
+#if !JINGTAN_APP
 using AlipaySdk;
+#endif
 using Newtonsoft.Json.Linq;
+using System.Reflection;
 
 namespace Ant.MetaVerse
 {
@@ -12,11 +15,33 @@ namespace Ant.MetaVerse
         public void HideLoadingView()
         {
             Debug.Log("HideLoadingView");
+#if JINGTAN_APP
+            Assembly assembly = GetLoadedAssembly("Assembly-CSharp");
+            assembly.GetType("Platform").GetMethod("HideLoadingView").Invoke(null, null);
+#else
             AlipaySDK.API.HideLoadingView();
+#endif
         }
+
+        private Assembly GetLoadedAssembly(string assemblyName)
+    {
+        Assembly[] assemblies = AppDomain.CurrentDomain.GetAssemblies();
+
+        foreach (Assembly assembly in assemblies)
+        {
+            if (assembly.GetName().Name == assemblyName)
+            {
+                return assembly;
+            }
+        }
+
+        return null;
+    }
+
 
         public void GetSystemInfo(Action<Exception, string> callback)
         {
+#if !JINGTAN_APP
             try{
                 AlipaySDK.API.GetSystemInfo(result =>
                 {
@@ -27,9 +52,12 @@ namespace Ant.MetaVerse
             catch(Exception e){
                 callback(e, null);
             }
+#endif
         }
     }
 
+
+#if !JINGTAN_APP
     public class PaymentService : IPaymentService
     {
         public void Pay(string transactionId, int buyQuantity, Action<Exception, string> callback)
@@ -80,7 +108,10 @@ namespace Ant.MetaVerse
             public string resultStatus;
         }
     }
+#endif
 
+
+#if !JINGTAN_APP
     //分享、会员信息、广告
     public class UserService : IUserService
     {
@@ -136,6 +167,7 @@ namespace Ant.MetaVerse
             }
         }
     }
+#endif
 
     [Serializable]
     public class AuthResponse

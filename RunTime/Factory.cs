@@ -16,6 +16,11 @@ namespace Ant.MetaVerse
         public static T GetService<T>() where T : class
         {
             Type type =  typeof (T);
+#if JINGTAN_APP
+            if(type == typeof(ICommonService)){
+                return new CommonService() as T;
+            }
+#else
             if(type == typeof(IPaymentService)){
                 return new PaymentService() as T;
             }
@@ -28,6 +33,7 @@ namespace Ant.MetaVerse
             else if(type == typeof(ICommonService)){
                 return new CommonService() as T;
             }
+#endif
             else{
                 return default(T);
             }
