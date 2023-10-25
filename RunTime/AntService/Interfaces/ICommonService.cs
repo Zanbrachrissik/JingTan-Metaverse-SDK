@@ -1,4 +1,5 @@
 using System;
+using UnityEngine;
 
 namespace Ant.MetaVerse
 {
@@ -14,5 +15,11 @@ namespace Ant.MetaVerse
         /// </summary>
         /// <param name="callback"></param>
         public void GetSystemInfo(Action<Exception, string> callback);
+
+        public void GetOrientation(Action<Exception, string> callback);
+
+        public void SetOrientation(ScreenOrientation orientation, Action<Exception, string> callback);
+
+        public void GetLaunchOptions(string[] query, Action<Exception, string> callback);
     }
 }

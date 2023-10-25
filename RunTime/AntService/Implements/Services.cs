@@ -23,20 +23,57 @@ namespace Ant.MetaVerse
 #endif
         }
 
-        private Assembly GetLoadedAssembly(string assemblyName)
-    {
-        Assembly[] assemblies = AppDomain.CurrentDomain.GetAssemblies();
-
-        foreach (Assembly assembly in assemblies)
+        public void GetOrientation(Action<Exception, string> callback)
         {
-            if (assembly.GetName().Name == assemblyName)
-            {
-                return assembly;
+            Debug.Log("GetOrientation");
+            try{
+#if JINGTAN_APP
+                callback(null, Screen.orientation.ToString());
+#else
+                AlipaySDK.API.GetOrientation(jsonStr => {
+                    JObject jObject = JObject.Parse(jsonStr);
+                    string orientation = jObject["orientation"].ToString();
+                    Debug.Log(orientation);
+                    callback(null, orientation);
+                });
+#endif
+            }
+            catch(Exception e){
+                callback(e, null);
             }
         }
 
-        return null;
-    }
+        public void SetOrientation(ScreenOrientation orientation, Action<Exception, string> callback)
+        {
+#if !JINGTAN_APP
+            try{
+                AlipaySDK.API.SetOrientation(orientation, result => {
+                    Debug.Log(result);
+                    callback(null, result);
+                });
+            }
+            catch(Exception e){
+                Debug.Log(e);
+            }
+#endif
+        }
+
+        public void GetLaunchOptions(string[] query, Action<Exception, string> callback)
+        {
+            Debug.Log("GetLaunchOptions");
+#if !JINGTAN_APP
+            try{
+                AlipaySDK.API.GetLaunchOptions(query, jsonStr => {
+                    JObject jObject = JObject.Parse(jsonStr);
+                    string result = jObject["query"].ToString();
+                    callback(null, result);
+                });
+            }
+            catch(Exception e){
+                callback(e, null);
+            }
+#endif
+        }
 
 
         public void GetSystemInfo(Action<Exception, string> callback)
