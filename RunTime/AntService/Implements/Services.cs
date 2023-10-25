@@ -95,60 +95,6 @@ namespace Ant.MetaVerse
 
 
 #if !JINGTAN_APP
-    public class PaymentService : IPaymentService
-    {
-        public void Pay(string transactionId, int buyQuantity, Action<Exception, string> callback)
-        {
-            try{
-
-                // string date = System.DateTime.Now.ToString("yyMM_hhmmss");
-                // string screenshotFilename = date + ".png";
-                // string androidPath = Path.Combine("pictures", screenshotFilename);
-                // string path = Path.Combine(WriteDirPath, androidPath);//Application.persistentDataPath
-                // AlipaySDK.API.ShareTinyAppMsg("unity game", "unity game desc", path, (result) =>
-                // {
-                //     Debug.Log("ShareTinyAppMsg result: " + result);
-                // });
-
-                AlipaySDK.API.RequestGamePayment(transactionId, buyQuantity, result => {
-                    Debug.Log("Pay result: " + result);
-                    PayResponse response = JsonConvert.DeserializeObject<PayResponse>(result);
-                    Debug.Log("Pay response after deserialization: " + response);
-                    if(response.success){
-                        callback(null, result);
-                        return;
-                    }
-                    else
-                    {
-                        Debug.Log("Pay error: " + response.errorMsg);
-                        callback(new Exception(response.errorCode + response.errorMsg), "");
-                        return;
-                    }
-                });
-            }
-            catch(Exception e){
-                callback(e, "");
-            }
-        }
-
-        [Serializable]
-        public class PayResponse
-        {
-            public bool success;
-            public bool retryable;
-            public int serializedSize;
-            public string tradeNo;
-            public int unknownFieldsSerializedSize;
-
-            public string errorCode;
-            public string errorMsg;
-            public string resultStatus;
-        }
-    }
-#endif
-
-
-#if !JINGTAN_APP
     //分享、会员信息、广告
     public class UserService : IUserService
     {

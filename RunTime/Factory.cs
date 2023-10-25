@@ -21,10 +21,7 @@ namespace Ant.MetaVerse
                 return new CommonService() as T;
             }
 #else
-            if(type == typeof(IPaymentService)){
-                return new PaymentService() as T;
-            }
-            else if(type == typeof(IUserService)){
+            if(type == typeof(IUserService)){
                 return new UserService() as T;
             }
             else if(type == typeof(IAvatarService)){
