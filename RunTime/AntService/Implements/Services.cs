@@ -16,7 +16,7 @@ namespace Ant.MetaVerse
         {
             Debug.Log("HideLoadingView");
 #if JINGTAN_APP
-            Assembly assembly = GetLoadedAssembly("Assembly-CSharp");
+            Assembly assembly = AntMetaverseUtil.GetLoadedAssembly("Assembly-CSharp");
             assembly.GetType("Platform").GetMethod("HideLoadingView").Invoke(null, null);
 #else
             AlipaySDK.API.HideLoadingView();
