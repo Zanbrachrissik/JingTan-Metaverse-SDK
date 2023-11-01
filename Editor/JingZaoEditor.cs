@@ -37,10 +37,10 @@ namespace Ant.MetaVerse.Editor
             ROOT_PATH = Application.dataPath.Substring(0, Application.dataPath.IndexOf("Assets"));
         }
 
-        [MenuItem("Tools/鲸造资源编辑器")]
+        [MenuItem("Tools/鲸造打包工具")]
         public static void Init()
         {
-            AssetInspection window = (AssetInspection)EditorWindow.GetWindow(typeof(AssetInspection));
+            JingZaoEditor window = (JingZaoEditor)EditorWindow.GetWindow(typeof(JingZaoEditor), false, "鲸造资源打包上传工具");
             window.Show();
         }
 
