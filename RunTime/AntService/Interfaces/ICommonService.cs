@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using Newtonsoft.Json.Linq;
 
 namespace Ant.MetaVerse
 {
@@ -21,5 +22,7 @@ namespace Ant.MetaVerse
         public void SetOrientation(ScreenOrientation orientation, Action<Exception, string> callback);
 
         public void GetLaunchOptions(string[] query, Action<Exception, string> callback);
+        public void NavigateToMiniProgram(string appId, string url, Action<Exception, string> callback);
+        public void StartBizService(JObject param, Action<Exception, string> callback);
     }
 }

@@ -75,6 +75,43 @@ namespace Ant.MetaVerse
 #endif
         }
 
+        public void NavigateToMiniProgram(string appId, string url, Action<Exception, string> callback)
+        {
+            Debug.Log("NavigateToMiniProgram");
+            try{
+                if(appId == null){
+                    throw new Exception("appId is null");
+                }
+                JObject startBizParam = new JObject();
+                startBizParam.Add ("url", url??"alipays://platformapi/startapp?appId=2060090000307725&url=https%3A%2F%2Frenderpre.alipay.com%2Fp%2Fyuyan%2F180020010001259157%2Findex.html%3FcaprMode%3Dsync");
+                AlipaySDK.API.NavigateToMiniProgram(appId, startBizParam, (result) =>
+                {
+                    Debug.Log("NavigateToMiniProgram result: " + result);
+                    callback(null, result);
+                });
+            }
+            catch(Exception e){
+                callback(e, null);
+            }
+        }
+
+        public void StartBizService(JObject param, Action<Exception, string> callback)
+        {
+            Debug.Log("StartBizService");
+            try{
+                AlipaySDK.API.StartBizService("deduct", param, (result) =>
+                {
+                    Debug.Log("StartBizService result: " + result);
+                    callback(null, result);
+                });
+            }
+            catch(Exception e){
+                Debug.Log(e);
+                callback(e, null);
+            }
+
+        }
+
 
         public void GetSystemInfo(Action<Exception, string> callback)
         {
