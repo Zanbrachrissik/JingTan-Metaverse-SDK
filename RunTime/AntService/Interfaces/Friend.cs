@@ -21,4 +21,9 @@ namespace Ant.MetaVerse
         public string Avatar { get; set; }
     }
 
+    public enum AccountType{
+        JINGTAN,
+        ALIPAY
+    }
+
 }

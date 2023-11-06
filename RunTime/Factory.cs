@@ -27,6 +27,9 @@ namespace Ant.MetaVerse
             else if(type == typeof(IAvatarService)){
                 return AvatarViewObject.Instance as T;
             }
+            else if(type == typeof(IPaymentService)){
+                return new PaymentService() as T;
+            }
             else if(type == typeof(ICommonService)){
                 return new CommonService() as T;
             }

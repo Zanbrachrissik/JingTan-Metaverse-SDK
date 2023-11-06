@@ -83,7 +83,12 @@ namespace Ant.MetaVerse
                     throw new Exception("appId is null");
                 }
                 JObject startBizParam = new JObject();
-                startBizParam.Add ("url", url??"alipays://platformapi/startapp?appId=2060090000307725&url=https%3A%2F%2Frenderpre.alipay.com%2Fp%2Fyuyan%2F180020010001259157%2Findex.html%3FcaprMode%3Dsync");
+                startBizParam.Add("chInfo", "小游戏");
+                startBizParam.Add("transAnimate", "YES");
+                startBizParam.Add("transparent", "YES");
+                startBizParam.Add("query", "a=tietou&b=xianxiao");
+                startBizParam.Add("page", "pages/world/world?a=foo&b=ba");
+                // startBizParam.Add ("url", url??"https://renderpre.alipay.com/p/yuyan/180020010001259157/index.html?caprMode=sync");
                 AlipaySDK.API.NavigateToMiniProgram(appId, startBizParam, (result) =>
                 {
                     Debug.Log("NavigateToMiniProgram result: " + result);
@@ -99,7 +104,7 @@ namespace Ant.MetaVerse
         {
             Debug.Log("StartBizService");
             try{
-                AlipaySDK.API.StartBizService("deduct", param, (result) =>
+                AlipaySDK.API.StartBizService("bigworld", param, (result) =>
                 {
                     Debug.Log("StartBizService result: " + result);
                     callback(null, result);
@@ -110,6 +115,24 @@ namespace Ant.MetaVerse
                 callback(e, null);
             }
 
+        }
+
+        public void AddOnShowListener(Action<string> callback)
+        {
+            AlipaySDK.onShow += (result) =>
+            {
+                Debug.Log("unity小游戏展示在前台");
+                callback(result);
+            };
+        }
+
+        public void AddOnHideListener(Action callback)
+        {
+            AlipaySDK.onHide += () =>
+            {
+                Debug.Log("unity小游戏被拉起");
+                callback();
+            };
         }
 
 
@@ -166,20 +189,48 @@ namespace Ant.MetaVerse
             }
         }
 
-        public void GetAuthCode(string scope, Action<Exception, string> callback)
+        public void GetAuthCode(AccountType accountType, string scope, Action<Exception, string> callback)
         {
             try{
-                string[] scopes = new string[]{scope};
-                AlipaySDK.API.GetAuthCode(scopes, result =>
-                {
-                    Debug.Log(string.Format("GetAuthCode scope: {0}, result: {1}", scope, result));
-                    AuthResponse response = JsonConvert.DeserializeObject<AuthResponse>(result);
-                    Debug.Log(string.Format("GetAuthCode after deserialization: {0}. Authcode: {1}", response, response.authCode));
-                    if(response.error != 0){
-                        Debug.Log(string.Format("GetAuthCode error: {0}, message: {1}", response.error, response.errorMessage));
-                        callback(new Exception(response.error + response.errorMessage), null);
+                if(accountType == AccountType.JINGTAN){
+                    throw new Exception("JINGTAN has not supported GetAuthCode, yet");
+                }
+                else if(accountType == AccountType.ALIPAY){
+                    string[] scopes = new string[]{scope};
+                    AlipaySDK.API.GetAuthCode(scopes, result =>
+                    {
+                        Debug.Log(string.Format("GetAuthCode scope: {0}, result: {1}", scope, result));
+                        AuthResponse response = JsonConvert.DeserializeObject<AuthResponse>(result);
+                        Debug.Log(string.Format("GetAuthCode after deserialization: {0}. Authcode: {1}", response, response.authCode));
+                        if(response.error != 0){
+                            Debug.Log(string.Format("GetAuthCode error: {0}, message: {1}", response.error, response.errorMessage));
+                            callback(new Exception(response.error + response.errorMessage), null);
+                        }
+                        callback(null, response.authCode);
+                    });
+                }
+            }
+            catch(Exception e){
+                callback(e, null);
+            }
+        }
+    }
+#endif
+
+#if !JINGTAN_APP
+    public class PaymentService : IPaymentService
+    {
+        public void Buy(string productId, string transactionId, Action<Exception, string> callback)
+        {
+            Debug.Log("Buy");
+            try{
+                Factory.GetService<ICommonService>().StartBizService(new JObject(), (e, result) => {
+                    Debug.Log("StartBizService result: " + result);
+                    if(e != null){
+                        callback(e, null);
+                        return;
                     }
-                    callback(null, response.authCode);
+                    callback(null, result);
                 });
             }
             catch(Exception e){
