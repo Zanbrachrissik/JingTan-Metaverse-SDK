@@ -25,6 +25,8 @@ namespace Ant.MetaVerse
         public void NavigateToMiniProgram(string appId, string url, Action<Exception, string> callback);
         public void StartBizService(JObject param, Action<Exception, string> callback);
         public void AddOnShowListener(Action<string> callback);
+        public void RemoveOnShowListener(Action<string> callback);
         public void AddOnHideListener(Action callback);
+        public void RemoOnHideListener(Action callback);
     }
 }

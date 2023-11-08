@@ -8,6 +8,9 @@ namespace Ant.MetaVerse
     /// </summary>
     public class Factory
     {
+        static CommonService commonService;
+        static UserService userService;
+        static PaymentService paymentService;
         /// <summary>
         /// 用于获取指定类型的对象。使用后记得及时销毁。
         /// </summary>
@@ -18,20 +21,24 @@ namespace Ant.MetaVerse
             Type type =  typeof (T);
 #if JINGTAN_APP
             if(type == typeof(ICommonService)){
-                return new CommonService() as T;
+                commonService ??= new CommonService();
+                return commonService as T;
             }
 #else
             if(type == typeof(IUserService)){
-                return new UserService() as T;
+                userService ??= new UserService();
+                return userService as T;
             }
             else if(type == typeof(IAvatarService)){
                 return AvatarViewObject.Instance as T;
             }
             else if(type == typeof(IPaymentService)){
-                return new PaymentService() as T;
+                paymentService ??= new PaymentService();
+                return paymentService as T;
             }
             else if(type == typeof(ICommonService)){
-                return new CommonService() as T;
+                commonService ??= new CommonService();
+                return commonService as T;
             }
 #endif
             else{

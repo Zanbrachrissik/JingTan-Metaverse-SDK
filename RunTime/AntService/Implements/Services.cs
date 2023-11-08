@@ -25,7 +25,6 @@ namespace Ant.MetaVerse
 
         public void GetOrientation(Action<Exception, string> callback)
         {
-            Debug.Log("GetOrientation");
             try{
 #if JINGTAN_APP
                 callback(null, Screen.orientation.ToString());
@@ -53,7 +52,7 @@ namespace Ant.MetaVerse
                 });
             }
             catch(Exception e){
-                Debug.Log(e);
+                callback(e, null);
             }
 #endif
         }
@@ -86,7 +85,10 @@ namespace Ant.MetaVerse
                 startBizParam.Add("chInfo", "小游戏");
                 startBizParam.Add("transAnimate", "YES");
                 startBizParam.Add("transparent", "YES");
-                startBizParam.Add("query", "a=tietou&b=xianxiao");
+                JObject param2 = new JObject();
+                param2.Add("test", "xianxiao");
+                param2.Add("test2", "xianxiao2");
+                startBizParam.Add("query", param2);
                 startBizParam.Add("page", "pages/world/world?a=foo&b=ba");
                 // startBizParam.Add ("url", url??"https://renderpre.alipay.com/p/yuyan/180020010001259157/index.html?caprMode=sync");
                 AlipaySDK.API.NavigateToMiniProgram(appId, startBizParam, (result) =>
@@ -119,22 +121,23 @@ namespace Ant.MetaVerse
 
         public void AddOnShowListener(Action<string> callback)
         {
-            AlipaySDK.onShow += (result) =>
-            {
-                Debug.Log("unity小游戏展示在前台");
-                callback(result);
-            };
+            AlipaySDK.onShow += callback;
+        }
+
+        public void RemoveOnShowListener(Action<string> callback)
+        {
+            AlipaySDK.onShow -= callback;
         }
 
         public void AddOnHideListener(Action callback)
         {
-            AlipaySDK.onHide += () =>
-            {
-                Debug.Log("unity小游戏被拉起");
-                callback();
-            };
+            AlipaySDK.onHide += callback;
         }
 
+        public void RemoOnHideListener(Action callback)
+        {
+            AlipaySDK.onHide -= callback;
+        }
 
         public void GetSystemInfo(Action<Exception, string> callback)
         {
@@ -224,18 +227,67 @@ namespace Ant.MetaVerse
         {
             Debug.Log("Buy");
             try{
-                Factory.GetService<ICommonService>().StartBizService(new JObject(), (e, result) => {
-                    Debug.Log("StartBizService result: " + result);
-                    if(e != null){
-                        callback(e, null);
-                        return;
+                Factory.GetService<ICommonService>().GetOrientation(
+                    (e, orientation) => {
+                        if(e != null){
+                            callback(e, null);
+                            return;
+                        }
+                        Debug.Log("xxk###: " + Application.platform.ToString());
+
+                        Action realCall = () => {
+                            JObject param = new JObject();
+                            param.Add("chInfo", "小游戏");
+                            param.Add("transAnimate", "YES");
+                            param.Add("transparent", "YES");
+                            param.Add("scene", "purchase");
+                            JObject param2 = new JObject();
+                            param2.Add("productId", "xianxiao");
+                            param2.Add("transactionId", "xianxiao2");
+                            param.Add("query", param2);
+
+                            Factory.GetService<ICommonService>().StartBizService(param, (e, result) => {
+                                if(e != null){
+                                    callback(e, null);
+                                    return;
+                                }
+                                callback(null, result);
+                            });
+                        };
+
+                        Debug.Log("xxk###: " + Application.platform.ToString());
+                        // ios平台特写
+                        // if((Application.platform == UnityEngine.RuntimePlatform.IPhonePlayer || Application.platform == RuntimePlatform.WebGLPlayer) && orientation == "landscape"){
+                            Factory.GetService<ICommonService>().SetOrientation(ScreenOrientation.Portrait, (e, result) => {
+                                Debug.Log("SetOrientation result: " + result);
+                                if(e != null){
+                                    callback(e, null);
+                                    return;
+                                }
+                                Factory.GetService<ICommonService>().AddOnShowListener(iosOnShowBehaviour);
+                                realCall();
+                            });
+                        // }
+                        // else{
+                        //     Debug.Log("xxk### else 逻辑");
+                        //     realCall();
+                        // }
+
                     }
-                    callback(null, result);
-                });
+                );
             }
             catch(Exception e){
                 callback(e, null);
             }
+        }
+
+        private void iosOnShowBehaviour(string result)
+        {
+            Debug.Log("OnShowBehaviour");
+            Factory.GetService<ICommonService>().SetOrientation(ScreenOrientation.LandscapeLeft, (e, result) => {
+                Debug.Log("SetOrientation result: " + result);
+                Factory.GetService<ICommonService>().RemoveOnShowListener(iosOnShowBehaviour);
+            });
         }
     }
 #endif
