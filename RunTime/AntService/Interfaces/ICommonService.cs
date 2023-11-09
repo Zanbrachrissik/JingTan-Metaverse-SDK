@@ -22,7 +22,7 @@ namespace Ant.MetaVerse
         public void SetOrientation(ScreenOrientation orientation);
 
         public void GetLaunchOptions(string[] query, Action<Exception, string> callback);
-        public void NavigateToMiniProgram(string appId, string url, Action<Exception, string> callback);
+        public void NavigateToMiniProgram(JObject param, Action<Exception, string> callback);
         public void StartBizService(JObject param, Action<Exception, string> callback);
         public void AddOnShowListener(Action<string> callback);
         public void RemoveOnShowListener(Action<string> callback);

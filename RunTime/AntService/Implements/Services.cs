@@ -71,24 +71,12 @@ namespace Ant.MetaVerse
 #endif
         }
 
-        public void NavigateToMiniProgram(string appId, string url, Action<Exception, string> callback)
+        public void NavigateToMiniProgram(JObject param, Action<Exception, string> callback)
         {
             Debug.Log("NavigateToMiniProgram");
             try{
-                if(appId == null){
-                    throw new Exception("appId is null");
-                }
-                JObject startBizParam = new JObject();
-                startBizParam.Add("chInfo", "小游戏");
-                startBizParam.Add("transAnimate", "YES");
-                startBizParam.Add("transparent", "YES");
-                JObject param2 = new JObject();
-                param2.Add("test", "xianxiao");
-                param2.Add("test2", "xianxiao2");
-                startBizParam.Add("query", param2);
-                startBizParam.Add("page", "pages/world/world?a=foo&b=ba");
-                // startBizParam.Add ("url", url??"https://renderpre.alipay.com/p/yuyan/180020010001259157/index.html?caprMode=sync");
-                AlipaySDK.API.NavigateToMiniProgram(appId, startBizParam, (result) =>
+                string appId = param["appId"].ToString();
+                AlipaySDK.API.NavigateToMiniProgram(appId, param, (result) =>
                 {
                     Debug.Log("NavigateToMiniProgram result: " + result);
                     callback(null, result);
@@ -193,7 +181,40 @@ namespace Ant.MetaVerse
         {
             try{
                 if(accountType == AccountType.JINGTAN){
-                    throw new Exception("JINGTAN has not supported GetAuthCode, yet");
+                    Action realCall = () => {
+                        JObject param = new JObject();
+                        param.Add("chInfo", "小游戏");
+                        param.Add("transAnimate", "YES");
+                        param.Add("transparent", "YES");
+                        param.Add("scene", "auth");
+                        JObject param2 = new JObject();
+                        param.Add("query", param2);
+
+                        Factory.GetService<ICommonService>().StartBizService(param, (e, result) => {
+                            if(e != null){
+                                callback(e, null);
+                                return;
+                            }
+                            callback(null, result);
+                        });
+                    };
+
+                    Factory.GetService<ICommonService>().GetSystemInfo((e, result) => {
+                        if(e != null){
+                            Debug.LogError("GetSystemInfo error: " + e);
+                            realCall();
+                            return;
+                        }
+                        JObject jObject = JObject.Parse(result);
+                        string platform = jObject["platform"].ToString();
+                        Debug.Log("platform: " + platform);
+                        if(platform == "iOS"){
+                            iOSGeneralBehaviour.iOSKeepOrien(realCall);
+                        }
+                        else{
+                            realCall();
+                        }
+                    });
                 }
                 else if(accountType == AccountType.ALIPAY){
                     string[] scopes = new string[]{scope};
@@ -213,6 +234,42 @@ namespace Ant.MetaVerse
             catch(Exception e){
                 callback(e, null);
             }
+        }
+    }
+#endif
+
+#if !JINGTAN_APP
+    public class iOSGeneralBehaviour{
+        public static void iOSKeepOrien(Action action)
+        {
+            Factory.GetService<ICommonService>().GetOrientation(
+                (e, orientation) => {
+                    if(e != null){
+                        Debug.LogError("GetOrientation error: " + e);
+                        orientation = "landscape";
+                    }
+                    Debug.Log("xxk###: " + Application.platform.ToString());
+
+                    // ios平台特写
+                    if(orientation == "landscape"){
+                        Factory.GetService<ICommonService>().SetOrientation(ScreenOrientation.Portrait);
+                        Factory.GetService<ICommonService>().AddOnShowListener(iosOnShowBehaviour);
+                        action();
+                    }
+                    else{
+                        Debug.Log("xxk### else 逻辑");
+                        action();
+                    }
+
+                }
+            );
+        }
+
+        private static void iosOnShowBehaviour(string result)
+        {
+            Debug.Log("OnShowBehaviour");
+            Factory.GetService<ICommonService>().SetOrientation(ScreenOrientation.LandscapeLeft);
+            Factory.GetService<ICommonService>().RemoveOnShowListener(iosOnShowBehaviour);
         }
     }
 #endif
@@ -255,53 +312,19 @@ namespace Ant.MetaVerse
                     string platform = jObject["platform"].ToString();
                     Debug.Log("platform: " + platform);
                     if(platform == "iOS"){
-                        iosBuyBehaviour(realCall);
+                        iOSGeneralBehaviour.iOSKeepOrien(realCall);
                     }
                     else{
                         realCall();
                     }
                 });
 
-                
-
-                
             }
             catch(Exception e){
                 callback(e, null);
             }
         }
 
-        private void iosBuyBehaviour(Action action)
-        {
-            Factory.GetService<ICommonService>().GetOrientation(
-                (e, orientation) => {
-                    if(e != null){
-                        Debug.LogError("GetOrientation error: " + e);
-                        orientation = "landscape";
-                    }
-                    Debug.Log("xxk###: " + Application.platform.ToString());
-
-                    // ios平台特写
-                    if(orientation == "landscape"){
-                        Factory.GetService<ICommonService>().SetOrientation(ScreenOrientation.Portrait);
-                        Factory.GetService<ICommonService>().AddOnShowListener(iosOnShowBehaviour);
-                        action();
-                    }
-                    else{
-                        Debug.Log("xxk### else 逻辑");
-                        action();
-                    }
-
-                }
-            );
-        }
-
-        private void iosOnShowBehaviour(string result)
-        {
-            Debug.Log("OnShowBehaviour");
-            Factory.GetService<ICommonService>().SetOrientation(ScreenOrientation.LandscapeLeft);
-            Factory.GetService<ICommonService>().RemoveOnShowListener(this.iosOnShowBehaviour);
-        }
     }
 #endif
 
