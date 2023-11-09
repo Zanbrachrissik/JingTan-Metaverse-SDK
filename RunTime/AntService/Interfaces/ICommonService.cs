@@ -19,7 +19,7 @@ namespace Ant.MetaVerse
 
         public void GetOrientation(Action<Exception, string> callback);
 
-        public void SetOrientation(ScreenOrientation orientation, Action<Exception, string> callback);
+        public void SetOrientation(ScreenOrientation orientation);
 
         public void GetLaunchOptions(string[] query, Action<Exception, string> callback);
         public void NavigateToMiniProgram(string appId, string url, Action<Exception, string> callback);

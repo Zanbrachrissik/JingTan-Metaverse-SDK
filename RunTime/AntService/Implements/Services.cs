@@ -42,17 +42,14 @@ namespace Ant.MetaVerse
             }
         }
 
-        public void SetOrientation(ScreenOrientation orientation, Action<Exception, string> callback)
+        public void SetOrientation(ScreenOrientation orientation)
         {
 #if !JINGTAN_APP
             try{
-                AlipaySDK.API.SetOrientation(orientation, result => {
-                    Debug.Log(result);
-                    callback(null, result);
-                });
+                AlipaySDK.API.SetOrientation(orientation, null);
             }
             catch(Exception e){
-                callback(e, null);
+                Debug.Log("SetOrientation Error " + e);
             }
 #endif
         }
@@ -286,7 +283,7 @@ namespace Ant.MetaVerse
 
                     // ios平台特写
                     if(orientation == "landscape"){
-                        Factory.GetService<ICommonService>().SetOrientation(ScreenOrientation.Portrait, null);
+                        Factory.GetService<ICommonService>().SetOrientation(ScreenOrientation.Portrait);
                         Factory.GetService<ICommonService>().AddOnShowListener(iosOnShowBehaviour);
                         action();
                     }
@@ -302,10 +299,8 @@ namespace Ant.MetaVerse
         private void iosOnShowBehaviour(string result)
         {
             Debug.Log("OnShowBehaviour");
-            Factory.GetService<ICommonService>().SetOrientation(ScreenOrientation.LandscapeLeft, (e, result) => {
-                Debug.Log("SetOrientation result: " + result);
-                Factory.GetService<ICommonService>().RemoveOnShowListener(iosOnShowBehaviour);
-            });
+            Factory.GetService<ICommonService>().SetOrientation(ScreenOrientation.LandscapeLeft);
+            Factory.GetService<ICommonService>().RemoveOnShowListener(this.iosOnShowBehaviour);
         }
     }
 #endif
