@@ -227,58 +227,76 @@ namespace Ant.MetaVerse
         {
             Debug.Log("Buy");
             try{
-                Factory.GetService<ICommonService>().GetOrientation(
-                    (e, orientation) => {
+
+                Action realCall = () => {
+                    JObject param = new JObject();
+                    param.Add("chInfo", "小游戏");
+                    param.Add("transAnimate", "YES");
+                    param.Add("transparent", "YES");
+                    param.Add("scene", "purchase");
+                    JObject param2 = new JObject();
+                    param2.Add("productId", "xianxiao");
+                    param2.Add("transactionId", "xianxiao2");
+                    param.Add("query", param2);
+
+                    Factory.GetService<ICommonService>().StartBizService(param, (e, result) => {
                         if(e != null){
                             callback(e, null);
                             return;
                         }
-                        Debug.Log("xxk###: " + Application.platform.ToString());
+                        callback(null, result);
+                    });
+                };
 
-                        Action realCall = () => {
-                            JObject param = new JObject();
-                            param.Add("chInfo", "小游戏");
-                            param.Add("transAnimate", "YES");
-                            param.Add("transparent", "YES");
-                            param.Add("scene", "purchase");
-                            JObject param2 = new JObject();
-                            param2.Add("productId", "xianxiao");
-                            param2.Add("transactionId", "xianxiao2");
-                            param.Add("query", param2);
-
-                            Factory.GetService<ICommonService>().StartBizService(param, (e, result) => {
-                                if(e != null){
-                                    callback(e, null);
-                                    return;
-                                }
-                                callback(null, result);
-                            });
-                        };
-
-                        Debug.Log("xxk###: " + Application.platform.ToString());
-                        // ios平台特写
-                        // if((Application.platform == UnityEngine.RuntimePlatform.IPhonePlayer || Application.platform == RuntimePlatform.WebGLPlayer) && orientation == "landscape"){
-                            Factory.GetService<ICommonService>().SetOrientation(ScreenOrientation.Portrait, (e, result) => {
-                                Debug.Log("SetOrientation result: " + result);
-                                if(e != null){
-                                    callback(e, null);
-                                    return;
-                                }
-                                Factory.GetService<ICommonService>().AddOnShowListener(iosOnShowBehaviour);
-                                realCall();
-                            });
-                        // }
-                        // else{
-                        //     Debug.Log("xxk### else 逻辑");
-                        //     realCall();
-                        // }
-
+                Factory.GetService<ICommonService>().GetSystemInfo((e, result) => {
+                    if(e != null){
+                        Debug.LogError("GetSystemInfo error: " + e);
+                        realCall();
+                        return;
                     }
-                );
+                    JObject jObject = JObject.Parse(result);
+                    string platform = jObject["platform"].ToString();
+                    Debug.Log("platform: " + platform);
+                    if(platform == "iOS"){
+                        iosBuyBehaviour(realCall);
+                    }
+                    else{
+                        realCall();
+                    }
+                });
+
+                
+
+                
             }
             catch(Exception e){
                 callback(e, null);
             }
+        }
+
+        private void iosBuyBehaviour(Action action)
+        {
+            Factory.GetService<ICommonService>().GetOrientation(
+                (e, orientation) => {
+                    if(e != null){
+                        Debug.LogError("GetOrientation error: " + e);
+                        orientation = "landscape";
+                    }
+                    Debug.Log("xxk###: " + Application.platform.ToString());
+
+                    // ios平台特写
+                    if(orientation == "landscape"){
+                        Factory.GetService<ICommonService>().SetOrientation(ScreenOrientation.Portrait, null);
+                        Factory.GetService<ICommonService>().AddOnShowListener(iosOnShowBehaviour);
+                        action();
+                    }
+                    else{
+                        Debug.Log("xxk### else 逻辑");
+                        action();
+                    }
+
+                }
+            );
         }
 
         private void iosOnShowBehaviour(string result)
