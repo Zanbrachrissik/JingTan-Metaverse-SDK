@@ -19,14 +19,30 @@ namespace Ant.MetaVerse.Editor
         public string message;
         public bool success;
         public string traceId;
-        public bool data;
+        public MsgData data;
+    }
+
+    public class MsgData
+    {
+        public bool success;
+        public bool needRetry;
+        public string errorCode;
+        public string errorType;
+        public string idempotentBizContext;
+        public string osskey;
+        public string aftskey;
+        public string ossUrl;
+        public string aftsUrl;
+        public string name;
+        public string zipFiles;
+        public string vid;
+        public string fileId;
+        public string jsonUrl;
+        public string duration;
     }
     public class JingZaoEditor : EditorWindow
     {
         string ROOT_PATH = "";
-        string modelName = "";
-        string modelDescription = "";
-        string applyNo = "";
         Object source;
         string modelId = "";
         List<string> assetPaths = new List<string>();
@@ -45,26 +61,27 @@ namespace Ant.MetaVerse.Editor
         }
 
         private void OnGUI() {
+            modelId = EditorGUILayout.TextField("模型id(网页复制)", modelId, "TextField");
+            
             EditorGUILayout.BeginHorizontal();
             source = EditorGUILayout.ObjectField(source, typeof(Object), true);
             EditorGUILayout.EndHorizontal();
 
-            if (GUILayout.Button("检测&&开始上传") && source != null)
+            if (GUILayout.Button("开始上传") && source != null)
             {
-                string times = DateTime.Now.ToString();
-                modelName = source.name;
-                modelDescription = source.name + "_" + times;
-                applyNo = source.name + times + UnityEngine.Random.Range(0, 1000).ToString();
-
-                if (EditorUtility.DisplayDialog("检测提示", "资源检测通过", "继续上传", "稍后上传"))
-                {
-                    //打包AB资源
-                    PackAssetBundle();
-                    //打包上传 视频，图片，字幕，H5，子空间
-                    // packSourceBundle();
-                    Upload();
+                if(!CheckIsAsset()){
+                    EditorUtility.DisplayDialog("错误", "请选择资源文件", "好的");
+                    return;
                 }
+                PackAssetBundle();
+                Upload();
             }
+        }
+
+        private bool CheckIsAsset()
+        {
+            string assetPath = AssetDatabase.GetAssetPath(source);
+            return !string.IsNullOrEmpty(assetPath);
         }
 
 
@@ -145,8 +162,8 @@ namespace Ant.MetaVerse.Editor
                     form.AddBinaryData("webglFile", files[i].downloadHandler.data, Path.GetFileName(path));
             }
 
-            // 后面要改域名。目前还是dev环境
-            UnityWebRequest req = UnityWebRequest.Post("https://mynftmerchant.antgroup.com/jingzao/project/model/supplyABResource", form);
+            string postUrl = "http://zkmynftmerchant-238.gzz8c.dev.alipay.net/jingzao/project/model/supplyABResource";
+            UnityWebRequest req = UnityWebRequest.Post(postUrl, form);
 
             req.uploadHandler.contentType = "multipart/form-data";
             EditorUtility.DisplayProgressBar("请稍候", "正在上传", 1f);
@@ -159,7 +176,7 @@ namespace Ant.MetaVerse.Editor
                 string response = req.downloadHandler.text;
                 ResponseData msg = JsonUtility.FromJson<ResponseData>(response);
                 Debug.Log(string.Format("traceId: {0}, success: {1}, message: {2}, code: {3}, data: {4}", msg.traceId, msg.success, msg.message, msg.code, msg.data));
-                if (msg.data)
+                if (msg.success)
                 {
                     EditorUtility.DisplayDialog("提示", "上传成功！", "好的");
                 }
