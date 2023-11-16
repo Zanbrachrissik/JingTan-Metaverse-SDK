@@ -19,27 +19,9 @@ namespace Ant.MetaVerse.Editor
         public string message;
         public bool success;
         public string traceId;
-        public MsgData data;
+        public bool data;
     }
 
-    public class MsgData
-    {
-        public bool success;
-        public bool needRetry;
-        public string errorCode;
-        public string errorType;
-        public string idempotentBizContext;
-        public string osskey;
-        public string aftskey;
-        public string ossUrl;
-        public string aftsUrl;
-        public string name;
-        public string zipFiles;
-        public string vid;
-        public string fileId;
-        public string jsonUrl;
-        public string duration;
-    }
     public class JingZaoEditor : EditorWindow
     {
         string ROOT_PATH = "";
@@ -176,7 +158,7 @@ namespace Ant.MetaVerse.Editor
                 string response = req.downloadHandler.text;
                 ResponseData msg = JsonUtility.FromJson<ResponseData>(response);
                 Debug.Log(string.Format("traceId: {0}, success: {1}, message: {2}, code: {3}, data: {4}", msg.traceId, msg.success, msg.message, msg.code, msg.data));
-                if (msg.success)
+                if (msg.data)
                 {
                     EditorUtility.DisplayDialog("提示", "上传成功！", "好的");
                 }
