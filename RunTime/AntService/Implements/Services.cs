@@ -73,7 +73,6 @@ namespace Ant.MetaVerse
 
         public void NavigateToMiniProgram(JObject param, Action<Exception, string> callback)
         {
-            Debug.Log("NavigateToMiniProgram");
             try{
                 string appId = param["appId"].ToString();
                 AlipaySDK.API.NavigateToMiniProgram(appId, param, (result) =>
@@ -177,60 +176,69 @@ namespace Ant.MetaVerse
             }
         }
 
-        public void GetAuthCode(AccountType accountType, string scope, Action<Exception, string> callback)
+        public void GetJingTanAuthCode(JObject args = null, Action<Exception, string> callback = null)
         {
             try{
-                if(accountType == AccountType.JINGTAN){
-                    Action realCall = () => {
-                        JObject param = new JObject();
-                        param.Add("chInfo", "小游戏");
-                        param.Add("transAnimate", "YES");
-                        param.Add("transparent", "YES");
-                        param.Add("scene", "auth");
-                        JObject param2 = new JObject();
-                        param.Add("query", param2);
+                Action realCall = () => {
+                    JObject param = new JObject();
+                    param.Add("chInfo", "小游戏");
+                    param.Add("transAnimate", "YES");
+                    param.Add("transparent", "YES");
+                    param.Add("scene", "auth");
+                    param.Merge(args);
 
-                        Factory.GetService<ICommonService>().StartBizService(param, (e, result) => {
-                            if(e != null){
-                                callback(e, null);
-                                return;
-                            }
-                            callback(null, result);
-                        });
-                    };
-
-                    Factory.GetService<ICommonService>().GetSystemInfo((e, result) => {
-                        if(e != null){
-                            Debug.LogError("GetSystemInfo error: " + e);
-                            realCall();
+                    Factory.GetService<ICommonService>().StartBizService(param, (e, result) => {
+                        if (e != null)
+                        {
+                            callback(e, null);
                             return;
                         }
-                        JObject jObject = JObject.Parse(result);
-                        string platform = jObject["platform"].ToString();
-                        Debug.Log("platform: " + platform);
-                        if(platform == "iOS"){
-                            iOSGeneralBehaviour.iOSKeepOrien(realCall);
-                        }
-                        else{
-                            realCall();
-                        }
+                        callback(null, result);
                     });
-                }
-                else if(accountType == AccountType.ALIPAY){
-                    string[] scopes = new string[]{scope};
-                    AlipaySDK.API.GetAuthCode(scopes, result =>
+                };
+
+                Factory.GetService<ICommonService>().GetSystemInfo((e, result) => {
+                    if (e != null)
                     {
-                        Debug.Log(string.Format("GetAuthCode scope: {0}, result: {1}", scope, result));
-                        AuthResponse response = JsonConvert.DeserializeObject<AuthResponse>(result);
-                        Debug.Log(string.Format("GetAuthCode after deserialization: {0}. Authcode: {1}", response, response.authCode));
-                        if(response.error != 0){
-                            Debug.Log(string.Format("GetAuthCode error: {0}, message: {1}", response.error, response.errorMessage));
-                            callback(new Exception(response.error + response.errorMessage), null);
-                        }
-                        callback(null, response.authCode);
-                    });
-                }
+                        Debug.LogError("GetSystemInfo error: " + e);
+                        realCall();
+                        return;
+                    }
+                    JObject jObject = JObject.Parse(result);
+                    string platform = jObject["platform"].ToString();
+                    Debug.Log("platform: " + platform);
+                    if (platform == "iOS")
+                    {
+                        iOSGeneralBehaviour.iOSKeepOrien(realCall);
+                    }
+                    else
+                    {
+                        realCall();
+                    }
+                });
             }
+            catch(Exception e){
+                callback(e, null);
+            }
+        }
+
+
+        public void GetAlipayAuthCode(string scope, Action<Exception, string> callback)
+        {
+            try{
+                string[] scopes = new string[]{scope};
+                AlipaySDK.API.GetAuthCode(scopes, result =>
+                {
+                    Debug.Log(string.Format("GetAuthCode scope: {0}, result: {1}", scope, result));
+                    AuthResponse response = JsonConvert.DeserializeObject<AuthResponse>(result);
+                    Debug.Log(string.Format("GetAuthCode after deserialization: {0}. Authcode: {1}", response, response.authCode));
+                    if(response.error != 0){
+                        Debug.Log(string.Format("GetAuthCode error: {0}, message: {1}", response.error, response.errorMessage));
+                        callback(new Exception(response.error + response.errorMessage), null);
+                    }
+                    callback(null, response.authCode);
+                });
+                }
             catch(Exception e){
                 callback(e, null);
             }
@@ -248,7 +256,6 @@ namespace Ant.MetaVerse
                         Debug.LogError("GetOrientation error: " + e);
                         orientation = "landscape";
                     }
-                    Debug.Log("xxk###: " + Application.platform.ToString());
 
                     // ios平台特写
                     if(orientation == "landscape"){
@@ -257,7 +264,6 @@ namespace Ant.MetaVerse
                         action();
                     }
                     else{
-                        Debug.Log("xxk### else 逻辑");
                         action();
                     }
 
@@ -277,7 +283,7 @@ namespace Ant.MetaVerse
 #if !JINGTAN_APP
     public class PaymentService : IPaymentService
     {
-        public void Buy(string productId, string transactionId, Action<Exception, string> callback)
+        public void Buy(string itemId, string bizNo, string token, Action<Exception, string> callback)
         {
             Debug.Log("Buy");
             try{
@@ -288,10 +294,15 @@ namespace Ant.MetaVerse
                     param.Add("transAnimate", "YES");
                     param.Add("transparent", "YES");
                     param.Add("scene", "purchase");
-                    JObject param2 = new JObject();
-                    param2.Add("productId", "xianxiao");
-                    param2.Add("transactionId", "xianxiao2");
-                    param.Add("query", param2);
+                    param.Add("itemId", itemId);
+                    param.Add("bizNo", bizNo);
+                    param.Add("token", token);
+
+                    // query暂时没用，前端不消费
+                    // JObject param2 = new JObject();
+                    // param2.Add("productId", "xianxiao");
+                    // param2.Add("transactionId", "xianxiao2");
+                    // param.Add("query", param2);
 
                     Factory.GetService<ICommonService>().StartBizService(param, (e, result) => {
                         if(e != null){

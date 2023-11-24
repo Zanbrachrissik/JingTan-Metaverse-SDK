@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Newtonsoft.Json.Linq;
 
 namespace Ant.MetaVerse
 {
@@ -52,7 +53,9 @@ namespace Ant.MetaVerse
         /// }
         /// </code>
         /// </example>
-        void GetAuthCode(AccountType accountType, string scope, Action<Exception, string> callback);
+        void GetAlipayAuthCode(string scope, Action<Exception, string> callback);
+
+        void GetJingTanAuthCode(JObject args = null, Action<Exception, string> callback = null);
 
         /// <summary>
         /// 获取运动健康相关数据。
