@@ -144,7 +144,8 @@ namespace Ant.MetaVerse.Editor
                     form.AddBinaryData("webglFile", files[i].downloadHandler.data, Path.GetFileName(path));
             }
 
-            string postUrl = "http://zkmynftmerchant-238.gzz8c.dev.alipay.net/jingzao/project/model/supplyABResource";
+            // dev用http，pre及prod用https
+            string postUrl = "https://mynftmerchant-pre.antgroup.com/jingzao/project/model/supplyABResource";
             UnityWebRequest req = UnityWebRequest.Post(postUrl, form);
 
             req.uploadHandler.contentType = "multipart/form-data";
