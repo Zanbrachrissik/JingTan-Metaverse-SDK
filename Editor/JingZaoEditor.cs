@@ -73,7 +73,7 @@ namespace Ant.MetaVerse.Editor
             }
         }
 
-        [MenuItem("Tools/鲸造打包工具")]
+        [MenuItem("Tools/鲸造AssetBundle打包工具")]
         public static void Init()
         {
             JingZaoEditor window = (JingZaoEditor)EditorWindow.GetWindow(typeof(JingZaoEditor), false, "鲸造资源打包上传工具");
@@ -271,8 +271,8 @@ namespace Ant.MetaVerse.Editor
             // dev用http，pre及prod用https
             //prod: https://mynftmerchant.antgroup.com/
             //pre: https://mynftmerchant-pre.antgroup.com/
-            //dev: https://zkmynftmerchant-253.gzz8c.dev.alipay.net
-            string postUrl = "http://zkmynftmerchant-253.gzz8c.dev.alipay.net/jingzao/project/model/supplyABResource";
+            //dev: http://zkmynftmerchant-253.gzz8c.dev.alipay.net
+            string postUrl = "https://mynftmerchant.antgroup.com/jingzao/project/model/supplyABResource";
             UnityWebRequest req = UnityWebRequest.Post(postUrl, form);
 
             req.uploadHandler.contentType = "multipart/form-data";
