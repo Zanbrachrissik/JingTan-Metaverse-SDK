@@ -152,7 +152,7 @@ namespace Ant.MetaVerse.Editor
                     return false;
                 }
             }
-            return false;
+            return true;
         }
 
 
@@ -202,33 +202,36 @@ namespace Ant.MetaVerse.Editor
             {
                 assetPaths.Add(filePath + "/Android/" + assetName);
                 Directory.CreateDirectory(filePath + "/Android");
-                BuildPipeline.BuildAssetBundles("JingZaoAssetBundle/Android", buildList.ToArray(), BuildAssetBundleOptions.StrictMode, BuildTarget.Android);
+                BuildPipeline.BuildAssetBundles("JingZaoAssetBundle/Output/Android", buildList.ToArray(), BuildAssetBundleOptions.StrictMode, BuildTarget.Android);
             }
             if (packIOS)
             {
                 assetPaths.Add(filePath + "/iOS/" + assetName);
                 Directory.CreateDirectory(filePath + "/iOS");
-                BuildPipeline.BuildAssetBundles("JingZaoAssetBundle/iOS", buildList.ToArray(), BuildAssetBundleOptions.StrictMode, BuildTarget.iOS);
+                BuildPipeline.BuildAssetBundles("JingZaoAssetBundle/Output/iOS", buildList.ToArray(), BuildAssetBundleOptions.StrictMode, BuildTarget.iOS);
             }
             if (packWebGL)
             {
                 assetPaths.Add(filePath + "/WebGL/" + assetName);
                 Directory.CreateDirectory(filePath + "/WebGL");
-                BuildPipeline.BuildAssetBundles("JingZaoAssetBundle/WebGL", buildList.ToArray(), BuildAssetBundleOptions.StrictMode, BuildTarget.WebGL);
+                BuildPipeline.BuildAssetBundles("JingZaoAssetBundle/Output/WebGL", buildList.ToArray(), BuildAssetBundleOptions.StrictMode, BuildTarget.WebGL);
             }
         }
 
         IEnumerator Upload()
         {
+            int totalProcess = jingzaoABData.Count;
             for (int i = 0; i < jingzaoABData.Count; i++)
             {
                 if (string.IsNullOrEmpty(jingzaoABData[i].modelId))
                 {
                     continue;
                 }
+                EditorUtility.DisplayProgressBar("请稍候", string.Format("正在上传第{0}个item", i+1), (float)i/totalProcess);
                 yield return EditorCoroutineUtility.StartCoroutine(UploadSingleItem(i), this);
             }
             yield return null;
+            EditorUtility.ClearProgressBar();
             EditorUtility.DisplayDialog("提示", "上传完成！详细信息请查看控制台日志", "好的");
         }
 
@@ -249,21 +252,18 @@ namespace Ant.MetaVerse.Editor
             if(packAndroid){
                 string fullPath = Path.Combine(parentFolder, "Android", abName);
                 var file = UnityWebRequest.Get("file://" + fullPath);
-                EditorUtility.DisplayProgressBar("请稍候", string.Format("正在读取{0}", fullPath), 0f);
                 yield return file.SendWebRequest();
                 form.AddBinaryData("androidFile", file.downloadHandler.data, Path.GetFileName(fullPath));
             }
             if(packIOS){
                 string fullPath = Path.Combine(parentFolder, "iOS", abName);
                 var file = UnityWebRequest.Get("file://" + fullPath);
-                EditorUtility.DisplayProgressBar("请稍候", string.Format("正在读取{0}", fullPath), 0f);
                 yield return file.SendWebRequest();
                 form.AddBinaryData("iosFile", file.downloadHandler.data, Path.GetFileName(fullPath));
             }
             if(packWebGL){
                 string fullPath = Path.Combine(parentFolder, "WebGL", abName);
                 var file = UnityWebRequest.Get("file://" + fullPath);
-                EditorUtility.DisplayProgressBar("请稍候", string.Format("正在读取{0}", fullPath), 0f);
                 yield return file.SendWebRequest();
                 form.AddBinaryData("webglFile", file.downloadHandler.data, Path.GetFileName(fullPath));
             }
@@ -271,33 +271,23 @@ namespace Ant.MetaVerse.Editor
             // dev用http，pre及prod用https
             //prod: https://mynftmerchant.antgroup.com/
             //pre: https://mynftmerchant-pre.antgroup.com/
-            string postUrl = "https://mynftmerchant.antgroup.com/jingzao/project/model/supplyABResource";
+            //dev: https://zkmynftmerchant-253.gzz8c.dev.alipay.net
+            string postUrl = "http://zkmynftmerchant-253.gzz8c.dev.alipay.net/jingzao/project/model/supplyABResource";
             UnityWebRequest req = UnityWebRequest.Post(postUrl, form);
 
             req.uploadHandler.contentType = "multipart/form-data";
-            EditorUtility.DisplayProgressBar("请稍候", "正在上传", 1f);
 
             yield return req.SendWebRequest();
-            EditorUtility.ClearProgressBar();
 
             if (req.result == UnityWebRequest.Result.Success)
             {
                 string response = req.downloadHandler.text;
                 ResponseData msg = JsonUtility.FromJson<ResponseData>(response);
                 Debug.Log(string.Format("第{5}个item上传信息：traceId: {0}, success: {1}, message: {2}, code: {3}, data: {4}", msg.traceId, msg.success, msg.message, msg.code, msg.data, index + 1));
-                // if (msg.data)
-                // {
-                //     EditorUtility.DisplayDialog("提示", "上传成功！", "好的");
-                // }
-                // else
-                // {
-                //     EditorUtility.DisplayDialog("错误", "上传失败！\n 失败信息：" + msg.message, "好的");
-                // }
             }
             else
             {
                 Debug.Log($"第{index + 1}个item上传失败：{req.error}" + req.error);
-                // EditorUtility.DisplayDialog("错误", "上传失败！\n 失败信息：" + req.error, "好的");
             }
         }
 
