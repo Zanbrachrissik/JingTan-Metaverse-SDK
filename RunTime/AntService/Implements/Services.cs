@@ -46,7 +46,24 @@ namespace Ant.MetaVerse
         {
 #if !JINGTAN_APP
             try{
-                AlipaySDK.API.SetOrientation(orientation, null);
+                Factory.GetService<ICommonService>().GetSystemInfo((e, result) => {
+                    if (e != null)
+                    {
+                        Debug.LogError("GetSystemInfo error: " + e);
+                        return;
+                    }
+                    JObject jObject = JObject.Parse(result);
+                    string platform = jObject["platform"].ToString();
+                    Debug.Log("platform: " + platform);
+                    if (platform == "iOS")
+                    {
+                        AlipaySDK.API.SetOrientation(orientation, null);
+                    }
+                    else
+                    {
+                        Screen.orientation = orientation;
+                    }
+                });
             }
             catch(Exception e){
                 Debug.Log("SetOrientation Error " + e);
