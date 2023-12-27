@@ -48,6 +48,9 @@ namespace Ant.MetaVerse.Editor
         bool packIOS = false;
         bool packWebGL = false;
 
+        private Vector2 scrollPosition = Vector2.zero;
+        private const float ButtonHeight = 40f;
+
 
         private void OnEnable()
         {
@@ -104,6 +107,8 @@ namespace Ant.MetaVerse.Editor
             }
             
             EditorGUILayout.Space();
+            scrollPosition = EditorGUILayout.BeginScrollView(scrollPosition, GUILayout.Height(position.height - 170f));
+            EditorGUILayout.BeginVertical();
             for(int i = 0; i < totalCount; i++){
                 EditorGUILayout.LabelField($"第{i + 1}个资源", EditorStyles.boldLabel);
                 EditorGUILayout.BeginHorizontal();
@@ -123,15 +128,14 @@ namespace Ant.MetaVerse.Editor
 
                 EditorGUILayout.Space();
             }
-
             if(GUILayout.Button("新增一个")){
                 totalCount++;
             }
+            EditorGUILayout.EndVertical();
+            EditorGUILayout.EndScrollView();
 
-            EditorGUILayout.Space();
-            EditorGUILayout.Space();
-
-            if (GUILayout.Button("开始上传"))
+            Rect buttonRect = new Rect(0f, position.height - ButtonHeight, position.width, ButtonHeight);
+            if (GUI.Button(buttonRect, "开始上传"))
             {
                 if(!CheckIsAsset(out int index)){
                     EditorUtility.DisplayDialog("错误", $"第{index + 1}个选择的资源文件不正确，请重新选择", "好的");
@@ -272,7 +276,7 @@ namespace Ant.MetaVerse.Editor
             //prod: https://mynftmerchant.antgroup.com/
             //pre: https://mynftmerchant-pre.antgroup.com/
             //dev: http://zkmynftmerchant-253.gzz8c.dev.alipay.net
-            string postUrl = "https://mynftmerchant.antgroup.com/jingzao/project/model/supplyABResource";
+            string postUrl = "https://mynftmerchant-pre.antgroup.com/jingzao/project/model/supplyABResource";
             UnityWebRequest req = UnityWebRequest.Post(postUrl, form);
 
             req.uploadHandler.contentType = "multipart/form-data";
