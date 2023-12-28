@@ -276,7 +276,7 @@ namespace Ant.MetaVerse.Editor
             //prod: https://mynftmerchant.antgroup.com/
             //pre: https://mynftmerchant-pre.antgroup.com/
             //dev: http://zkmynftmerchant-253.gzz8c.dev.alipay.net
-            string postUrl = "https://mynftmerchant-pre.antgroup.com/jingzao/project/model/supplyABResource";
+            string postUrl = "https://mynftmerchant.antgroup.com/jingzao/project/model/supplyABResource";
             UnityWebRequest req = UnityWebRequest.Post(postUrl, form);
 
             req.uploadHandler.contentType = "multipart/form-data";
