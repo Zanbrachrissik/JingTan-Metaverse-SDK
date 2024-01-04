@@ -306,6 +306,9 @@ namespace Ant.MetaVerse.Editor
                 jingzaoABData[i].assetPath = AssetDatabase.GetAssetPath(jingzaoABData[i].asset);
             }
             string path = ROOT_PATH + "JingZaoAssetBundle/ABData.json";
+            if(!Directory.Exists(path)){
+                Directory.CreateDirectory(ROOT_PATH + "JingZaoAssetBundle");
+            }
             string json = JsonConvert.SerializeObject(jingzaoABData, Formatting.Indented);
             File.WriteAllText(path, json);
         }
