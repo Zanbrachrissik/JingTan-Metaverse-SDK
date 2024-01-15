@@ -107,7 +107,7 @@ namespace Ant.MetaVerse
         {
             Debug.Log("StartBizService");
             try{
-                AlipaySDK.API.StartBizService("bigworld", param, (result) =>
+                AlipaySDK.InternalAPI.StartBizService("bigworld", param, (result) =>
                 {
                     Debug.Log("StartBizService result: " + result);
                     callback(null, result);
@@ -154,6 +154,48 @@ namespace Ant.MetaVerse
                 callback(e, null);
             }
 #endif
+        }
+
+        public void RegisterEventMonitor(string eventId, JObject extParam, Action<Exception, string> callback)
+        {
+            try{
+                AlipaySDK.InternalAPI.EventMonitor(eventId, extParam, (result) =>
+                {
+                    Debug.Log("RegisterEventMonitor result: " + result);
+                    callback(null, result);
+                });
+            }
+            catch(Exception e){
+                callback(e, null);
+            }
+        }
+
+        public void SetTransparentTitle(string title, Action<Exception, string> callback)
+        {
+            try{
+                AlipaySDK.InternalAPI.SetTransparentTitle(title, (result) =>
+                {
+                    Debug.Log("SetTransparentTitle result: " + result);
+                    callback(null, result);
+                });
+            }
+            catch(Exception e){
+                callback(e, null);
+            }
+        }
+
+        public void StartAPP(string appId, string scheme, Action<Exception, string> callback)
+        {
+            try{
+                AlipaySDK.InternalAPI.StartAPP(appId, scheme, (result) =>
+                {
+                    Debug.Log("StartApp result: " + result);
+                    callback(null, result);
+                });
+            }
+            catch(Exception e){
+                callback(e, null);
+            }
         }
     }
 

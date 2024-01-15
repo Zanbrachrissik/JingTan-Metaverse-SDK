@@ -28,5 +28,21 @@ namespace Ant.MetaVerse
         public void RemoveOnShowListener(Action<string> callback);
         public void AddOnHideListener(Action callback);
         public void RemoOnHideListener(Action callback);
+
+        /// <summary>
+        /// 埋点
+        /// (支付宝：10.5.70版本以上使用）
+        /// </summary>
+        public void RegisterEventMonitor(string eventId, JObject extParam, Action<Exception, string> callback);
+        /// <summary>
+        /// 设置透明导航栏
+        /// (支付宝：10.5.70版本以上使用）
+        /// </summary>
+        public void SetTransparentTitle(string title, Action<Exception, string> callback);
+        /// <summary>
+        /// StartAPP
+        /// (支付宝：10.5.70版本以上使用）
+        /// </summary>
+        public void StartAPP(string appId, string scheme, Action<Exception, string> callback);
     }
 }
