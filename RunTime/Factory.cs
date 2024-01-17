@@ -11,6 +11,7 @@ namespace Ant.MetaVerse
         static CommonService commonService;
         static UserService userService;
         static PaymentService paymentService;
+        static FileService fileService;
         /// <summary>
         /// 用于获取指定类型的对象。使用后记得及时销毁。
         /// </summary>
@@ -39,6 +40,10 @@ namespace Ant.MetaVerse
             else if(type == typeof(ICommonService)){
                 commonService ??= new CommonService();
                 return commonService as T;
+            }
+            else if(type == typeof(IFileService)){
+                fileService ??= new FileService();
+                return fileService as T;
             }
 #endif
             else{

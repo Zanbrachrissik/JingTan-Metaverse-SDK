@@ -398,6 +398,86 @@ namespace Ant.MetaVerse
     }
 #endif
 
+#if !JINGTAN_APP
+    public class FileService : IFileService
+    {
+        public void IsExist(string filePath, Action<Exception, string> callback)
+        {
+            try{
+                Debug.Log("FileServices.IsExist");
+                JObject fsParam = new JObject();
+                fsParam.Add("path", filePath);
+                AlipaySDK.API.FSManage("access", fsParam, (result) =>
+                {
+                    FileOperateResponse response = JsonConvert.DeserializeObject<FileOperateResponse>(result);
+                    Debug.Log("IsExist result: " + response.success + response.error + response.errorMessage);
+                    if(response.error != null){
+                        callback(new Exception(response.error + response.errorMessage), null);
+                    }
+                    callback(null, response.success);
+                });
+            }
+            catch(Exception e){
+                callback(e, null);
+            }
+        }
+
+        public void ReadFile(JObject args, Action<Exception, byte[]> callback)
+        {
+            try{
+                // fsParam.Add("filePath", "share.png");
+                // fsParam.Add("encoding", "utf8");
+                AlipaySDK.API.FSManage("readFile", args, (result) =>
+                {
+                    JObject jsonObj = JObject.Parse(result);
+                    if (jsonObj.ContainsKey("data"))
+                    {
+                        byte[] temp = (byte[])jsonObj["data"];
+                        callback(null, temp);    
+                    }
+                });
+            }
+            catch(Exception e){
+                callback(e, null);
+            }
+        }
+
+        public void WriteFile(JObject args, Action<Exception, string> callback)
+        {
+            try{
+                // JObject fsParam = new JObject();
+                // fsParam.Add("filePath", "share.png");
+                // fsParam.Add("data，", tempSaveImg);
+                // fsParam.Add("encoding", "utf8");
+                Debug.Log("WriteFile From SDK");
+                AlipaySDK.API.FSManage("writeFile", args, (result) =>
+                {
+                    Debug.Log(result);
+                });
+            }
+            catch(Exception e){
+                callback(e, null);
+            }
+        }
+
+        public void DeleteFile(string filePath, Action<Exception, string> callback)
+        {
+            try{
+                JObject args = new JObject();
+                args.Add("filePath", filePath);
+                AlipaySDK.API.FSManage("unlink", args, (result) =>
+                {
+                    Debug.Log(result);
+                });
+            }
+            catch(Exception e){
+                callback(e, null);
+            }
+        }
+
+    }
+#endif
+
     [Serializable]
     public class AuthResponse
     {
@@ -409,6 +489,12 @@ namespace Ant.MetaVerse
         public string errorMessage;
     }
 
-
+    [Serializable]
+    public class FileOperateResponse
+    {
+        public string success;
+        public string error;
+        public string errorMessage;
+    }
 
 }
