@@ -90,6 +90,7 @@ namespace Ant.MetaVerse
 
         public void NavigateToMiniProgram(JObject param, Action<Exception, string> callback)
         {
+#if !JINGTAN_APP
             try{
                 string appId = param["appId"].ToString();
                 AlipaySDK.API.NavigateToMiniProgram(appId, param, (result) =>
@@ -101,11 +102,14 @@ namespace Ant.MetaVerse
             catch(Exception e){
                 callback(e, null);
             }
+#endif
         }
 
         public void StartBizService(JObject param, Action<Exception, string> callback)
         {
             Debug.Log("StartBizService");
+
+#if !JINGTAN_APP
             try{
                 AlipaySDK.InternalAPI.StartBizService("bigworld", param, (result) =>
                 {
@@ -117,9 +121,10 @@ namespace Ant.MetaVerse
                 Debug.Log(e);
                 callback(e, null);
             }
-
+#endif
         }
 
+#if !JINGTAN_APP
         public void AddOnShowListener(Action<string> callback)
         {
             AlipaySDK.onShow += callback;
@@ -139,7 +144,7 @@ namespace Ant.MetaVerse
         {
             AlipaySDK.onHide -= callback;
         }
-
+#endif
         public void GetSystemInfo(Action<Exception, string> callback)
         {
 #if !JINGTAN_APP
@@ -158,6 +163,7 @@ namespace Ant.MetaVerse
 
         public void RegisterEventMonitor(string eventId, JObject extParam, Action<Exception, string> callback)
         {
+#if !JINGTAN_APP
             try{
                 AlipaySDK.InternalAPI.EventMonitor(eventId, extParam, (result) =>
                 {
@@ -168,10 +174,12 @@ namespace Ant.MetaVerse
             catch(Exception e){
                 callback(e, null);
             }
+#endif
         }
 
         public void SetTransparentTitle(string title, Action<Exception, string> callback)
         {
+#if !JINGTAN_APP
             try{
                 AlipaySDK.InternalAPI.SetTransparentTitle(title, (result) =>
                 {
@@ -182,10 +190,12 @@ namespace Ant.MetaVerse
             catch(Exception e){
                 callback(e, null);
             }
+#endif
         }
 
         public void StartAPP(string appId, string scheme, Action<Exception, string> callback)
         {
+#if !JINGTAN_APP
             try{
                 AlipaySDK.InternalAPI.StartAPP(appId, scheme, (result) =>
                 {
@@ -196,6 +206,7 @@ namespace Ant.MetaVerse
             catch(Exception e){
                 callback(e, null);
             }
+#endif
         }
     }
 

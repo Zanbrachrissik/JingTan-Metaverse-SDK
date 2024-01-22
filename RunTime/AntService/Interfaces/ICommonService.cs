@@ -24,11 +24,13 @@ namespace Ant.MetaVerse
         public void GetLaunchOptions(string[] query, Action<Exception, string> callback);
         public void NavigateToMiniProgram(JObject param, Action<Exception, string> callback);
         public void StartBizService(JObject param, Action<Exception, string> callback);
+
+#if !JINGTAN_APP
         public void AddOnShowListener(Action<string> callback);
         public void RemoveOnShowListener(Action<string> callback);
         public void AddOnHideListener(Action callback);
         public void RemoOnHideListener(Action callback);
-
+#endif
         /// <summary>
         /// 埋点
         /// (支付宝：10.5.70版本以上使用）

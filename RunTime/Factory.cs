@@ -9,9 +9,11 @@ namespace Ant.MetaVerse
     public class Factory
     {
         static CommonService commonService;
+    #if !JINGTAN_APP
         static UserService userService;
         static PaymentService paymentService;
         static FileService fileService;
+    #endif
         /// <summary>
         /// 用于获取指定类型的对象。使用后记得及时销毁。
         /// </summary>
