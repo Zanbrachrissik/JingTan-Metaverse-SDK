@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Ant.MetaVerse
+namespace Ant.Metaverse
 {
     public class GameEntry : MonoBehaviour {
         

@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Ant.MetaVerse
+namespace Ant.Metaverse
 {
     /// <summary>
     /// 支付相关接口。

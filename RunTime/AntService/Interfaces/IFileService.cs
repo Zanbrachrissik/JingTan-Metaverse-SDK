@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using Newtonsoft.Json.Linq;
 
-namespace Ant.MetaVerse
+namespace Ant.Metaverse
 {
     /// <summary>
     /// 文件读取服务（支付宝：10.5.70版本以上使用）

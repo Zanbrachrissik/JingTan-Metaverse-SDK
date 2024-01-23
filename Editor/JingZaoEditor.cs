@@ -13,7 +13,7 @@ using Object = UnityEngine.Object;
 using Newtonsoft.Json;
 
 
-namespace Ant.MetaVerse.Editor
+namespace Ant.Metaverse.Editor
 {
     public class ResponseData
     {

@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Reflection;
 
-namespace Ant.MetaVerse
+namespace Ant.Metaverse
 {
     public class AntMetaverseUtil{
         public static Assembly GetLoadedAssembly(string assemblyName)

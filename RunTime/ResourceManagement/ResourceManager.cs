@@ -3,7 +3,7 @@ using System;
 using System.Collections;
 using UnityEngine.Networking;
 
-namespace Ant.MetaVerse
+namespace Ant.Metaverse
 {
     public class ResourceManager : BaseManager<ResourceManager>
     {

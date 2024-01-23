@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using Newtonsoft.Json.Linq;
 
-namespace Ant.MetaVerse
+namespace Ant.Metaverse
 {
     /// <summary>
     /// 获取用户信息授权相关的接口。

@@ -1,7 +1,7 @@
 using UnityEngine;
 using System;
 
-namespace Ant.MetaVerse
+namespace Ant.Metaverse
 {
     public class CameraManager : BaseManager<CameraManager>
     {

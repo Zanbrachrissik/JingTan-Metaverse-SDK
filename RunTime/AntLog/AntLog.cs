@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Ant.MetaVerse
+namespace Ant.Metaverse
 {
 
     ///TODO: 1. 支持日志等级，比如只打印warning以上的日志,2. 设置宏

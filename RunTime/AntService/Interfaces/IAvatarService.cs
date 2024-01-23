@@ -1,6 +1,6 @@
 using System;
 
-namespace Ant.MetaVerse
+namespace Ant.Metaverse
 {
 
     /// <summary>

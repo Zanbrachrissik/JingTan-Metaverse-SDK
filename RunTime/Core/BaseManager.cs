@@ -1,6 +1,6 @@
 
 
-namespace Ant.MetaVerse
+namespace Ant.Metaverse
 {
     /// <summary>
     /// 单例继承类，需要在Game重新实现Instance

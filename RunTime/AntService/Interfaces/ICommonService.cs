@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using Newtonsoft.Json.Linq;
 
-namespace Ant.MetaVerse
+namespace Ant.Metaverse
 {
     public interface ICommonService
     {

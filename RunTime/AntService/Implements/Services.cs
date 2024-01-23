@@ -8,7 +8,7 @@ using AlipaySdk;
 using Newtonsoft.Json.Linq;
 using System.Reflection;
 
-namespace Ant.MetaVerse
+namespace Ant.Metaverse
 {
     public class CommonService : ICommonService
     {

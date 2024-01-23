@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-namespace Ant.MetaVerse
+namespace Ant.Metaverse
 {
 
     /// <summary>

@@ -1,4 +1,4 @@
-namespace Ant.MetaVerse
+namespace Ant.Metaverse
 {
     /// <summary>
     /// 支付宝好友信息。
