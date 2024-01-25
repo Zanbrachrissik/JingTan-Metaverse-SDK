@@ -1,0 +1,638 @@
+{
+  "sitemap": {
+    "baseUrl": "https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/"
+  },
+  "source_base_path": "/home/runner/work/JingTan-Metaverse-SDK/JingTan-Metaverse-SDK/Documentation~",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AlipaySdk.Bridge.AlipayWebGLInterface.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AlipaySdk.Bridge.AlipayWebGLInterface.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AlipaySdk.Bridge.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AlipaySdk.Bridge.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ant.Metaverse.AccountType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ant.Metaverse.AccountType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ant.Metaverse.AntLog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ant.Metaverse.AntLog.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ant.Metaverse.AntMetaverseUtil.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ant.Metaverse.AntMetaverseUtil.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ant.Metaverse.AuthResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ant.Metaverse.AuthResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ant.Metaverse.Avatar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ant.Metaverse.Avatar.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ant.Metaverse.AvatarViewObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ant.Metaverse.AvatarViewObject.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ant.Metaverse.BaseManager-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ant.Metaverse.BaseManager-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ant.Metaverse.CameraManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ant.Metaverse.CameraManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ant.Metaverse.CommonService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ant.Metaverse.CommonService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ant.Metaverse.Editor.ABData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ant.Metaverse.Editor.ABData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ant.Metaverse.Editor.JingZaoEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ant.Metaverse.Editor.JingZaoEditor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ant.Metaverse.Editor.ResponseData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ant.Metaverse.Editor.ResponseData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ant.Metaverse.Editor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ant.Metaverse.Editor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ant.Metaverse.Factory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ant.Metaverse.Factory.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ant.Metaverse.FileOperateResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ant.Metaverse.FileOperateResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ant.Metaverse.FileService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ant.Metaverse.FileService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ant.Metaverse.Friend.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ant.Metaverse.Friend.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ant.Metaverse.GameEntry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ant.Metaverse.GameEntry.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ant.Metaverse.IAvatarService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ant.Metaverse.IAvatarService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ant.Metaverse.ICommonService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ant.Metaverse.ICommonService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ant.Metaverse.IFileService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ant.Metaverse.IFileService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ant.Metaverse.IPaymentService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ant.Metaverse.IPaymentService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ant.Metaverse.IService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ant.Metaverse.IService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ant.Metaverse.IUserService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ant.Metaverse.IUserService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ant.Metaverse.PaymentService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ant.Metaverse.PaymentService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ant.Metaverse.ResourceManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ant.Metaverse.ResourceManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ant.Metaverse.UIManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ant.Metaverse.UIManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ant.Metaverse.UserService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ant.Metaverse.UserService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ant.Metaverse.iOSGeneralBehaviour.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ant.Metaverse.iOSGeneralBehaviour.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ant.Metaverse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ant.Metaverse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IngameDebugConsole.CircularBuffer-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IngameDebugConsole.CircularBuffer-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IngameDebugConsole.Commands.PlayerPrefsCommands.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IngameDebugConsole.Commands.PlayerPrefsCommands.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IngameDebugConsole.Commands.SceneCommands.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IngameDebugConsole.Commands.SceneCommands.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IngameDebugConsole.Commands.TimeCommands.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IngameDebugConsole.Commands.TimeCommands.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IngameDebugConsole.Commands.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IngameDebugConsole.Commands.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IngameDebugConsole.ConsoleMethodAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IngameDebugConsole.ConsoleMethodAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IngameDebugConsole.ConsoleMethodInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IngameDebugConsole.ConsoleMethodInfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IngameDebugConsole.DebugLogConsole.ParseFunction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IngameDebugConsole.DebugLogConsole.ParseFunction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IngameDebugConsole.DebugLogConsole.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IngameDebugConsole.DebugLogConsole.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IngameDebugConsole.DebugLogEntry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IngameDebugConsole.DebugLogEntry.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IngameDebugConsole.DebugLogEntryTimestamp.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IngameDebugConsole.DebugLogEntryTimestamp.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IngameDebugConsole.DebugLogFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IngameDebugConsole.DebugLogFilter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IngameDebugConsole.DebugLogIndexList-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IngameDebugConsole.DebugLogIndexList-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IngameDebugConsole.DebugLogItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IngameDebugConsole.DebugLogItem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IngameDebugConsole.DebugLogManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IngameDebugConsole.DebugLogManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IngameDebugConsole.DebugLogManagerEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IngameDebugConsole.DebugLogManagerEditor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IngameDebugConsole.DebugLogPopup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IngameDebugConsole.DebugLogPopup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IngameDebugConsole.DebugLogRecycledListView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IngameDebugConsole.DebugLogRecycledListView.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IngameDebugConsole.DebugLogResizeListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IngameDebugConsole.DebugLogResizeListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IngameDebugConsole.DebugsOnScrollListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IngameDebugConsole.DebugsOnScrollListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IngameDebugConsole.DynamicCircularBuffer-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IngameDebugConsole.DynamicCircularBuffer-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IngameDebugConsole.EventSystemHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IngameDebugConsole.EventSystemHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IngameDebugConsole.QueuedDebugLogEntry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IngameDebugConsole.QueuedDebugLogEntry.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IngameDebugConsole.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IngameDebugConsole.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".json": {
+          "relative_path": "api/toc.json"
+        },
+        ".html": {
+          "relative_path": "api/toc.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".json": {
+          "relative_path": "toc.json"
+        },
+        ".html": {
+          "relative_path": "toc.html"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
