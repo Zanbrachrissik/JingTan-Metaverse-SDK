@@ -212,16 +212,21 @@ namespace Ant.Metaverse
         public string GetCompressedAvatarUrl(string url, int size = 256)
         {
             try{
-                string[] strs = url.Split("/original");
-                if(strs.Length > 2){
-                    return url;
-                }
                 string targetSize = string.Format("/{0}w", size);
-                int index = url.IndexOf("/original");
-                if(index == -1){
-                    return string.Format("{0}{1}", url, targetSize);
+                
+                Uri uri = new Uri(url);
+                string path = uri.AbsolutePath;
+                int index = path.LastIndexOf("/original");
+                // 是否以以"/original"结尾
+                bool isOrigEnd = index + 9 == path.Length;
+                string newPath = "";
+                if(isOrigEnd){
+                    newPath = path.Replace("/original", targetSize);
                 }
-                return url.Replace("/original", targetSize);
+                else{
+                    newPath = string.Format("{0}{1}", path, targetSize);
+                }
+                return new UriBuilder(uri.Scheme, uri.Host, uri.Port, newPath, uri.Query).ToString();
             }
             catch(Exception e){
                 Debug.Log("GetCompressedAvatarUrl Error " + e);
