@@ -15,8 +15,23 @@ namespace Ant.Metaverse
         /// <param name="path"></param>
         /// <param name="callback"></param>
         public void IsExist(string filePath, Action<Exception, string> callback);
+        /// <summary>
+        /// 读取文件
+        /// </summary>
+        /// <param name="args">必须包含filePath和encoding字段</param>
+        /// <param name="callback"></param>
         public void ReadFile(JObject args, Action<Exception, byte[]> callback);
+        /// <summary>
+        /// 写入文件
+        /// </summary>
+        /// <param name="args">必须包含filePath和encoding字段</param>
+        /// <param name="callback"></param>
         public void WriteFile(JObject args, Action<Exception, string> callback);
+        /// <summary>
+        /// 删除文件
+        /// </summary>
+        /// <param name="filePath">文件路径</param>
+        /// <param name="callback"></param>
         public void DeleteFile(string filePath, Action<Exception, string> callback);
     }
 }
