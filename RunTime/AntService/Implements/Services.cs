@@ -216,9 +216,8 @@ namespace Ant.Metaverse
                 
                 Uri uri = new Uri(url);
                 string path = uri.AbsolutePath;
-                int index = path.LastIndexOf("/original");
                 // 是否以以"/original"结尾
-                bool isOrigEnd = index + 9 == path.Length;
+                bool isOrigEnd = path.EndsWith("/original");
                 string newPath = "";
                 if(isOrigEnd){
                     newPath = path.Replace("/original", targetSize);
