@@ -208,6 +208,22 @@ namespace Ant.Metaverse
             }
 #endif
         }
+
+        public string GetCompressedAvatarUrl(string url, int size = 256)
+        {
+            try{
+                string targetSize = string.Format("/{0}w", size);
+                int index = url.IndexOf("/original");
+                if(index == -1){
+                    return string.Format("{0}{1}", url, targetSize);
+                }
+                return url.Replace("/original", targetSize);
+            }
+            catch(Exception e){
+                Debug.Log("GetCompressedAvatarUrl Error " + e);
+                return url;
+            }
+        }
     }
 
 

@@ -46,5 +46,14 @@ namespace Ant.Metaverse
         /// (支付宝：10.5.70版本以上使用）
         /// </summary>
         public void StartAPP(string appId, string scheme, Action<Exception, string> callback);
+        /// <summary>
+        /// 根据原始头像Url生成压缩后的头像Url
+        /// </summary>
+        /// <param name="url">原始头像Url</param>
+        /// <param name="size">压缩后的头像尺寸</param>
+        /// <returns>
+        /// 压缩后的头像Url
+        /// </returns>
+        public string GetCompressedAvatarUrl(string url, int size);
     }
 }
