@@ -489,6 +489,7 @@ namespace Ant.Metaverse
                 AlipaySDK.API.FSManage("writeFile", args, (result) =>
                 {
                     Debug.Log(result);
+                    callback(null, result);
                 });
             }
             catch(Exception e){
@@ -504,6 +505,7 @@ namespace Ant.Metaverse
                 AlipaySDK.API.FSManage("unlink", args, (result) =>
                 {
                     Debug.Log(result);
+                    callback(null, result);
                 });
             }
             catch(Exception e){
