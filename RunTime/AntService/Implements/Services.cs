@@ -327,7 +327,7 @@ namespace Ant.Metaverse
                     Debug.Log(string.Format("GetAuthCode after deserialization: {0}. Authcode: {1}", response, response.authCode));
                     if(response.error != 0){
                         Debug.Log(string.Format("GetAuthCode error: {0}, message: {1}", response.error, response.errorMessage));
-                        callback(new Exception(response.error + response.errorMessage), null);
+                        throw new Exception(response.error + response.errorMessage);
                     }
                     callback(null, response.authCode);
                 });
@@ -446,7 +446,7 @@ namespace Ant.Metaverse
                     FileOperateResponse response = JsonConvert.DeserializeObject<FileOperateResponse>(result);
                     Debug.Log("IsExist result: " + response.success + response.error + response.errorMessage);
                     if(response.error != null){
-                        callback(new Exception(response.error + response.errorMessage), null);
+                        throw new Exception(response.error + response.errorMessage);
                     }
                     callback(null, response.success);
                 });
