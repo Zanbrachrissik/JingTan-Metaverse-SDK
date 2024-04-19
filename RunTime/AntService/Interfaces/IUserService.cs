@@ -16,5 +16,6 @@ namespace Ant.Metaverse
         void GetHealthData(DateTime date, Action<Exception, string> callback);
 
         void GetFriends(Action<Exception, List<Friend>> callback);
+        void OpenTaskPage(string userInfoToken, string channelType, Action<Exception, string> callback);
     }
 }

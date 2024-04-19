@@ -9,10 +9,10 @@ namespace Ant.Metaverse
     public class Factory
     {
         static CommonService commonService;
+        static FileService fileService;
+        static PaymentService paymentService;
     #if !JINGTAN_APP
         static UserService userService;
-        static PaymentService paymentService;
-        static FileService fileService;
     #endif
         /// <summary>
         /// 用于获取指定类型的对象。使用后记得及时销毁。
@@ -27,13 +27,18 @@ namespace Ant.Metaverse
                 commonService ??= new CommonService();
                 return commonService as T;
             }
+            else if(type == typeof(IFileService)){
+                fileService ??= new FileService();
+                return fileService as T;
+            }
+            else if(type == typeof(IPaymentService)){
+                paymentService ??= new PaymentService();
+                return paymentService as T;
+            }
 #else
             if(type == typeof(IUserService)){
                 userService ??= new UserService();
                 return userService as T;
-            }
-            else if(type == typeof(IAvatarService)){
-                return AvatarViewObject.Instance as T;
             }
             else if(type == typeof(IPaymentService)){
                 paymentService ??= new PaymentService();

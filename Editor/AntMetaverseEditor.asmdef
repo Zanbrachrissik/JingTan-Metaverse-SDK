@@ -2,7 +2,8 @@
     "name": "AntMetaverseEditor",
     "rootNamespace": "",
     "references": [
-        "GUID:478a2357cc57436488a56e564b08d223"
+        "GUID:478a2357cc57436488a56e564b08d223",
+        "GUID:2373f786d14518f44b0f475db77ba4de"
     ],
     "includePlatforms": [
         "Editor"

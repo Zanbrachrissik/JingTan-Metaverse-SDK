@@ -1,5 +1,6 @@
 {
   "name": "com.antgroup.antmetaverse",
+  "note" : "version的格式为x.y.z，其中x、y、z均为非负整数，且均不能大于10。",
   "version": "0.0.2",
   "displayName": "AntMetaverse",
   "description": "Plugin for Alipay Mini Program",

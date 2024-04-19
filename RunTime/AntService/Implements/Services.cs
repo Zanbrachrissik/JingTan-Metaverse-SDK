@@ -7,23 +7,40 @@ using AlipaySdk;
 #endif
 using Newtonsoft.Json.Linq;
 using System.Reflection;
+using UnityEngine.Networking;
+using System.Collections;
 
 namespace Ant.Metaverse
 {
     public class CommonService : ICommonService
     {
+
+#if JINGTAN_APP
+        public void QuitGame()
+        {
+            Debug.Log("QuitGame");
+            // 后面挪到UnitySDK里
+            AntMetaverseUtil.GetMethodInfo("Assembly-CSharp", "Platform", "InvokeNativeMethod")?.Invoke(null, new string[]{"quit", "", ""});
+            NativeMsgManager.Dispose();
+            AntMetaverseUtil.Dispose();
+
+        }
+#endif
+
         public void HideLoadingView()
         {
             Debug.Log("HideLoadingView");
 #if JINGTAN_APP
-            Assembly assembly = AntMetaverseUtil.GetLoadedAssembly("Assembly-CSharp");
-            assembly.GetType("Platform").GetMethod("HideLoadingView").Invoke(null, null);
+            AntMetaverseUtil.GetMethodInfo("Assembly-CSharp", "Platform", "InvokeNativeMethod")?.Invoke(null, new string[]{"SceneManager", "onReady", ""});
+
+            // AntMetaverseUtil.GetMethodInfo("Assembly-CSharp", "Platform", "HideLoadingView")?.Invoke(null, null);
+            // assembly.GetType("Platform").GetMethod("HideLoadingView").Invoke(null, null);
 #else
             AlipaySDK.API.HideLoadingView();
 #endif
         }
 
-        public void GetOrientation(Action<Exception, string> callback)
+        public void GetScreenOrientation(Action<Exception, string> callback)
         {
             try{
 #if JINGTAN_APP
@@ -42,9 +59,70 @@ namespace Ant.Metaverse
             }
         }
 
-        public void SetOrientation(ScreenOrientation orientation)
+        public void Share(string title, string desc, string link, string imageUrl, Action<Exception, string> callback)
         {
-#if !JINGTAN_APP
+            Debug.Log("Share");
+#if JINGTAN_APP
+            try{
+                var content = new{
+                    title = title,
+                    description = desc,
+                    link = link,
+                    imageUrl = imageUrl,
+                    // UEFA等定制企业空间屏蔽“分享到动态”按钮
+                    channelDisabled = new string[]{"jtmoment"}
+                };
+                AntMetaverseUtil.GetMethodInfo("Assembly-CSharp", "Platform", "InvokeNativeMethod")?.Invoke(null, new string[]{"share", JsonConvert.SerializeObject(content), ""});
+            }
+            catch(Exception e){
+                callback(e, null);
+            }
+#else
+            try{
+
+                JObject param = new JObject();
+                param.Add("chInfo", "小游戏");
+                param.Add("transAnimate", "YES");
+                param.Add("transparent", "YES");
+                param.Add("scene", "share");
+
+                Debug.Log("Share title: " + title + " desc: " + desc + " link: " + link + " imageUrl: " + imageUrl);
+                JObject shareConfig = new JObject();
+                shareConfig.Add("bizType", "ztokenV0_wVgyZkRS");
+                shareConfig.Add("url", link);
+                shareConfig.Add("title", title);
+                shareConfig.Add("desc", desc);
+                param.Add("shareConfig", shareConfig);
+
+                Factory.GetService<ICommonService>().StartBizService(param, (e, result) => {
+                    if (e != null)
+                    {
+                        callback(e, null);
+                        return;
+                    }
+                    callback(null, result);
+                });
+            }
+            catch(Exception e){
+                callback(e, null);
+            }
+#endif
+
+        }
+
+        public void SetScreenOrientation(ScreenOrientation orien)
+        {
+#if JINGTAN_APP
+            try{
+                var content = new{
+                    orientation = orien == ScreenOrientation.LandscapeLeft ? "landscape" : "portrait"
+                };
+                AntMetaverseUtil.GetMethodInfo("Assembly-CSharp", "Platform", "InvokeNativeMethod")?.Invoke(null, new string[]{"changeOrientation", JsonConvert.SerializeObject(content), ""});
+            }
+            catch(Exception e){
+                Debug.Log("SetScreenOrientation Error " + e);
+            }
+#else
             try{
                 Factory.GetService<ICommonService>().GetSystemInfo((e, result) => {
                     if (e != null)
@@ -57,16 +135,16 @@ namespace Ant.Metaverse
                     Debug.Log("platform: " + platform);
                     if (platform == "iOS")
                     {
-                        AlipaySDK.API.SetOrientation(orientation, null);
+                        AlipaySDK.API.SetOrientation(orien, null);
                     }
                     else
                     {
-                        Screen.orientation = orientation;
+                        Screen.orientation = orien;
                     }
                 });
             }
             catch(Exception e){
-                Debug.Log("SetOrientation Error " + e);
+                Debug.Log("SetScreenOrientation Error " + e);
             }
 #endif
         }
@@ -74,7 +152,19 @@ namespace Ant.Metaverse
         public void GetLaunchOptions(string[] query, Action<Exception, string> callback)
         {
             Debug.Log("GetLaunchOptions");
-#if !JINGTAN_APP
+#if JINGTAN_APP
+            try{
+                object result = AntMetaverseUtil.GetMethodInfo("Assembly-CSharp", "LuaManager", "GetLaunchOptionsString")?.Invoke(null, null);
+                if(result == null){
+                    throw new Exception("GetLaunchOptionsString is null");
+                }
+                callback(null, result.ToString());
+            }
+            catch(Exception e){
+                callback(e, null);
+            
+            }
+#else
             try{
                 AlipaySDK.API.GetLaunchOptions(query, jsonStr => {
                     JObject jObject = JObject.Parse(jsonStr);
@@ -144,6 +234,21 @@ namespace Ant.Metaverse
         {
             AlipaySDK.onHide -= callback;
         }
+
+        public void NavigateToJTSpringBoard(JObject param, Action<Exception, string> callback)
+        {
+            try{
+                param.Add("appId", MetaSDK.JINGTANAPPID);
+                Factory.GetService<ICommonService>().NavigateToMiniProgram(param, (exception, result) =>
+                {
+                    Debug.Log("NavigateToJTSpringBoard result: " + result);
+                    callback(null, result);
+                });
+            }
+            catch(Exception e){
+                callback(e, null);
+            }
+        }
 #endif
         public void GetSystemInfo(Action<Exception, string> callback)
         {
@@ -161,13 +266,29 @@ namespace Ant.Metaverse
 #endif
         }
 
-        public void RegisterEventMonitor(string eventId, JObject extParam, Action<Exception, string> callback)
+        public void ReportLog(string JTEventId, string AlipayEventId, JObject extParam, Action<Exception, string> callback)
         {
-#if !JINGTAN_APP
+#if JINGTAN_APP
             try{
-                AlipaySDK.InternalAPI.EventMonitor(eventId, extParam, (result) =>
+                var player = new
                 {
-                    Debug.Log("RegisterEventMonitor result: " + result);
+                    JTEventId = JTEventId,
+                    extParam = extParam
+                };
+
+                // 将匿名对象转换为JSON字符串
+                string json = JsonConvert.SerializeObject(player);
+                AntMetaverseUtil.GetMethodInfo("Assembly-CSharp", "Platform", "InvokeNativeMethod")?.Invoke(null, new string[]{"spm", json, ""});
+            }
+            catch(Exception e){
+                callback(e, null);
+            
+            }
+#else
+            try{
+                AlipaySDK.InternalAPI.EventMonitor(AlipayEventId, extParam, (result) =>
+                {
+                    Debug.Log("Spm result: " + result);
                     callback(null, result);
                 });
             }
@@ -269,6 +390,32 @@ namespace Ant.Metaverse
             }
         }
 
+        public void OpenTaskPage(string userInfoToken, string channelType, Action<Exception, string> callback)
+        {
+            try{
+                JObject param = new JObject();
+                param.Add("chInfo", "小游戏");
+                param.Add("transAnimate", "YES");
+                param.Add("transparent", "YES");
+                param.Add("scene", "task");
+                // param.Add("env", "dev");
+                param.Add("channelType", channelType);
+                param.Add("tenantId", MetaSDK.GetTenantId());
+                param.Add("userInfoToken", userInfoToken);
+                Factory.GetService<ICommonService>().StartBizService(param, (e, result) => {
+                    if (e != null)
+                    {
+                        callback(e, null);
+                        return;
+                    }
+                    callback(null, result);
+                });
+            }
+            catch(Exception e){
+                callback(e, null);
+            }
+        }
+
         public void GetJingTanAuthCode(JObject args = null, Action<Exception, string> callback = null)
         {
             try{
@@ -343,16 +490,16 @@ namespace Ant.Metaverse
     public class iOSGeneralBehaviour{
         public static void iOSKeepOrien(Action action)
         {
-            Factory.GetService<ICommonService>().GetOrientation(
+            Factory.GetService<ICommonService>().GetScreenOrientation(
                 (e, orientation) => {
                     if(e != null){
-                        Debug.LogError("GetOrientation error: " + e);
+                        Debug.LogError("GetScreenOrientation error: " + e);
                         orientation = "landscape";
                     }
 
                     // ios平台特写
                     if(orientation == "landscape"){
-                        Factory.GetService<ICommonService>().SetOrientation(ScreenOrientation.Portrait);
+                        Factory.GetService<ICommonService>().SetScreenOrientation(ScreenOrientation.Portrait);
                         Factory.GetService<ICommonService>().AddOnShowListener(iosOnShowBehaviour);
                         action();
                     }
@@ -367,37 +514,36 @@ namespace Ant.Metaverse
         private static void iosOnShowBehaviour(string result)
         {
             Debug.Log("OnShowBehaviour");
-            Factory.GetService<ICommonService>().SetOrientation(ScreenOrientation.LandscapeLeft);
+            Factory.GetService<ICommonService>().SetScreenOrientation(ScreenOrientation.LandscapeLeft);
             Factory.GetService<ICommonService>().RemoveOnShowListener(iosOnShowBehaviour);
         }
     }
 #endif
 
-#if !JINGTAN_APP
     public class PaymentService : IPaymentService
     {
-        public void Buy(string itemId, string bizNo, string token, Action<Exception, string> callback)
+        public void Buy(string itemId, string externalOrderId, Action<Exception, string> callback)
         {
             Debug.Log("Buy");
             try{
-
+#if JINGTAN_APP
+                string prefixUrl = "antfans://web?appid=68687967&url=";
+                string urlParam = UnityWebRequest.EscapeURL(string.Format("/www/trade_commodity.html?itemId={0}&externalOrderId={1}&tenantId={2}&reJumpUrl=&__webview_options__=transparentTitle%3Dalways%26allowsBounceVertical%3DNO", itemId, externalOrderId, MetaSDK.GetTenantId()));
+                string url = prefixUrl + urlParam;
+                Debug.Log("Buy url: " + url);
+                AntMetaverseUtil.OpenUrl(url, (e, result) => {
+                    if(e != null){
+                        callback(e, null);
+                        return;
+                    }
+                    callback(null, result);
+                });
+#else
                 Action realCall = () => {
                     JObject param = new JObject();
-                    param.Add("chInfo", "小游戏");
-                    param.Add("transAnimate", "YES");
-                    param.Add("transparent", "YES");
-                    param.Add("scene", "purchase");
-                    param.Add("itemId", itemId);
-                    param.Add("bizNo", bizNo);
-                    param.Add("token", token);
-
-                    // query暂时没用，前端不消费
-                    // JObject param2 = new JObject();
-                    // param2.Add("productId", "xianxiao");
-                    // param2.Add("transactionId", "xianxiao2");
-                    // param.Add("query", param2);
-
-                    Factory.GetService<ICommonService>().StartBizService(param, (e, result) => {
+                    param.Add("appId", MetaSDK.JINGTANAPPID);
+                    param.Add("page", string.Format("pages/trade/commodity/index?itemId={0}&externalOrderId={1}&tenantId={2}&chInfo=", itemId, externalOrderId, MetaSDK.GetTenantId()));
+                    Factory.GetService<ICommonService>().NavigateToMiniProgram(param, (e, result) => {
                         if(e != null){
                             callback(e, null);
                             return;
@@ -423,6 +569,7 @@ namespace Ant.Metaverse
                     }
                 });
 
+#endif
             }
             catch(Exception e){
                 callback(e, null);
@@ -430,11 +577,11 @@ namespace Ant.Metaverse
         }
 
     }
-#endif
 
-#if !JINGTAN_APP
     public class FileService : IFileService
     {
+        
+#if !JINGTAN_APP
         public void IsExist(string filePath, Action<Exception, string> callback)
         {
             try{
@@ -475,10 +622,25 @@ namespace Ant.Metaverse
                 callback(e, null);
             }
         }
+#endif
 
         public void WriteFile(JObject args, Action<Exception, string> callback)
         {
             try{
+#if JINGTAN_APP
+                // 鲸探APP内处理下载，并返回文件本地路径
+                if(!args.ContainsKey("fileUrl")){
+                    throw new Exception("fileUrl is required");
+                }
+                NativeMsgManager.DownloadFile(args["fileUrl"].ToString(), (e, filePath) => {
+                    if(e != null){
+                        callback(e, null);
+                        return;
+                    }
+                    Debug.Log("WriteFile From NativeMsgManager: " + filePath);
+                    callback(null, filePath);
+                });
+#else
                 // JObject fsParam = new JObject();
                 // fsParam.Add("filePath", "share.png");
                 // fsParam.Add("data，", tempSaveImg);
@@ -489,12 +651,15 @@ namespace Ant.Metaverse
                     Debug.Log(result);
                     callback(null, result);
                 });
+#endif
             }
             catch(Exception e){
                 callback(e, null);
             }
         }
 
+
+#if !JINGTAN_APP
         public void DeleteFile(string filePath, Action<Exception, string> callback)
         {
             try{
@@ -511,8 +676,8 @@ namespace Ant.Metaverse
             }
         }
 
-    }
 #endif
+    }
 
     [Serializable]
     public class AuthResponse
