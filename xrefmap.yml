@@ -97,6 +97,41 @@ references:
   commentId: T:Ant.Metaverse.AntMetaverseUtil
   fullName: Ant.Metaverse.AntMetaverseUtil
   nameWithType: AntMetaverseUtil
+- uid: Ant.Metaverse.AntMetaverseUtil.AssemblyDic
+  name: AssemblyDic
+  href: api/Ant.Metaverse.AntMetaverseUtil.html#Ant_Metaverse_AntMetaverseUtil_AssemblyDic
+  commentId: F:Ant.Metaverse.AntMetaverseUtil.AssemblyDic
+  fullName: Ant.Metaverse.AntMetaverseUtil.AssemblyDic
+  nameWithType: AntMetaverseUtil.AssemblyDic
+- uid: Ant.Metaverse.AntMetaverseUtil.Dispose
+  name: Dispose()
+  href: api/Ant.Metaverse.AntMetaverseUtil.html#Ant_Metaverse_AntMetaverseUtil_Dispose
+  commentId: M:Ant.Metaverse.AntMetaverseUtil.Dispose
+  fullName: Ant.Metaverse.AntMetaverseUtil.Dispose()
+  nameWithType: AntMetaverseUtil.Dispose()
+- uid: Ant.Metaverse.AntMetaverseUtil.Dispose*
+  name: Dispose
+  href: api/Ant.Metaverse.AntMetaverseUtil.html#Ant_Metaverse_AntMetaverseUtil_Dispose_
+  commentId: Overload:Ant.Metaverse.AntMetaverseUtil.Dispose
+  isSpec: "True"
+  fullName: Ant.Metaverse.AntMetaverseUtil.Dispose
+  nameWithType: AntMetaverseUtil.Dispose
+- uid: Ant.Metaverse.AntMetaverseUtil.GetJtokenByKey(JObject,System.String)
+  name: GetJtokenByKey(JObject, string)
+  href: api/Ant.Metaverse.AntMetaverseUtil.html#Ant_Metaverse_AntMetaverseUtil_GetJtokenByKey_JObject_System_String_
+  commentId: M:Ant.Metaverse.AntMetaverseUtil.GetJtokenByKey(JObject,System.String)
+  name.vb: GetJtokenByKey(JObject, String)
+  fullName: Ant.Metaverse.AntMetaverseUtil.GetJtokenByKey(JObject, string)
+  fullName.vb: Ant.Metaverse.AntMetaverseUtil.GetJtokenByKey(JObject, String)
+  nameWithType: AntMetaverseUtil.GetJtokenByKey(JObject, string)
+  nameWithType.vb: AntMetaverseUtil.GetJtokenByKey(JObject, String)
+- uid: Ant.Metaverse.AntMetaverseUtil.GetJtokenByKey*
+  name: GetJtokenByKey
+  href: api/Ant.Metaverse.AntMetaverseUtil.html#Ant_Metaverse_AntMetaverseUtil_GetJtokenByKey_
+  commentId: Overload:Ant.Metaverse.AntMetaverseUtil.GetJtokenByKey
+  isSpec: "True"
+  fullName: Ant.Metaverse.AntMetaverseUtil.GetJtokenByKey
+  nameWithType: AntMetaverseUtil.GetJtokenByKey
 - uid: Ant.Metaverse.AntMetaverseUtil.GetLoadedAssembly(System.String)
   name: GetLoadedAssembly(string)
   href: api/Ant.Metaverse.AntMetaverseUtil.html#Ant_Metaverse_AntMetaverseUtil_GetLoadedAssembly_System_String_
@@ -113,6 +148,63 @@ references:
   isSpec: "True"
   fullName: Ant.Metaverse.AntMetaverseUtil.GetLoadedAssembly
   nameWithType: AntMetaverseUtil.GetLoadedAssembly
+- uid: Ant.Metaverse.AntMetaverseUtil.GetLoadedType(System.Reflection.Assembly,System.String)
+  name: GetLoadedType(Assembly, string)
+  href: api/Ant.Metaverse.AntMetaverseUtil.html#Ant_Metaverse_AntMetaverseUtil_GetLoadedType_System_Reflection_Assembly_System_String_
+  commentId: M:Ant.Metaverse.AntMetaverseUtil.GetLoadedType(System.Reflection.Assembly,System.String)
+  name.vb: GetLoadedType(Assembly, String)
+  fullName: Ant.Metaverse.AntMetaverseUtil.GetLoadedType(System.Reflection.Assembly, string)
+  fullName.vb: Ant.Metaverse.AntMetaverseUtil.GetLoadedType(System.Reflection.Assembly, String)
+  nameWithType: AntMetaverseUtil.GetLoadedType(Assembly, string)
+  nameWithType.vb: AntMetaverseUtil.GetLoadedType(Assembly, String)
+- uid: Ant.Metaverse.AntMetaverseUtil.GetLoadedType*
+  name: GetLoadedType
+  href: api/Ant.Metaverse.AntMetaverseUtil.html#Ant_Metaverse_AntMetaverseUtil_GetLoadedType_
+  commentId: Overload:Ant.Metaverse.AntMetaverseUtil.GetLoadedType
+  isSpec: "True"
+  fullName: Ant.Metaverse.AntMetaverseUtil.GetLoadedType
+  nameWithType: AntMetaverseUtil.GetLoadedType
+- uid: Ant.Metaverse.AntMetaverseUtil.GetMethodInfo(System.String,System.String,System.String)
+  name: GetMethodInfo(string, string, string)
+  href: api/Ant.Metaverse.AntMetaverseUtil.html#Ant_Metaverse_AntMetaverseUtil_GetMethodInfo_System_String_System_String_System_String_
+  commentId: M:Ant.Metaverse.AntMetaverseUtil.GetMethodInfo(System.String,System.String,System.String)
+  name.vb: GetMethodInfo(String, String, String)
+  fullName: Ant.Metaverse.AntMetaverseUtil.GetMethodInfo(string, string, string)
+  fullName.vb: Ant.Metaverse.AntMetaverseUtil.GetMethodInfo(String, String, String)
+  nameWithType: AntMetaverseUtil.GetMethodInfo(string, string, string)
+  nameWithType.vb: AntMetaverseUtil.GetMethodInfo(String, String, String)
+- uid: Ant.Metaverse.AntMetaverseUtil.GetMethodInfo*
+  name: GetMethodInfo
+  href: api/Ant.Metaverse.AntMetaverseUtil.html#Ant_Metaverse_AntMetaverseUtil_GetMethodInfo_
+  commentId: Overload:Ant.Metaverse.AntMetaverseUtil.GetMethodInfo
+  isSpec: "True"
+  fullName: Ant.Metaverse.AntMetaverseUtil.GetMethodInfo
+  nameWithType: AntMetaverseUtil.GetMethodInfo
+- uid: Ant.Metaverse.AntMetaverseUtil.InitAssemblyDic
+  name: InitAssemblyDic()
+  href: api/Ant.Metaverse.AntMetaverseUtil.html#Ant_Metaverse_AntMetaverseUtil_InitAssemblyDic
+  commentId: M:Ant.Metaverse.AntMetaverseUtil.InitAssemblyDic
+  fullName: Ant.Metaverse.AntMetaverseUtil.InitAssemblyDic()
+  nameWithType: AntMetaverseUtil.InitAssemblyDic()
+- uid: Ant.Metaverse.AntMetaverseUtil.InitAssemblyDic*
+  name: InitAssemblyDic
+  href: api/Ant.Metaverse.AntMetaverseUtil.html#Ant_Metaverse_AntMetaverseUtil_InitAssemblyDic_
+  commentId: Overload:Ant.Metaverse.AntMetaverseUtil.InitAssemblyDic
+  isSpec: "True"
+  fullName: Ant.Metaverse.AntMetaverseUtil.InitAssemblyDic
+  nameWithType: AntMetaverseUtil.InitAssemblyDic
+- uid: Ant.Metaverse.AntMetaverseUtil.MethodInfoDic
+  name: MethodInfoDic
+  href: api/Ant.Metaverse.AntMetaverseUtil.html#Ant_Metaverse_AntMetaverseUtil_MethodInfoDic
+  commentId: F:Ant.Metaverse.AntMetaverseUtil.MethodInfoDic
+  fullName: Ant.Metaverse.AntMetaverseUtil.MethodInfoDic
+  nameWithType: AntMetaverseUtil.MethodInfoDic
+- uid: Ant.Metaverse.AntMetaverseUtil.TypeDic
+  name: TypeDic
+  href: api/Ant.Metaverse.AntMetaverseUtil.html#Ant_Metaverse_AntMetaverseUtil_TypeDic
+  commentId: F:Ant.Metaverse.AntMetaverseUtil.TypeDic
+  fullName: Ant.Metaverse.AntMetaverseUtil.TypeDic
+  nameWithType: AntMetaverseUtil.TypeDic
 - uid: Ant.Metaverse.AuthResponse
   name: AuthResponse
   href: api/Ant.Metaverse.AuthResponse.html
@@ -381,22 +473,22 @@ references:
   isSpec: "True"
   fullName: Ant.Metaverse.CommonService.GetLaunchOptions
   nameWithType: CommonService.GetLaunchOptions
-- uid: Ant.Metaverse.CommonService.GetOrientation(System.Action{System.Exception,System.String})
-  name: GetOrientation(Action<Exception, string>)
-  href: api/Ant.Metaverse.CommonService.html#Ant_Metaverse_CommonService_GetOrientation_System_Action_System_Exception_System_String__
-  commentId: M:Ant.Metaverse.CommonService.GetOrientation(System.Action{System.Exception,System.String})
-  name.vb: GetOrientation(Action(Of Exception, String))
-  fullName: Ant.Metaverse.CommonService.GetOrientation(System.Action<System.Exception, string>)
-  fullName.vb: Ant.Metaverse.CommonService.GetOrientation(System.Action(Of System.Exception, String))
-  nameWithType: CommonService.GetOrientation(Action<Exception, string>)
-  nameWithType.vb: CommonService.GetOrientation(Action(Of Exception, String))
-- uid: Ant.Metaverse.CommonService.GetOrientation*
-  name: GetOrientation
-  href: api/Ant.Metaverse.CommonService.html#Ant_Metaverse_CommonService_GetOrientation_
-  commentId: Overload:Ant.Metaverse.CommonService.GetOrientation
+- uid: Ant.Metaverse.CommonService.GetScreenOrientation(System.Action{System.Exception,System.String})
+  name: GetScreenOrientation(Action<Exception, string>)
+  href: api/Ant.Metaverse.CommonService.html#Ant_Metaverse_CommonService_GetScreenOrientation_System_Action_System_Exception_System_String__
+  commentId: M:Ant.Metaverse.CommonService.GetScreenOrientation(System.Action{System.Exception,System.String})
+  name.vb: GetScreenOrientation(Action(Of Exception, String))
+  fullName: Ant.Metaverse.CommonService.GetScreenOrientation(System.Action<System.Exception, string>)
+  fullName.vb: Ant.Metaverse.CommonService.GetScreenOrientation(System.Action(Of System.Exception, String))
+  nameWithType: CommonService.GetScreenOrientation(Action<Exception, string>)
+  nameWithType.vb: CommonService.GetScreenOrientation(Action(Of Exception, String))
+- uid: Ant.Metaverse.CommonService.GetScreenOrientation*
+  name: GetScreenOrientation
+  href: api/Ant.Metaverse.CommonService.html#Ant_Metaverse_CommonService_GetScreenOrientation_
+  commentId: Overload:Ant.Metaverse.CommonService.GetScreenOrientation
   isSpec: "True"
-  fullName: Ant.Metaverse.CommonService.GetOrientation
-  nameWithType: CommonService.GetOrientation
+  fullName: Ant.Metaverse.CommonService.GetScreenOrientation
+  nameWithType: CommonService.GetScreenOrientation
 - uid: Ant.Metaverse.CommonService.GetSystemInfo(System.Action{System.Exception,System.String})
   name: GetSystemInfo(Action<Exception, string>)
   href: api/Ant.Metaverse.CommonService.html#Ant_Metaverse_CommonService_GetSystemInfo_System_Action_System_Exception_System_String__
@@ -426,6 +518,22 @@ references:
   isSpec: "True"
   fullName: Ant.Metaverse.CommonService.HideLoadingView
   nameWithType: CommonService.HideLoadingView
+- uid: Ant.Metaverse.CommonService.NavigateToJTSpringBoard(JObject,System.Action{System.Exception,System.String})
+  name: NavigateToJTSpringBoard(JObject, Action<Exception, string>)
+  href: api/Ant.Metaverse.CommonService.html#Ant_Metaverse_CommonService_NavigateToJTSpringBoard_JObject_System_Action_System_Exception_System_String__
+  commentId: M:Ant.Metaverse.CommonService.NavigateToJTSpringBoard(JObject,System.Action{System.Exception,System.String})
+  name.vb: NavigateToJTSpringBoard(JObject, Action(Of Exception, String))
+  fullName: Ant.Metaverse.CommonService.NavigateToJTSpringBoard(JObject, System.Action<System.Exception, string>)
+  fullName.vb: Ant.Metaverse.CommonService.NavigateToJTSpringBoard(JObject, System.Action(Of System.Exception, String))
+  nameWithType: CommonService.NavigateToJTSpringBoard(JObject, Action<Exception, string>)
+  nameWithType.vb: CommonService.NavigateToJTSpringBoard(JObject, Action(Of Exception, String))
+- uid: Ant.Metaverse.CommonService.NavigateToJTSpringBoard*
+  name: NavigateToJTSpringBoard
+  href: api/Ant.Metaverse.CommonService.html#Ant_Metaverse_CommonService_NavigateToJTSpringBoard_
+  commentId: Overload:Ant.Metaverse.CommonService.NavigateToJTSpringBoard
+  isSpec: "True"
+  fullName: Ant.Metaverse.CommonService.NavigateToJTSpringBoard
+  nameWithType: CommonService.NavigateToJTSpringBoard
 - uid: Ant.Metaverse.CommonService.NavigateToMiniProgram(JObject,System.Action{System.Exception,System.String})
   name: NavigateToMiniProgram(JObject, Action<Exception, string>)
   href: api/Ant.Metaverse.CommonService.html#Ant_Metaverse_CommonService_NavigateToMiniProgram_JObject_System_Action_System_Exception_System_String__
@@ -442,22 +550,6 @@ references:
   isSpec: "True"
   fullName: Ant.Metaverse.CommonService.NavigateToMiniProgram
   nameWithType: CommonService.NavigateToMiniProgram
-- uid: Ant.Metaverse.CommonService.RegisterEventMonitor(System.String,JObject,System.Action{System.Exception,System.String})
-  name: RegisterEventMonitor(string, JObject, Action<Exception, string>)
-  href: api/Ant.Metaverse.CommonService.html#Ant_Metaverse_CommonService_RegisterEventMonitor_System_String_JObject_System_Action_System_Exception_System_String__
-  commentId: M:Ant.Metaverse.CommonService.RegisterEventMonitor(System.String,JObject,System.Action{System.Exception,System.String})
-  name.vb: RegisterEventMonitor(String, JObject, Action(Of Exception, String))
-  fullName: Ant.Metaverse.CommonService.RegisterEventMonitor(string, JObject, System.Action<System.Exception, string>)
-  fullName.vb: Ant.Metaverse.CommonService.RegisterEventMonitor(String, JObject, System.Action(Of System.Exception, String))
-  nameWithType: CommonService.RegisterEventMonitor(string, JObject, Action<Exception, string>)
-  nameWithType.vb: CommonService.RegisterEventMonitor(String, JObject, Action(Of Exception, String))
-- uid: Ant.Metaverse.CommonService.RegisterEventMonitor*
-  name: RegisterEventMonitor
-  href: api/Ant.Metaverse.CommonService.html#Ant_Metaverse_CommonService_RegisterEventMonitor_
-  commentId: Overload:Ant.Metaverse.CommonService.RegisterEventMonitor
-  isSpec: "True"
-  fullName: Ant.Metaverse.CommonService.RegisterEventMonitor
-  nameWithType: CommonService.RegisterEventMonitor
 - uid: Ant.Metaverse.CommonService.RemoOnHideListener(System.Action)
   name: RemoOnHideListener(Action)
   href: api/Ant.Metaverse.CommonService.html#Ant_Metaverse_CommonService_RemoOnHideListener_System_Action_
@@ -487,19 +579,35 @@ references:
   isSpec: "True"
   fullName: Ant.Metaverse.CommonService.RemoveOnShowListener
   nameWithType: CommonService.RemoveOnShowListener
-- uid: Ant.Metaverse.CommonService.SetOrientation(ScreenOrientation)
-  name: SetOrientation(ScreenOrientation)
-  href: api/Ant.Metaverse.CommonService.html#Ant_Metaverse_CommonService_SetOrientation_ScreenOrientation_
-  commentId: M:Ant.Metaverse.CommonService.SetOrientation(ScreenOrientation)
-  fullName: Ant.Metaverse.CommonService.SetOrientation(ScreenOrientation)
-  nameWithType: CommonService.SetOrientation(ScreenOrientation)
-- uid: Ant.Metaverse.CommonService.SetOrientation*
-  name: SetOrientation
-  href: api/Ant.Metaverse.CommonService.html#Ant_Metaverse_CommonService_SetOrientation_
-  commentId: Overload:Ant.Metaverse.CommonService.SetOrientation
+- uid: Ant.Metaverse.CommonService.ReportLog(System.String,System.String,JObject,System.Action{System.Exception,System.String})
+  name: ReportLog(string, string, JObject, Action<Exception, string>)
+  href: api/Ant.Metaverse.CommonService.html#Ant_Metaverse_CommonService_ReportLog_System_String_System_String_JObject_System_Action_System_Exception_System_String__
+  commentId: M:Ant.Metaverse.CommonService.ReportLog(System.String,System.String,JObject,System.Action{System.Exception,System.String})
+  name.vb: ReportLog(String, String, JObject, Action(Of Exception, String))
+  fullName: Ant.Metaverse.CommonService.ReportLog(string, string, JObject, System.Action<System.Exception, string>)
+  fullName.vb: Ant.Metaverse.CommonService.ReportLog(String, String, JObject, System.Action(Of System.Exception, String))
+  nameWithType: CommonService.ReportLog(string, string, JObject, Action<Exception, string>)
+  nameWithType.vb: CommonService.ReportLog(String, String, JObject, Action(Of Exception, String))
+- uid: Ant.Metaverse.CommonService.ReportLog*
+  name: ReportLog
+  href: api/Ant.Metaverse.CommonService.html#Ant_Metaverse_CommonService_ReportLog_
+  commentId: Overload:Ant.Metaverse.CommonService.ReportLog
   isSpec: "True"
-  fullName: Ant.Metaverse.CommonService.SetOrientation
-  nameWithType: CommonService.SetOrientation
+  fullName: Ant.Metaverse.CommonService.ReportLog
+  nameWithType: CommonService.ReportLog
+- uid: Ant.Metaverse.CommonService.SetScreenOrientation(ScreenOrientation)
+  name: SetScreenOrientation(ScreenOrientation)
+  href: api/Ant.Metaverse.CommonService.html#Ant_Metaverse_CommonService_SetScreenOrientation_ScreenOrientation_
+  commentId: M:Ant.Metaverse.CommonService.SetScreenOrientation(ScreenOrientation)
+  fullName: Ant.Metaverse.CommonService.SetScreenOrientation(ScreenOrientation)
+  nameWithType: CommonService.SetScreenOrientation(ScreenOrientation)
+- uid: Ant.Metaverse.CommonService.SetScreenOrientation*
+  name: SetScreenOrientation
+  href: api/Ant.Metaverse.CommonService.html#Ant_Metaverse_CommonService_SetScreenOrientation_
+  commentId: Overload:Ant.Metaverse.CommonService.SetScreenOrientation
+  isSpec: "True"
+  fullName: Ant.Metaverse.CommonService.SetScreenOrientation
+  nameWithType: CommonService.SetScreenOrientation
 - uid: Ant.Metaverse.CommonService.SetTransparentTitle(System.String,System.Action{System.Exception,System.String})
   name: SetTransparentTitle(string, Action<Exception, string>)
   href: api/Ant.Metaverse.CommonService.html#Ant_Metaverse_CommonService_SetTransparentTitle_System_String_System_Action_System_Exception_System_String__
@@ -516,6 +624,22 @@ references:
   isSpec: "True"
   fullName: Ant.Metaverse.CommonService.SetTransparentTitle
   nameWithType: CommonService.SetTransparentTitle
+- uid: Ant.Metaverse.CommonService.Share(System.String,System.String,System.String,System.String,System.Action{System.Exception,System.String})
+  name: Share(string, string, string, string, Action<Exception, string>)
+  href: api/Ant.Metaverse.CommonService.html#Ant_Metaverse_CommonService_Share_System_String_System_String_System_String_System_String_System_Action_System_Exception_System_String__
+  commentId: M:Ant.Metaverse.CommonService.Share(System.String,System.String,System.String,System.String,System.Action{System.Exception,System.String})
+  name.vb: Share(String, String, String, String, Action(Of Exception, String))
+  fullName: Ant.Metaverse.CommonService.Share(string, string, string, string, System.Action<System.Exception, string>)
+  fullName.vb: Ant.Metaverse.CommonService.Share(String, String, String, String, System.Action(Of System.Exception, String))
+  nameWithType: CommonService.Share(string, string, string, string, Action<Exception, string>)
+  nameWithType.vb: CommonService.Share(String, String, String, String, Action(Of Exception, String))
+- uid: Ant.Metaverse.CommonService.Share*
+  name: Share
+  href: api/Ant.Metaverse.CommonService.html#Ant_Metaverse_CommonService_Share_
+  commentId: Overload:Ant.Metaverse.CommonService.Share
+  isSpec: "True"
+  fullName: Ant.Metaverse.CommonService.Share
+  nameWithType: CommonService.Share
 - uid: Ant.Metaverse.CommonService.StartAPP(System.String,System.String,System.Action{System.Exception,System.String})
   name: StartAPP(string, string, Action<Exception, string>)
   href: api/Ant.Metaverse.CommonService.html#Ant_Metaverse_CommonService_StartAPP_System_String_System_String_System_Action_System_Exception_System_String__
@@ -584,6 +708,36 @@ references:
   commentId: F:Ant.Metaverse.Editor.ABData.modelId
   fullName: Ant.Metaverse.Editor.ABData.modelId
   nameWithType: ABData.modelId
+- uid: Ant.Metaverse.Editor.DllConfig
+  name: DllConfig
+  href: api/Ant.Metaverse.Editor.DllConfig.html
+  commentId: T:Ant.Metaverse.Editor.DllConfig
+  fullName: Ant.Metaverse.Editor.DllConfig
+  nameWithType: DllConfig
+- uid: Ant.Metaverse.Editor.DllConfig.HotUpdateAssemblyFiles
+  name: HotUpdateAssemblyFiles
+  href: api/Ant.Metaverse.Editor.DllConfig.html#Ant_Metaverse_Editor_DllConfig_HotUpdateAssemblyFiles
+  commentId: F:Ant.Metaverse.Editor.DllConfig.HotUpdateAssemblyFiles
+  fullName: Ant.Metaverse.Editor.DllConfig.HotUpdateAssemblyFiles
+  nameWithType: DllConfig.HotUpdateAssemblyFiles
+- uid: Ant.Metaverse.Editor.DllConfig.MainAssemblyFile
+  name: MainAssemblyFile
+  href: api/Ant.Metaverse.Editor.DllConfig.html#Ant_Metaverse_Editor_DllConfig_MainAssemblyFile
+  commentId: F:Ant.Metaverse.Editor.DllConfig.MainAssemblyFile
+  fullName: Ant.Metaverse.Editor.DllConfig.MainAssemblyFile
+  nameWithType: DllConfig.MainAssemblyFile
+- uid: Ant.Metaverse.Editor.DllConfig.MetaAssemblyFiles
+  name: MetaAssemblyFiles
+  href: api/Ant.Metaverse.Editor.DllConfig.html#Ant_Metaverse_Editor_DllConfig_MetaAssemblyFiles
+  commentId: F:Ant.Metaverse.Editor.DllConfig.MetaAssemblyFiles
+  fullName: Ant.Metaverse.Editor.DllConfig.MetaAssemblyFiles
+  nameWithType: DllConfig.MetaAssemblyFiles
+- uid: Ant.Metaverse.Editor.DllConfig.MetaSDKVersion
+  name: MetaSDKVersion
+  href: api/Ant.Metaverse.Editor.DllConfig.html#Ant_Metaverse_Editor_DllConfig_MetaSDKVersion
+  commentId: F:Ant.Metaverse.Editor.DllConfig.MetaSDKVersion
+  fullName: Ant.Metaverse.Editor.DllConfig.MetaSDKVersion
+  nameWithType: DllConfig.MetaSDKVersion
 - uid: Ant.Metaverse.Editor.JingZaoEditor
   name: JingZaoEditor
   href: api/Ant.Metaverse.Editor.JingZaoEditor.html
@@ -901,22 +1055,22 @@ references:
   isSpec: "True"
   fullName: Ant.Metaverse.ICommonService.GetLaunchOptions
   nameWithType: ICommonService.GetLaunchOptions
-- uid: Ant.Metaverse.ICommonService.GetOrientation(System.Action{System.Exception,System.String})
-  name: GetOrientation(Action<Exception, string>)
-  href: api/Ant.Metaverse.ICommonService.html#Ant_Metaverse_ICommonService_GetOrientation_System_Action_System_Exception_System_String__
-  commentId: M:Ant.Metaverse.ICommonService.GetOrientation(System.Action{System.Exception,System.String})
-  name.vb: GetOrientation(Action(Of Exception, String))
-  fullName: Ant.Metaverse.ICommonService.GetOrientation(System.Action<System.Exception, string>)
-  fullName.vb: Ant.Metaverse.ICommonService.GetOrientation(System.Action(Of System.Exception, String))
-  nameWithType: ICommonService.GetOrientation(Action<Exception, string>)
-  nameWithType.vb: ICommonService.GetOrientation(Action(Of Exception, String))
-- uid: Ant.Metaverse.ICommonService.GetOrientation*
-  name: GetOrientation
-  href: api/Ant.Metaverse.ICommonService.html#Ant_Metaverse_ICommonService_GetOrientation_
-  commentId: Overload:Ant.Metaverse.ICommonService.GetOrientation
+- uid: Ant.Metaverse.ICommonService.GetScreenOrientation(System.Action{System.Exception,System.String})
+  name: GetScreenOrientation(Action<Exception, string>)
+  href: api/Ant.Metaverse.ICommonService.html#Ant_Metaverse_ICommonService_GetScreenOrientation_System_Action_System_Exception_System_String__
+  commentId: M:Ant.Metaverse.ICommonService.GetScreenOrientation(System.Action{System.Exception,System.String})
+  name.vb: GetScreenOrientation(Action(Of Exception, String))
+  fullName: Ant.Metaverse.ICommonService.GetScreenOrientation(System.Action<System.Exception, string>)
+  fullName.vb: Ant.Metaverse.ICommonService.GetScreenOrientation(System.Action(Of System.Exception, String))
+  nameWithType: ICommonService.GetScreenOrientation(Action<Exception, string>)
+  nameWithType.vb: ICommonService.GetScreenOrientation(Action(Of Exception, String))
+- uid: Ant.Metaverse.ICommonService.GetScreenOrientation*
+  name: GetScreenOrientation
+  href: api/Ant.Metaverse.ICommonService.html#Ant_Metaverse_ICommonService_GetScreenOrientation_
+  commentId: Overload:Ant.Metaverse.ICommonService.GetScreenOrientation
   isSpec: "True"
-  fullName: Ant.Metaverse.ICommonService.GetOrientation
-  nameWithType: ICommonService.GetOrientation
+  fullName: Ant.Metaverse.ICommonService.GetScreenOrientation
+  nameWithType: ICommonService.GetScreenOrientation
 - uid: Ant.Metaverse.ICommonService.GetSystemInfo(System.Action{System.Exception,System.String})
   name: GetSystemInfo(Action<Exception, string>)
   href: api/Ant.Metaverse.ICommonService.html#Ant_Metaverse_ICommonService_GetSystemInfo_System_Action_System_Exception_System_String__
@@ -946,6 +1100,22 @@ references:
   isSpec: "True"
   fullName: Ant.Metaverse.ICommonService.HideLoadingView
   nameWithType: ICommonService.HideLoadingView
+- uid: Ant.Metaverse.ICommonService.NavigateToJTSpringBoard(JObject,System.Action{System.Exception,System.String})
+  name: NavigateToJTSpringBoard(JObject, Action<Exception, string>)
+  href: api/Ant.Metaverse.ICommonService.html#Ant_Metaverse_ICommonService_NavigateToJTSpringBoard_JObject_System_Action_System_Exception_System_String__
+  commentId: M:Ant.Metaverse.ICommonService.NavigateToJTSpringBoard(JObject,System.Action{System.Exception,System.String})
+  name.vb: NavigateToJTSpringBoard(JObject, Action(Of Exception, String))
+  fullName: Ant.Metaverse.ICommonService.NavigateToJTSpringBoard(JObject, System.Action<System.Exception, string>)
+  fullName.vb: Ant.Metaverse.ICommonService.NavigateToJTSpringBoard(JObject, System.Action(Of System.Exception, String))
+  nameWithType: ICommonService.NavigateToJTSpringBoard(JObject, Action<Exception, string>)
+  nameWithType.vb: ICommonService.NavigateToJTSpringBoard(JObject, Action(Of Exception, String))
+- uid: Ant.Metaverse.ICommonService.NavigateToJTSpringBoard*
+  name: NavigateToJTSpringBoard
+  href: api/Ant.Metaverse.ICommonService.html#Ant_Metaverse_ICommonService_NavigateToJTSpringBoard_
+  commentId: Overload:Ant.Metaverse.ICommonService.NavigateToJTSpringBoard
+  isSpec: "True"
+  fullName: Ant.Metaverse.ICommonService.NavigateToJTSpringBoard
+  nameWithType: ICommonService.NavigateToJTSpringBoard
 - uid: Ant.Metaverse.ICommonService.NavigateToMiniProgram(JObject,System.Action{System.Exception,System.String})
   name: NavigateToMiniProgram(JObject, Action<Exception, string>)
   href: api/Ant.Metaverse.ICommonService.html#Ant_Metaverse_ICommonService_NavigateToMiniProgram_JObject_System_Action_System_Exception_System_String__
@@ -962,22 +1132,6 @@ references:
   isSpec: "True"
   fullName: Ant.Metaverse.ICommonService.NavigateToMiniProgram
   nameWithType: ICommonService.NavigateToMiniProgram
-- uid: Ant.Metaverse.ICommonService.RegisterEventMonitor(System.String,JObject,System.Action{System.Exception,System.String})
-  name: RegisterEventMonitor(string, JObject, Action<Exception, string>)
-  href: api/Ant.Metaverse.ICommonService.html#Ant_Metaverse_ICommonService_RegisterEventMonitor_System_String_JObject_System_Action_System_Exception_System_String__
-  commentId: M:Ant.Metaverse.ICommonService.RegisterEventMonitor(System.String,JObject,System.Action{System.Exception,System.String})
-  name.vb: RegisterEventMonitor(String, JObject, Action(Of Exception, String))
-  fullName: Ant.Metaverse.ICommonService.RegisterEventMonitor(string, JObject, System.Action<System.Exception, string>)
-  fullName.vb: Ant.Metaverse.ICommonService.RegisterEventMonitor(String, JObject, System.Action(Of System.Exception, String))
-  nameWithType: ICommonService.RegisterEventMonitor(string, JObject, Action<Exception, string>)
-  nameWithType.vb: ICommonService.RegisterEventMonitor(String, JObject, Action(Of Exception, String))
-- uid: Ant.Metaverse.ICommonService.RegisterEventMonitor*
-  name: RegisterEventMonitor
-  href: api/Ant.Metaverse.ICommonService.html#Ant_Metaverse_ICommonService_RegisterEventMonitor_
-  commentId: Overload:Ant.Metaverse.ICommonService.RegisterEventMonitor
-  isSpec: "True"
-  fullName: Ant.Metaverse.ICommonService.RegisterEventMonitor
-  nameWithType: ICommonService.RegisterEventMonitor
 - uid: Ant.Metaverse.ICommonService.RemoOnHideListener(System.Action)
   name: RemoOnHideListener(Action)
   href: api/Ant.Metaverse.ICommonService.html#Ant_Metaverse_ICommonService_RemoOnHideListener_System_Action_
@@ -1007,19 +1161,35 @@ references:
   isSpec: "True"
   fullName: Ant.Metaverse.ICommonService.RemoveOnShowListener
   nameWithType: ICommonService.RemoveOnShowListener
-- uid: Ant.Metaverse.ICommonService.SetOrientation(ScreenOrientation)
-  name: SetOrientation(ScreenOrientation)
-  href: api/Ant.Metaverse.ICommonService.html#Ant_Metaverse_ICommonService_SetOrientation_ScreenOrientation_
-  commentId: M:Ant.Metaverse.ICommonService.SetOrientation(ScreenOrientation)
-  fullName: Ant.Metaverse.ICommonService.SetOrientation(ScreenOrientation)
-  nameWithType: ICommonService.SetOrientation(ScreenOrientation)
-- uid: Ant.Metaverse.ICommonService.SetOrientation*
-  name: SetOrientation
-  href: api/Ant.Metaverse.ICommonService.html#Ant_Metaverse_ICommonService_SetOrientation_
-  commentId: Overload:Ant.Metaverse.ICommonService.SetOrientation
+- uid: Ant.Metaverse.ICommonService.ReportLog(System.String,System.String,JObject,System.Action{System.Exception,System.String})
+  name: ReportLog(string, string, JObject, Action<Exception, string>)
+  href: api/Ant.Metaverse.ICommonService.html#Ant_Metaverse_ICommonService_ReportLog_System_String_System_String_JObject_System_Action_System_Exception_System_String__
+  commentId: M:Ant.Metaverse.ICommonService.ReportLog(System.String,System.String,JObject,System.Action{System.Exception,System.String})
+  name.vb: ReportLog(String, String, JObject, Action(Of Exception, String))
+  fullName: Ant.Metaverse.ICommonService.ReportLog(string, string, JObject, System.Action<System.Exception, string>)
+  fullName.vb: Ant.Metaverse.ICommonService.ReportLog(String, String, JObject, System.Action(Of System.Exception, String))
+  nameWithType: ICommonService.ReportLog(string, string, JObject, Action<Exception, string>)
+  nameWithType.vb: ICommonService.ReportLog(String, String, JObject, Action(Of Exception, String))
+- uid: Ant.Metaverse.ICommonService.ReportLog*
+  name: ReportLog
+  href: api/Ant.Metaverse.ICommonService.html#Ant_Metaverse_ICommonService_ReportLog_
+  commentId: Overload:Ant.Metaverse.ICommonService.ReportLog
   isSpec: "True"
-  fullName: Ant.Metaverse.ICommonService.SetOrientation
-  nameWithType: ICommonService.SetOrientation
+  fullName: Ant.Metaverse.ICommonService.ReportLog
+  nameWithType: ICommonService.ReportLog
+- uid: Ant.Metaverse.ICommonService.SetScreenOrientation(ScreenOrientation)
+  name: SetScreenOrientation(ScreenOrientation)
+  href: api/Ant.Metaverse.ICommonService.html#Ant_Metaverse_ICommonService_SetScreenOrientation_ScreenOrientation_
+  commentId: M:Ant.Metaverse.ICommonService.SetScreenOrientation(ScreenOrientation)
+  fullName: Ant.Metaverse.ICommonService.SetScreenOrientation(ScreenOrientation)
+  nameWithType: ICommonService.SetScreenOrientation(ScreenOrientation)
+- uid: Ant.Metaverse.ICommonService.SetScreenOrientation*
+  name: SetScreenOrientation
+  href: api/Ant.Metaverse.ICommonService.html#Ant_Metaverse_ICommonService_SetScreenOrientation_
+  commentId: Overload:Ant.Metaverse.ICommonService.SetScreenOrientation
+  isSpec: "True"
+  fullName: Ant.Metaverse.ICommonService.SetScreenOrientation
+  nameWithType: ICommonService.SetScreenOrientation
 - uid: Ant.Metaverse.ICommonService.SetTransparentTitle(System.String,System.Action{System.Exception,System.String})
   name: SetTransparentTitle(string, Action<Exception, string>)
   href: api/Ant.Metaverse.ICommonService.html#Ant_Metaverse_ICommonService_SetTransparentTitle_System_String_System_Action_System_Exception_System_String__
@@ -1036,6 +1206,22 @@ references:
   isSpec: "True"
   fullName: Ant.Metaverse.ICommonService.SetTransparentTitle
   nameWithType: ICommonService.SetTransparentTitle
+- uid: Ant.Metaverse.ICommonService.Share(System.String,System.String,System.String,System.String,System.Action{System.Exception,System.String})
+  name: Share(string, string, string, string, Action<Exception, string>)
+  href: api/Ant.Metaverse.ICommonService.html#Ant_Metaverse_ICommonService_Share_System_String_System_String_System_String_System_String_System_Action_System_Exception_System_String__
+  commentId: M:Ant.Metaverse.ICommonService.Share(System.String,System.String,System.String,System.String,System.Action{System.Exception,System.String})
+  name.vb: Share(String, String, String, String, Action(Of Exception, String))
+  fullName: Ant.Metaverse.ICommonService.Share(string, string, string, string, System.Action<System.Exception, string>)
+  fullName.vb: Ant.Metaverse.ICommonService.Share(String, String, String, String, System.Action(Of System.Exception, String))
+  nameWithType: ICommonService.Share(string, string, string, string, Action<Exception, string>)
+  nameWithType.vb: ICommonService.Share(String, String, String, String, Action(Of Exception, String))
+- uid: Ant.Metaverse.ICommonService.Share*
+  name: Share
+  href: api/Ant.Metaverse.ICommonService.html#Ant_Metaverse_ICommonService_Share_
+  commentId: Overload:Ant.Metaverse.ICommonService.Share
+  isSpec: "True"
+  fullName: Ant.Metaverse.ICommonService.Share
+  nameWithType: ICommonService.Share
 - uid: Ant.Metaverse.ICommonService.StartAPP(System.String,System.String,System.Action{System.Exception,System.String})
   name: StartAPP(string, string, Action<Exception, string>)
   href: api/Ant.Metaverse.ICommonService.html#Ant_Metaverse_ICommonService_StartAPP_System_String_System_String_System_Action_System_Exception_System_String__
@@ -1144,15 +1330,15 @@ references:
   commentId: T:Ant.Metaverse.IPaymentService
   fullName: Ant.Metaverse.IPaymentService
   nameWithType: IPaymentService
-- uid: Ant.Metaverse.IPaymentService.Buy(System.String,System.String,System.String,System.Action{System.Exception,System.String})
-  name: Buy(string, string, string, Action<Exception, string>)
-  href: api/Ant.Metaverse.IPaymentService.html#Ant_Metaverse_IPaymentService_Buy_System_String_System_String_System_String_System_Action_System_Exception_System_String__
-  commentId: M:Ant.Metaverse.IPaymentService.Buy(System.String,System.String,System.String,System.Action{System.Exception,System.String})
-  name.vb: Buy(String, String, String, Action(Of Exception, String))
-  fullName: Ant.Metaverse.IPaymentService.Buy(string, string, string, System.Action<System.Exception, string>)
-  fullName.vb: Ant.Metaverse.IPaymentService.Buy(String, String, String, System.Action(Of System.Exception, String))
-  nameWithType: IPaymentService.Buy(string, string, string, Action<Exception, string>)
-  nameWithType.vb: IPaymentService.Buy(String, String, String, Action(Of Exception, String))
+- uid: Ant.Metaverse.IPaymentService.Buy(System.String,System.String,System.Action{System.Exception,System.String})
+  name: Buy(string, string, Action<Exception, string>)
+  href: api/Ant.Metaverse.IPaymentService.html#Ant_Metaverse_IPaymentService_Buy_System_String_System_String_System_Action_System_Exception_System_String__
+  commentId: M:Ant.Metaverse.IPaymentService.Buy(System.String,System.String,System.Action{System.Exception,System.String})
+  name.vb: Buy(String, String, Action(Of Exception, String))
+  fullName: Ant.Metaverse.IPaymentService.Buy(string, string, System.Action<System.Exception, string>)
+  fullName.vb: Ant.Metaverse.IPaymentService.Buy(String, String, System.Action(Of System.Exception, String))
+  nameWithType: IPaymentService.Buy(string, string, Action<Exception, string>)
+  nameWithType.vb: IPaymentService.Buy(String, String, Action(Of Exception, String))
 - uid: Ant.Metaverse.IPaymentService.Buy*
   name: Buy
   href: api/Ant.Metaverse.IPaymentService.html#Ant_Metaverse_IPaymentService_Buy_
@@ -1236,21 +1422,155 @@ references:
   isSpec: "True"
   fullName: Ant.Metaverse.IUserService.GetJingTanAuthCode
   nameWithType: IUserService.GetJingTanAuthCode
+- uid: Ant.Metaverse.IUserService.OpenTaskPage(System.String,System.String,System.Action{System.Exception,System.String})
+  name: OpenTaskPage(string, string, Action<Exception, string>)
+  href: api/Ant.Metaverse.IUserService.html#Ant_Metaverse_IUserService_OpenTaskPage_System_String_System_String_System_Action_System_Exception_System_String__
+  commentId: M:Ant.Metaverse.IUserService.OpenTaskPage(System.String,System.String,System.Action{System.Exception,System.String})
+  name.vb: OpenTaskPage(String, String, Action(Of Exception, String))
+  fullName: Ant.Metaverse.IUserService.OpenTaskPage(string, string, System.Action<System.Exception, string>)
+  fullName.vb: Ant.Metaverse.IUserService.OpenTaskPage(String, String, System.Action(Of System.Exception, String))
+  nameWithType: IUserService.OpenTaskPage(string, string, Action<Exception, string>)
+  nameWithType.vb: IUserService.OpenTaskPage(String, String, Action(Of Exception, String))
+- uid: Ant.Metaverse.IUserService.OpenTaskPage*
+  name: OpenTaskPage
+  href: api/Ant.Metaverse.IUserService.html#Ant_Metaverse_IUserService_OpenTaskPage_
+  commentId: Overload:Ant.Metaverse.IUserService.OpenTaskPage
+  isSpec: "True"
+  fullName: Ant.Metaverse.IUserService.OpenTaskPage
+  nameWithType: IUserService.OpenTaskPage
+- uid: Ant.Metaverse.MetaSDK
+  name: MetaSDK
+  href: api/Ant.Metaverse.MetaSDK.html
+  commentId: T:Ant.Metaverse.MetaSDK
+  fullName: Ant.Metaverse.MetaSDK
+  nameWithType: MetaSDK
+- uid: Ant.Metaverse.MetaSDK.Dispose
+  name: Dispose()
+  href: api/Ant.Metaverse.MetaSDK.html#Ant_Metaverse_MetaSDK_Dispose
+  commentId: M:Ant.Metaverse.MetaSDK.Dispose
+  fullName: Ant.Metaverse.MetaSDK.Dispose()
+  nameWithType: MetaSDK.Dispose()
+- uid: Ant.Metaverse.MetaSDK.Dispose*
+  name: Dispose
+  href: api/Ant.Metaverse.MetaSDK.html#Ant_Metaverse_MetaSDK_Dispose_
+  commentId: Overload:Ant.Metaverse.MetaSDK.Dispose
+  isSpec: "True"
+  fullName: Ant.Metaverse.MetaSDK.Dispose
+  nameWithType: MetaSDK.Dispose
+- uid: Ant.Metaverse.MetaSDK.GetAppId
+  name: GetAppId()
+  href: api/Ant.Metaverse.MetaSDK.html#Ant_Metaverse_MetaSDK_GetAppId
+  commentId: M:Ant.Metaverse.MetaSDK.GetAppId
+  fullName: Ant.Metaverse.MetaSDK.GetAppId()
+  nameWithType: MetaSDK.GetAppId()
+- uid: Ant.Metaverse.MetaSDK.GetAppId*
+  name: GetAppId
+  href: api/Ant.Metaverse.MetaSDK.html#Ant_Metaverse_MetaSDK_GetAppId_
+  commentId: Overload:Ant.Metaverse.MetaSDK.GetAppId
+  isSpec: "True"
+  fullName: Ant.Metaverse.MetaSDK.GetAppId
+  nameWithType: MetaSDK.GetAppId
+- uid: Ant.Metaverse.MetaSDK.GetTenantId
+  name: GetTenantId()
+  href: api/Ant.Metaverse.MetaSDK.html#Ant_Metaverse_MetaSDK_GetTenantId
+  commentId: M:Ant.Metaverse.MetaSDK.GetTenantId
+  fullName: Ant.Metaverse.MetaSDK.GetTenantId()
+  nameWithType: MetaSDK.GetTenantId()
+- uid: Ant.Metaverse.MetaSDK.GetTenantId*
+  name: GetTenantId
+  href: api/Ant.Metaverse.MetaSDK.html#Ant_Metaverse_MetaSDK_GetTenantId_
+  commentId: Overload:Ant.Metaverse.MetaSDK.GetTenantId
+  isSpec: "True"
+  fullName: Ant.Metaverse.MetaSDK.GetTenantId
+  nameWithType: MetaSDK.GetTenantId
+- uid: Ant.Metaverse.MetaSDK.Init(System.String,System.String)
+  name: Init(string, string)
+  href: api/Ant.Metaverse.MetaSDK.html#Ant_Metaverse_MetaSDK_Init_System_String_System_String_
+  commentId: M:Ant.Metaverse.MetaSDK.Init(System.String,System.String)
+  name.vb: Init(String, String)
+  fullName: Ant.Metaverse.MetaSDK.Init(string, string)
+  fullName.vb: Ant.Metaverse.MetaSDK.Init(String, String)
+  nameWithType: MetaSDK.Init(string, string)
+  nameWithType.vb: MetaSDK.Init(String, String)
+- uid: Ant.Metaverse.MetaSDK.Init*
+  name: Init
+  href: api/Ant.Metaverse.MetaSDK.html#Ant_Metaverse_MetaSDK_Init_
+  commentId: Overload:Ant.Metaverse.MetaSDK.Init
+  isSpec: "True"
+  fullName: Ant.Metaverse.MetaSDK.Init
+  nameWithType: MetaSDK.Init
+- uid: Ant.Metaverse.MetaSDK.JINGTANAPPID
+  name: JINGTANAPPID
+  href: api/Ant.Metaverse.MetaSDK.html#Ant_Metaverse_MetaSDK_JINGTANAPPID
+  commentId: F:Ant.Metaverse.MetaSDK.JINGTANAPPID
+  fullName: Ant.Metaverse.MetaSDK.JINGTANAPPID
+  nameWithType: MetaSDK.JINGTANAPPID
+- uid: Ant.Metaverse.NativeMsgManager
+  name: NativeMsgManager
+  href: api/Ant.Metaverse.NativeMsgManager.html
+  commentId: T:Ant.Metaverse.NativeMsgManager
+  fullName: Ant.Metaverse.NativeMsgManager
+  nameWithType: NativeMsgManager
+- uid: Ant.Metaverse.NativeMsgManager.Dispose
+  name: Dispose()
+  href: api/Ant.Metaverse.NativeMsgManager.html#Ant_Metaverse_NativeMsgManager_Dispose
+  commentId: M:Ant.Metaverse.NativeMsgManager.Dispose
+  fullName: Ant.Metaverse.NativeMsgManager.Dispose()
+  nameWithType: NativeMsgManager.Dispose()
+- uid: Ant.Metaverse.NativeMsgManager.Dispose*
+  name: Dispose
+  href: api/Ant.Metaverse.NativeMsgManager.html#Ant_Metaverse_NativeMsgManager_Dispose_
+  commentId: Overload:Ant.Metaverse.NativeMsgManager.Dispose
+  isSpec: "True"
+  fullName: Ant.Metaverse.NativeMsgManager.Dispose
+  nameWithType: NativeMsgManager.Dispose
+- uid: Ant.Metaverse.NativeMsgManager.DownloadFile(System.String,System.Action{System.Exception,System.String})
+  name: DownloadFile(string, Action<Exception, string>)
+  href: api/Ant.Metaverse.NativeMsgManager.html#Ant_Metaverse_NativeMsgManager_DownloadFile_System_String_System_Action_System_Exception_System_String__
+  commentId: M:Ant.Metaverse.NativeMsgManager.DownloadFile(System.String,System.Action{System.Exception,System.String})
+  name.vb: DownloadFile(String, Action(Of Exception, String))
+  fullName: Ant.Metaverse.NativeMsgManager.DownloadFile(string, System.Action<System.Exception, string>)
+  fullName.vb: Ant.Metaverse.NativeMsgManager.DownloadFile(String, System.Action(Of System.Exception, String))
+  nameWithType: NativeMsgManager.DownloadFile(string, Action<Exception, string>)
+  nameWithType.vb: NativeMsgManager.DownloadFile(String, Action(Of Exception, String))
+- uid: Ant.Metaverse.NativeMsgManager.DownloadFile*
+  name: DownloadFile
+  href: api/Ant.Metaverse.NativeMsgManager.html#Ant_Metaverse_NativeMsgManager_DownloadFile_
+  commentId: Overload:Ant.Metaverse.NativeMsgManager.DownloadFile
+  isSpec: "True"
+  fullName: Ant.Metaverse.NativeMsgManager.DownloadFile
+  nameWithType: NativeMsgManager.DownloadFile
+- uid: Ant.Metaverse.NativeMsgManager.ReceiveMsgFromJT(System.String)
+  name: ReceiveMsgFromJT(string)
+  href: api/Ant.Metaverse.NativeMsgManager.html#Ant_Metaverse_NativeMsgManager_ReceiveMsgFromJT_System_String_
+  commentId: M:Ant.Metaverse.NativeMsgManager.ReceiveMsgFromJT(System.String)
+  name.vb: ReceiveMsgFromJT(String)
+  fullName: Ant.Metaverse.NativeMsgManager.ReceiveMsgFromJT(string)
+  fullName.vb: Ant.Metaverse.NativeMsgManager.ReceiveMsgFromJT(String)
+  nameWithType: NativeMsgManager.ReceiveMsgFromJT(string)
+  nameWithType.vb: NativeMsgManager.ReceiveMsgFromJT(String)
+- uid: Ant.Metaverse.NativeMsgManager.ReceiveMsgFromJT*
+  name: ReceiveMsgFromJT
+  href: api/Ant.Metaverse.NativeMsgManager.html#Ant_Metaverse_NativeMsgManager_ReceiveMsgFromJT_
+  commentId: Overload:Ant.Metaverse.NativeMsgManager.ReceiveMsgFromJT
+  isSpec: "True"
+  fullName: Ant.Metaverse.NativeMsgManager.ReceiveMsgFromJT
+  nameWithType: NativeMsgManager.ReceiveMsgFromJT
 - uid: Ant.Metaverse.PaymentService
   name: PaymentService
   href: api/Ant.Metaverse.PaymentService.html
   commentId: T:Ant.Metaverse.PaymentService
   fullName: Ant.Metaverse.PaymentService
   nameWithType: PaymentService
-- uid: Ant.Metaverse.PaymentService.Buy(System.String,System.String,System.String,System.Action{System.Exception,System.String})
-  name: Buy(string, string, string, Action<Exception, string>)
-  href: api/Ant.Metaverse.PaymentService.html#Ant_Metaverse_PaymentService_Buy_System_String_System_String_System_String_System_Action_System_Exception_System_String__
-  commentId: M:Ant.Metaverse.PaymentService.Buy(System.String,System.String,System.String,System.Action{System.Exception,System.String})
-  name.vb: Buy(String, String, String, Action(Of Exception, String))
-  fullName: Ant.Metaverse.PaymentService.Buy(string, string, string, System.Action<System.Exception, string>)
-  fullName.vb: Ant.Metaverse.PaymentService.Buy(String, String, String, System.Action(Of System.Exception, String))
-  nameWithType: PaymentService.Buy(string, string, string, Action<Exception, string>)
-  nameWithType.vb: PaymentService.Buy(String, String, String, Action(Of Exception, String))
+- uid: Ant.Metaverse.PaymentService.Buy(System.String,System.String,System.Action{System.Exception,System.String})
+  name: Buy(string, string, Action<Exception, string>)
+  href: api/Ant.Metaverse.PaymentService.html#Ant_Metaverse_PaymentService_Buy_System_String_System_String_System_Action_System_Exception_System_String__
+  commentId: M:Ant.Metaverse.PaymentService.Buy(System.String,System.String,System.Action{System.Exception,System.String})
+  name.vb: Buy(String, String, Action(Of Exception, String))
+  fullName: Ant.Metaverse.PaymentService.Buy(string, string, System.Action<System.Exception, string>)
+  fullName.vb: Ant.Metaverse.PaymentService.Buy(String, String, System.Action(Of System.Exception, String))
+  nameWithType: PaymentService.Buy(string, string, Action<Exception, string>)
+  nameWithType.vb: PaymentService.Buy(String, String, Action(Of Exception, String))
 - uid: Ant.Metaverse.PaymentService.Buy*
   name: Buy
   href: api/Ant.Metaverse.PaymentService.html#Ant_Metaverse_PaymentService_Buy_
@@ -1296,6 +1616,41 @@ references:
   isSpec: "True"
   fullName: Ant.Metaverse.ResourceManager.LoadAssetBundleAsync
   nameWithType: ResourceManager.LoadAssetBundleAsync
+- uid: Ant.Metaverse.TemplateGameEntry
+  name: TemplateGameEntry
+  href: api/Ant.Metaverse.TemplateGameEntry.html
+  commentId: T:Ant.Metaverse.TemplateGameEntry
+  fullName: Ant.Metaverse.TemplateGameEntry
+  nameWithType: TemplateGameEntry
+- uid: Ant.Metaverse.TemplateGameEntry.Instance
+  name: Instance
+  href: api/Ant.Metaverse.TemplateGameEntry.html#Ant_Metaverse_TemplateGameEntry_Instance
+  commentId: P:Ant.Metaverse.TemplateGameEntry.Instance
+  fullName: Ant.Metaverse.TemplateGameEntry.Instance
+  nameWithType: TemplateGameEntry.Instance
+- uid: Ant.Metaverse.TemplateGameEntry.Instance*
+  name: Instance
+  href: api/Ant.Metaverse.TemplateGameEntry.html#Ant_Metaverse_TemplateGameEntry_Instance_
+  commentId: Overload:Ant.Metaverse.TemplateGameEntry.Instance
+  isSpec: "True"
+  fullName: Ant.Metaverse.TemplateGameEntry.Instance
+  nameWithType: TemplateGameEntry.Instance
+- uid: Ant.Metaverse.TemplateGameEntry.StartGame(System.String)
+  name: StartGame(string)
+  href: api/Ant.Metaverse.TemplateGameEntry.html#Ant_Metaverse_TemplateGameEntry_StartGame_System_String_
+  commentId: M:Ant.Metaverse.TemplateGameEntry.StartGame(System.String)
+  name.vb: StartGame(String)
+  fullName: Ant.Metaverse.TemplateGameEntry.StartGame(string)
+  fullName.vb: Ant.Metaverse.TemplateGameEntry.StartGame(String)
+  nameWithType: TemplateGameEntry.StartGame(string)
+  nameWithType.vb: TemplateGameEntry.StartGame(String)
+- uid: Ant.Metaverse.TemplateGameEntry.StartGame*
+  name: StartGame
+  href: api/Ant.Metaverse.TemplateGameEntry.html#Ant_Metaverse_TemplateGameEntry_StartGame_
+  commentId: Overload:Ant.Metaverse.TemplateGameEntry.StartGame
+  isSpec: "True"
+  fullName: Ant.Metaverse.TemplateGameEntry.StartGame
+  nameWithType: TemplateGameEntry.StartGame
 - uid: Ant.Metaverse.UIManager
   name: UIManager
   href: api/Ant.Metaverse.UIManager.html
@@ -1372,6 +1727,22 @@ references:
   isSpec: "True"
   fullName: Ant.Metaverse.UserService.GetJingTanAuthCode
   nameWithType: UserService.GetJingTanAuthCode
+- uid: Ant.Metaverse.UserService.OpenTaskPage(System.String,System.String,System.Action{System.Exception,System.String})
+  name: OpenTaskPage(string, string, Action<Exception, string>)
+  href: api/Ant.Metaverse.UserService.html#Ant_Metaverse_UserService_OpenTaskPage_System_String_System_String_System_Action_System_Exception_System_String__
+  commentId: M:Ant.Metaverse.UserService.OpenTaskPage(System.String,System.String,System.Action{System.Exception,System.String})
+  name.vb: OpenTaskPage(String, String, Action(Of Exception, String))
+  fullName: Ant.Metaverse.UserService.OpenTaskPage(string, string, System.Action<System.Exception, string>)
+  fullName.vb: Ant.Metaverse.UserService.OpenTaskPage(String, String, System.Action(Of System.Exception, String))
+  nameWithType: UserService.OpenTaskPage(string, string, Action<Exception, string>)
+  nameWithType.vb: UserService.OpenTaskPage(String, String, Action(Of Exception, String))
+- uid: Ant.Metaverse.UserService.OpenTaskPage*
+  name: OpenTaskPage
+  href: api/Ant.Metaverse.UserService.html#Ant_Metaverse_UserService_OpenTaskPage_
+  commentId: Overload:Ant.Metaverse.UserService.OpenTaskPage
+  isSpec: "True"
+  fullName: Ant.Metaverse.UserService.OpenTaskPage
+  nameWithType: UserService.OpenTaskPage
 - uid: Ant.Metaverse.iOSGeneralBehaviour
   name: iOSGeneralBehaviour
   href: api/Ant.Metaverse.iOSGeneralBehaviour.html
@@ -1391,6 +1762,806 @@ references:
   isSpec: "True"
   fullName: Ant.Metaverse.iOSGeneralBehaviour.iOSKeepOrien
   nameWithType: iOSGeneralBehaviour.iOSKeepOrien
+- uid: AntChain.SDK.Sample
+  name: AntChain.SDK.Sample
+  href: api/AntChain.SDK.Sample.html
+  commentId: N:AntChain.SDK.Sample
+  fullName: AntChain.SDK.Sample
+  nameWithType: AntChain.SDK.Sample
+- uid: AntChain.SDK.Sample.Client
+  name: Client
+  href: api/AntChain.SDK.Sample.Client.html
+  commentId: T:AntChain.SDK.Sample.Client
+  fullName: AntChain.SDK.Sample.Client
+  nameWithType: Client
+- uid: AntChain.SDK.Sample.Client.CreateClient(System.String,System.String)
+  name: CreateClient(string, string)
+  href: api/AntChain.SDK.Sample.Client.html#AntChain_SDK_Sample_Client_CreateClient_System_String_System_String_
+  commentId: M:AntChain.SDK.Sample.Client.CreateClient(System.String,System.String)
+  name.vb: CreateClient(String, String)
+  fullName: AntChain.SDK.Sample.Client.CreateClient(string, string)
+  fullName.vb: AntChain.SDK.Sample.Client.CreateClient(String, String)
+  nameWithType: Client.CreateClient(string, string)
+  nameWithType.vb: Client.CreateClient(String, String)
+- uid: AntChain.SDK.Sample.Client.CreateClient*
+  name: CreateClient
+  href: api/AntChain.SDK.Sample.Client.html#AntChain_SDK_Sample_Client_CreateClient_
+  commentId: Overload:AntChain.SDK.Sample.Client.CreateClient
+  isSpec: "True"
+  fullName: AntChain.SDK.Sample.Client.CreateClient
+  nameWithType: Client.CreateClient
+- uid: AntChain.SDK.Sample.Client.Main(System.String[])
+  name: Main(string[])
+  href: api/AntChain.SDK.Sample.Client.html#AntChain_SDK_Sample_Client_Main_System_String___
+  commentId: M:AntChain.SDK.Sample.Client.Main(System.String[])
+  name.vb: Main(String())
+  fullName: AntChain.SDK.Sample.Client.Main(string[])
+  fullName.vb: AntChain.SDK.Sample.Client.Main(String())
+  nameWithType: Client.Main(string[])
+  nameWithType.vb: Client.Main(String())
+- uid: AntChain.SDK.Sample.Client.Main*
+  name: Main
+  href: api/AntChain.SDK.Sample.Client.html#AntChain_SDK_Sample_Client_Main_
+  commentId: Overload:AntChain.SDK.Sample.Client.Main
+  isSpec: "True"
+  fullName: AntChain.SDK.Sample.Client.Main
+  nameWithType: Client.Main
+- uid: Global
+  name: ''
+  href: api/Global.html
+- uid: Global.CharacterInputData
+  name: CharacterInputData
+  href: api/Global.CharacterInputData.html
+  commentId: T:Global.CharacterInputData
+  fullName: CharacterInputData
+  nameWithType: CharacterInputData
+- uid: Global.CharacterInputData.JumpInput(System.Boolean)
+  name: JumpInput(bool)
+  href: api/Global.CharacterInputData.html#Global_CharacterInputData_JumpInput_System_Boolean_
+  commentId: M:Global.CharacterInputData.JumpInput(System.Boolean)
+  name.vb: JumpInput(Boolean)
+  fullName: CharacterInputData.JumpInput(bool)
+  fullName.vb: CharacterInputData.JumpInput(Boolean)
+  nameWithType: CharacterInputData.JumpInput(bool)
+  nameWithType.vb: CharacterInputData.JumpInput(Boolean)
+- uid: Global.CharacterInputData.JumpInput*
+  name: JumpInput
+  href: api/Global.CharacterInputData.html#Global_CharacterInputData_JumpInput_
+  commentId: Overload:Global.CharacterInputData.JumpInput
+  isSpec: "True"
+  fullName: CharacterInputData.JumpInput
+  nameWithType: CharacterInputData.JumpInput
+- uid: Global.CharacterInputData.LookInput(Vector2)
+  name: LookInput(Vector2)
+  href: api/Global.CharacterInputData.html#Global_CharacterInputData_LookInput_Vector2_
+  commentId: M:Global.CharacterInputData.LookInput(Vector2)
+  fullName: CharacterInputData.LookInput(Vector2)
+  nameWithType: CharacterInputData.LookInput(Vector2)
+- uid: Global.CharacterInputData.LookInput*
+  name: LookInput
+  href: api/Global.CharacterInputData.html#Global_CharacterInputData_LookInput_
+  commentId: Overload:Global.CharacterInputData.LookInput
+  isSpec: "True"
+  fullName: CharacterInputData.LookInput
+  nameWithType: CharacterInputData.LookInput
+- uid: Global.CharacterInputData.MoveInput(Vector2)
+  name: MoveInput(Vector2)
+  href: api/Global.CharacterInputData.html#Global_CharacterInputData_MoveInput_Vector2_
+  commentId: M:Global.CharacterInputData.MoveInput(Vector2)
+  fullName: CharacterInputData.MoveInput(Vector2)
+  nameWithType: CharacterInputData.MoveInput(Vector2)
+- uid: Global.CharacterInputData.MoveInput*
+  name: MoveInput
+  href: api/Global.CharacterInputData.html#Global_CharacterInputData_MoveInput_
+  commentId: Overload:Global.CharacterInputData.MoveInput
+  isSpec: "True"
+  fullName: CharacterInputData.MoveInput
+  nameWithType: CharacterInputData.MoveInput
+- uid: Global.CharacterInputData.SprintInput(System.Boolean)
+  name: SprintInput(bool)
+  href: api/Global.CharacterInputData.html#Global_CharacterInputData_SprintInput_System_Boolean_
+  commentId: M:Global.CharacterInputData.SprintInput(System.Boolean)
+  name.vb: SprintInput(Boolean)
+  fullName: CharacterInputData.SprintInput(bool)
+  fullName.vb: CharacterInputData.SprintInput(Boolean)
+  nameWithType: CharacterInputData.SprintInput(bool)
+  nameWithType.vb: CharacterInputData.SprintInput(Boolean)
+- uid: Global.CharacterInputData.SprintInput*
+  name: SprintInput
+  href: api/Global.CharacterInputData.html#Global_CharacterInputData_SprintInput_
+  commentId: Overload:Global.CharacterInputData.SprintInput
+  isSpec: "True"
+  fullName: CharacterInputData.SprintInput
+  nameWithType: CharacterInputData.SprintInput
+- uid: Global.CharacterInputData.analogMovement
+  name: analogMovement
+  href: api/Global.CharacterInputData.html#Global_CharacterInputData_analogMovement
+  commentId: F:Global.CharacterInputData.analogMovement
+  fullName: CharacterInputData.analogMovement
+  nameWithType: CharacterInputData.analogMovement
+- uid: Global.CharacterInputData.cursorInputForLook
+  name: cursorInputForLook
+  href: api/Global.CharacterInputData.html#Global_CharacterInputData_cursorInputForLook
+  commentId: F:Global.CharacterInputData.cursorInputForLook
+  fullName: CharacterInputData.cursorInputForLook
+  nameWithType: CharacterInputData.cursorInputForLook
+- uid: Global.CharacterInputData.cursorLocked
+  name: cursorLocked
+  href: api/Global.CharacterInputData.html#Global_CharacterInputData_cursorLocked
+  commentId: F:Global.CharacterInputData.cursorLocked
+  fullName: CharacterInputData.cursorLocked
+  nameWithType: CharacterInputData.cursorLocked
+- uid: Global.CharacterInputData.jump
+  name: jump
+  href: api/Global.CharacterInputData.html#Global_CharacterInputData_jump
+  commentId: F:Global.CharacterInputData.jump
+  fullName: CharacterInputData.jump
+  nameWithType: CharacterInputData.jump
+- uid: Global.CharacterInputData.look
+  name: look
+  href: api/Global.CharacterInputData.html#Global_CharacterInputData_look
+  commentId: F:Global.CharacterInputData.look
+  fullName: CharacterInputData.look
+  nameWithType: CharacterInputData.look
+- uid: Global.CharacterInputData.move
+  name: move
+  href: api/Global.CharacterInputData.html#Global_CharacterInputData_move
+  commentId: F:Global.CharacterInputData.move
+  fullName: CharacterInputData.move
+  nameWithType: CharacterInputData.move
+- uid: Global.CharacterInputData.sprint
+  name: sprint
+  href: api/Global.CharacterInputData.html#Global_CharacterInputData_sprint
+  commentId: F:Global.CharacterInputData.sprint
+  fullName: CharacterInputData.sprint
+  nameWithType: CharacterInputData.sprint
+- uid: Global.Data
+  name: Data
+  href: api/Global.Data.html
+  commentId: T:Global.Data
+  fullName: Data
+  nameWithType: Data
+- uid: Global.Data.id
+  name: id
+  href: api/Global.Data.html#Global_Data_id
+  commentId: P:Global.Data.id
+  fullName: Data.id
+  nameWithType: Data.id
+- uid: Global.Data.id*
+  name: id
+  href: api/Global.Data.html#Global_Data_id_
+  commentId: Overload:Global.Data.id
+  isSpec: "True"
+  fullName: Data.id
+  nameWithType: Data.id
+- uid: Global.JTAppInfo
+  name: JTAppInfo
+  href: api/Global.JTAppInfo.html
+  commentId: T:Global.JTAppInfo
+  fullName: JTAppInfo
+  nameWithType: JTAppInfo
+- uid: Global.JTAppInfo.appId
+  name: appId
+  href: api/Global.JTAppInfo.html#Global_JTAppInfo_appId
+  commentId: F:Global.JTAppInfo.appId
+  fullName: JTAppInfo.appId
+  nameWithType: JTAppInfo.appId
+- uid: Global.JTAppInfo.bizStatusCode
+  name: bizStatusCode
+  href: api/Global.JTAppInfo.html#Global_JTAppInfo_bizStatusCode
+  commentId: F:Global.JTAppInfo.bizStatusCode
+  fullName: JTAppInfo.bizStatusCode
+  nameWithType: JTAppInfo.bizStatusCode
+- uid: Global.JTAppInfo.bizStatusMessage
+  name: bizStatusMessage
+  href: api/Global.JTAppInfo.html#Global_JTAppInfo_bizStatusMessage
+  commentId: F:Global.JTAppInfo.bizStatusMessage
+  fullName: JTAppInfo.bizStatusMessage
+  nameWithType: JTAppInfo.bizStatusMessage
+- uid: Global.JTAppInfo.maasToken
+  name: maasToken
+  href: api/Global.JTAppInfo.html#Global_JTAppInfo_maasToken
+  commentId: F:Global.JTAppInfo.maasToken
+  fullName: JTAppInfo.maasToken
+  nameWithType: JTAppInfo.maasToken
+- uid: Global.JTAppInfo.url
+  name: url
+  href: api/Global.JTAppInfo.html#Global_JTAppInfo_url
+  commentId: F:Global.JTAppInfo.url
+  fullName: JTAppInfo.url
+  nameWithType: JTAppInfo.url
+- uid: Global.JTBindFile
+  name: JTBindFile
+  href: api/Global.JTBindFile.html
+  commentId: T:Global.JTBindFile
+  fullName: JTBindFile
+  nameWithType: JTBindFile
+- uid: Global.JTBindFile.Md5
+  name: Md5
+  href: api/Global.JTBindFile.html#Global_JTBindFile_Md5
+  commentId: P:Global.JTBindFile.Md5
+  fullName: JTBindFile.Md5
+  nameWithType: JTBindFile.Md5
+- uid: Global.JTBindFile.Md5*
+  name: Md5
+  href: api/Global.JTBindFile.html#Global_JTBindFile_Md5_
+  commentId: Overload:Global.JTBindFile.Md5
+  isSpec: "True"
+  fullName: JTBindFile.Md5
+  nameWithType: JTBindFile.Md5
+- uid: Global.JTBindFile.ReqMsgId
+  name: ReqMsgId
+  href: api/Global.JTBindFile.html#Global_JTBindFile_ReqMsgId
+  commentId: P:Global.JTBindFile.ReqMsgId
+  fullName: JTBindFile.ReqMsgId
+  nameWithType: JTBindFile.ReqMsgId
+- uid: Global.JTBindFile.ReqMsgId*
+  name: ReqMsgId
+  href: api/Global.JTBindFile.html#Global_JTBindFile_ReqMsgId_
+  commentId: Overload:Global.JTBindFile.ReqMsgId
+  isSpec: "True"
+  fullName: JTBindFile.ReqMsgId
+  nameWithType: JTBindFile.ReqMsgId
+- uid: Global.JTBindFile.ResultCode
+  name: ResultCode
+  href: api/Global.JTBindFile.html#Global_JTBindFile_ResultCode
+  commentId: P:Global.JTBindFile.ResultCode
+  fullName: JTBindFile.ResultCode
+  nameWithType: JTBindFile.ResultCode
+- uid: Global.JTBindFile.ResultCode*
+  name: ResultCode
+  href: api/Global.JTBindFile.html#Global_JTBindFile_ResultCode_
+  commentId: Overload:Global.JTBindFile.ResultCode
+  isSpec: "True"
+  fullName: JTBindFile.ResultCode
+  nameWithType: JTBindFile.ResultCode
+- uid: Global.JTBindFile.ResultMsg
+  name: ResultMsg
+  href: api/Global.JTBindFile.html#Global_JTBindFile_ResultMsg
+  commentId: P:Global.JTBindFile.ResultMsg
+  fullName: JTBindFile.ResultMsg
+  nameWithType: JTBindFile.ResultMsg
+- uid: Global.JTBindFile.ResultMsg*
+  name: ResultMsg
+  href: api/Global.JTBindFile.html#Global_JTBindFile_ResultMsg_
+  commentId: Overload:Global.JTBindFile.ResultMsg
+  isSpec: "True"
+  fullName: JTBindFile.ResultMsg
+  nameWithType: JTBindFile.ResultMsg
+- uid: Global.JTBindFile.Size
+  name: Size
+  href: api/Global.JTBindFile.html#Global_JTBindFile_Size
+  commentId: P:Global.JTBindFile.Size
+  fullName: JTBindFile.Size
+  nameWithType: JTBindFile.Size
+- uid: Global.JTBindFile.Size*
+  name: Size
+  href: api/Global.JTBindFile.html#Global_JTBindFile_Size_
+  commentId: Overload:Global.JTBindFile.Size
+  isSpec: "True"
+  fullName: JTBindFile.Size
+  nameWithType: JTBindFile.Size
+- uid: Global.JTBindFile.Url
+  name: Url
+  href: api/Global.JTBindFile.html#Global_JTBindFile_Url
+  commentId: P:Global.JTBindFile.Url
+  fullName: JTBindFile.Url
+  nameWithType: JTBindFile.Url
+- uid: Global.JTBindFile.Url*
+  name: Url
+  href: api/Global.JTBindFile.html#Global_JTBindFile_Url_
+  commentId: Overload:Global.JTBindFile.Url
+  isSpec: "True"
+  fullName: JTBindFile.Url
+  nameWithType: JTBindFile.Url
+- uid: Global.JTBindFile.Version
+  name: Version
+  href: api/Global.JTBindFile.html#Global_JTBindFile_Version
+  commentId: P:Global.JTBindFile.Version
+  fullName: JTBindFile.Version
+  nameWithType: JTBindFile.Version
+- uid: Global.JTBindFile.Version*
+  name: Version
+  href: api/Global.JTBindFile.html#Global_JTBindFile_Version_
+  commentId: Overload:Global.JTBindFile.Version
+  isSpec: "True"
+  fullName: JTBindFile.Version
+  nameWithType: JTBindFile.Version
+- uid: Global.JTLogin
+  name: JTLogin
+  href: api/Global.JTLogin.html
+  commentId: T:Global.JTLogin
+  fullName: JTLogin
+  nameWithType: JTLogin
+- uid: Global.JTLogin.OnGUI
+  name: OnGUI()
+  href: api/Global.JTLogin.html#Global_JTLogin_OnGUI
+  commentId: M:Global.JTLogin.OnGUI
+  fullName: JTLogin.OnGUI()
+  nameWithType: JTLogin.OnGUI()
+- uid: Global.JTLogin.OnGUI*
+  name: OnGUI
+  href: api/Global.JTLogin.html#Global_JTLogin_OnGUI_
+  commentId: Overload:Global.JTLogin.OnGUI
+  isSpec: "True"
+  fullName: JTLogin.OnGUI
+  nameWithType: JTLogin.OnGUI
+- uid: Global.JTLogin.ShowWindow
+  name: ShowWindow()
+  href: api/Global.JTLogin.html#Global_JTLogin_ShowWindow
+  commentId: M:Global.JTLogin.ShowWindow
+  fullName: JTLogin.ShowWindow()
+  nameWithType: JTLogin.ShowWindow()
+- uid: Global.JTLogin.ShowWindow*
+  name: ShowWindow
+  href: api/Global.JTLogin.html#Global_JTLogin_ShowWindow_
+  commentId: Overload:Global.JTLogin.ShowWindow
+  isSpec: "True"
+  fullName: JTLogin.ShowWindow
+  nameWithType: JTLogin.ShowWindow
+- uid: Global.JingTanNFTCUpload
+  name: JingTanNFTCUpload
+  href: api/Global.JingTanNFTCUpload.html
+  commentId: T:Global.JingTanNFTCUpload
+  fullName: JingTanNFTCUpload
+  nameWithType: JingTanNFTCUpload
+- uid: Global.JingTanNFTCUpload.BindJTFile(System.String,System.String,System.String,System.String)
+  name: BindJTFile(string, string, string, string)
+  href: api/Global.JingTanNFTCUpload.html#Global_JingTanNFTCUpload_BindJTFile_System_String_System_String_System_String_System_String_
+  commentId: M:Global.JingTanNFTCUpload.BindJTFile(System.String,System.String,System.String,System.String)
+  name.vb: BindJTFile(String, String, String, String)
+  fullName: JingTanNFTCUpload.BindJTFile(string, string, string, string)
+  fullName.vb: JingTanNFTCUpload.BindJTFile(String, String, String, String)
+  nameWithType: JingTanNFTCUpload.BindJTFile(string, string, string, string)
+  nameWithType.vb: JingTanNFTCUpload.BindJTFile(String, String, String, String)
+- uid: Global.JingTanNFTCUpload.BindJTFile*
+  name: BindJTFile
+  href: api/Global.JingTanNFTCUpload.html#Global_JingTanNFTCUpload_BindJTFile_
+  commentId: Overload:Global.JingTanNFTCUpload.BindJTFile
+  isSpec: "True"
+  fullName: JingTanNFTCUpload.BindJTFile
+  nameWithType: JingTanNFTCUpload.BindJTFile
+- uid: Global.JingTanNFTCUpload.CreateClient(System.String,System.String)
+  name: CreateClient(string, string)
+  href: api/Global.JingTanNFTCUpload.html#Global_JingTanNFTCUpload_CreateClient_System_String_System_String_
+  commentId: M:Global.JingTanNFTCUpload.CreateClient(System.String,System.String)
+  name.vb: CreateClient(String, String)
+  fullName: JingTanNFTCUpload.CreateClient(string, string)
+  fullName.vb: JingTanNFTCUpload.CreateClient(String, String)
+  nameWithType: JingTanNFTCUpload.CreateClient(string, string)
+  nameWithType.vb: JingTanNFTCUpload.CreateClient(String, String)
+- uid: Global.JingTanNFTCUpload.CreateClient*
+  name: CreateClient
+  href: api/Global.JingTanNFTCUpload.html#Global_JingTanNFTCUpload_CreateClient_
+  commentId: Overload:Global.JingTanNFTCUpload.CreateClient
+  isSpec: "True"
+  fullName: JingTanNFTCUpload.CreateClient
+  nameWithType: JingTanNFTCUpload.CreateClient
+- uid: Global.JingTanNFTCUpload.GetAppMsg(System.String,System.String)
+  name: GetAppMsg(string, string)
+  href: api/Global.JingTanNFTCUpload.html#Global_JingTanNFTCUpload_GetAppMsg_System_String_System_String_
+  commentId: M:Global.JingTanNFTCUpload.GetAppMsg(System.String,System.String)
+  name.vb: GetAppMsg(String, String)
+  fullName: JingTanNFTCUpload.GetAppMsg(string, string)
+  fullName.vb: JingTanNFTCUpload.GetAppMsg(String, String)
+  nameWithType: JingTanNFTCUpload.GetAppMsg(string, string)
+  nameWithType.vb: JingTanNFTCUpload.GetAppMsg(String, String)
+- uid: Global.JingTanNFTCUpload.GetAppMsg*
+  name: GetAppMsg
+  href: api/Global.JingTanNFTCUpload.html#Global_JingTanNFTCUpload_GetAppMsg_
+  commentId: Overload:Global.JingTanNFTCUpload.GetAppMsg
+  isSpec: "True"
+  fullName: JingTanNFTCUpload.GetAppMsg
+  nameWithType: JingTanNFTCUpload.GetAppMsg
+- uid: Global.JingTanNFTCUpload.UploadToJT(System.String,System.String,System.String,System.String,System.String,System.String)
+  name: UploadToJT(string, string, string, string, string, string)
+  href: api/Global.JingTanNFTCUpload.html#Global_JingTanNFTCUpload_UploadToJT_System_String_System_String_System_String_System_String_System_String_System_String_
+  commentId: M:Global.JingTanNFTCUpload.UploadToJT(System.String,System.String,System.String,System.String,System.String,System.String)
+  name.vb: UploadToJT(String, String, String, String, String, String)
+  fullName: JingTanNFTCUpload.UploadToJT(string, string, string, string, string, string)
+  fullName.vb: JingTanNFTCUpload.UploadToJT(String, String, String, String, String, String)
+  nameWithType: JingTanNFTCUpload.UploadToJT(string, string, string, string, string, string)
+  nameWithType.vb: JingTanNFTCUpload.UploadToJT(String, String, String, String, String, String)
+- uid: Global.JingTanNFTCUpload.UploadToJT*
+  name: UploadToJT
+  href: api/Global.JingTanNFTCUpload.html#Global_JingTanNFTCUpload_UploadToJT_
+  commentId: Overload:Global.JingTanNFTCUpload.UploadToJT
+  isSpec: "True"
+  fullName: JingTanNFTCUpload.UploadToJT
+  nameWithType: JingTanNFTCUpload.UploadToJT
+- uid: Global.JingTanNFTCUpload.client
+  name: client
+  href: api/Global.JingTanNFTCUpload.html#Global_JingTanNFTCUpload_client
+  commentId: F:Global.JingTanNFTCUpload.client
+  fullName: JingTanNFTCUpload.client
+  nameWithType: JingTanNFTCUpload.client
+- uid: Global.JingTanNFTCUpload.jtAppInfo
+  name: jtAppInfo
+  href: api/Global.JingTanNFTCUpload.html#Global_JingTanNFTCUpload_jtAppInfo
+  commentId: F:Global.JingTanNFTCUpload.jtAppInfo
+  fullName: JingTanNFTCUpload.jtAppInfo
+  nameWithType: JingTanNFTCUpload.jtAppInfo
+- uid: Global.JingTanNFTCUpload.showURL
+  name: showURL
+  href: api/Global.JingTanNFTCUpload.html#Global_JingTanNFTCUpload_showURL
+  commentId: F:Global.JingTanNFTCUpload.showURL
+  fullName: JingTanNFTCUpload.showURL
+  nameWithType: JingTanNFTCUpload.showURL
+- uid: Global.PrefsTool
+  name: PrefsTool
+  href: api/Global.PrefsTool.html
+  commentId: T:Global.PrefsTool
+  fullName: PrefsTool
+  nameWithType: PrefsTool
+- uid: Global.PrefsTool.Find*
+  name: Find
+  href: api/Global.PrefsTool.html#Global_PrefsTool_Find_
+  commentId: Overload:Global.PrefsTool.Find
+  isSpec: "True"
+  fullName: PrefsTool.Find
+  nameWithType: PrefsTool.Find
+- uid: Global.PrefsTool.Find``1(``0[],System.Func{``0,System.Boolean})
+  name: Find<T>(T[], Func<T, bool>)
+  href: api/Global.PrefsTool.html#Global_PrefsTool_Find__1___0___System_Func___0_System_Boolean__
+  commentId: M:Global.PrefsTool.Find``1(``0[],System.Func{``0,System.Boolean})
+  name.vb: Find(Of T)(T(), Func(Of T, Boolean))
+  fullName: PrefsTool.Find<T>(T[], System.Func<T, bool>)
+  fullName.vb: PrefsTool.Find(Of T)(T(), System.Func(Of T, Boolean))
+  nameWithType: PrefsTool.Find<T>(T[], Func<T, bool>)
+  nameWithType.vb: PrefsTool.Find(Of T)(T(), Func(Of T, Boolean))
+- uid: Global.PrefsTool.GenerateMD5FromFile(System.String)
+  name: GenerateMD5FromFile(string)
+  href: api/Global.PrefsTool.html#Global_PrefsTool_GenerateMD5FromFile_System_String_
+  commentId: M:Global.PrefsTool.GenerateMD5FromFile(System.String)
+  name.vb: GenerateMD5FromFile(String)
+  fullName: PrefsTool.GenerateMD5FromFile(string)
+  fullName.vb: PrefsTool.GenerateMD5FromFile(String)
+  nameWithType: PrefsTool.GenerateMD5FromFile(string)
+  nameWithType.vb: PrefsTool.GenerateMD5FromFile(String)
+- uid: Global.PrefsTool.GenerateMD5FromFile*
+  name: GenerateMD5FromFile
+  href: api/Global.PrefsTool.html#Global_PrefsTool_GenerateMD5FromFile_
+  commentId: Overload:Global.PrefsTool.GenerateMD5FromFile
+  isSpec: "True"
+  fullName: PrefsTool.GenerateMD5FromFile
+  nameWithType: PrefsTool.GenerateMD5FromFile
+- uid: Global.PrefsTool.GetZipLength(System.String)
+  name: GetZipLength(string)
+  href: api/Global.PrefsTool.html#Global_PrefsTool_GetZipLength_System_String_
+  commentId: M:Global.PrefsTool.GetZipLength(System.String)
+  name.vb: GetZipLength(String)
+  fullName: PrefsTool.GetZipLength(string)
+  fullName.vb: PrefsTool.GetZipLength(String)
+  nameWithType: PrefsTool.GetZipLength(string)
+  nameWithType.vb: PrefsTool.GetZipLength(String)
+- uid: Global.PrefsTool.GetZipLength*
+  name: GetZipLength
+  href: api/Global.PrefsTool.html#Global_PrefsTool_GetZipLength_
+  commentId: Overload:Global.PrefsTool.GetZipLength
+  isSpec: "True"
+  fullName: PrefsTool.GetZipLength
+  nameWithType: PrefsTool.GetZipLength
+- uid: Global.PrefsTool.JsonFileToObj*
+  name: JsonFileToObj
+  href: api/Global.PrefsTool.html#Global_PrefsTool_JsonFileToObj_
+  commentId: Overload:Global.PrefsTool.JsonFileToObj
+  isSpec: "True"
+  fullName: PrefsTool.JsonFileToObj
+  nameWithType: PrefsTool.JsonFileToObj
+- uid: Global.PrefsTool.JsonFileToObj``1(System.String)
+  name: JsonFileToObj<T>(string)
+  href: api/Global.PrefsTool.html#Global_PrefsTool_JsonFileToObj__1_System_String_
+  commentId: M:Global.PrefsTool.JsonFileToObj``1(System.String)
+  name.vb: JsonFileToObj(Of T)(String)
+  fullName: PrefsTool.JsonFileToObj<T>(string)
+  fullName.vb: PrefsTool.JsonFileToObj(Of T)(String)
+  nameWithType: PrefsTool.JsonFileToObj<T>(string)
+  nameWithType.vb: PrefsTool.JsonFileToObj(Of T)(String)
+- uid: Global.PrefsTool.JsonToObj*
+  name: JsonToObj
+  href: api/Global.PrefsTool.html#Global_PrefsTool_JsonToObj_
+  commentId: Overload:Global.PrefsTool.JsonToObj
+  isSpec: "True"
+  fullName: PrefsTool.JsonToObj
+  nameWithType: PrefsTool.JsonToObj
+- uid: Global.PrefsTool.JsonToObj``1(System.String)
+  name: JsonToObj<T>(string)
+  href: api/Global.PrefsTool.html#Global_PrefsTool_JsonToObj__1_System_String_
+  commentId: M:Global.PrefsTool.JsonToObj``1(System.String)
+  name.vb: JsonToObj(Of T)(String)
+  fullName: PrefsTool.JsonToObj<T>(string)
+  fullName.vb: PrefsTool.JsonToObj(Of T)(String)
+  nameWithType: PrefsTool.JsonToObj<T>(string)
+  nameWithType.vb: PrefsTool.JsonToObj(Of T)(String)
+- uid: Global.PrefsTool.ObjToJson*
+  name: ObjToJson
+  href: api/Global.PrefsTool.html#Global_PrefsTool_ObjToJson_
+  commentId: Overload:Global.PrefsTool.ObjToJson
+  isSpec: "True"
+  fullName: PrefsTool.ObjToJson
+  nameWithType: PrefsTool.ObjToJson
+- uid: Global.PrefsTool.ObjToJson``1(``0)
+  name: ObjToJson<T>(T)
+  href: api/Global.PrefsTool.html#Global_PrefsTool_ObjToJson__1___0_
+  commentId: M:Global.PrefsTool.ObjToJson``1(``0)
+  name.vb: ObjToJson(Of T)(T)
+  fullName: PrefsTool.ObjToJson<T>(T)
+  fullName.vb: PrefsTool.ObjToJson(Of T)(T)
+  nameWithType: PrefsTool.ObjToJson<T>(T)
+  nameWithType.vb: PrefsTool.ObjToJson(Of T)(T)
+- uid: Global.PrefsTool.ObjToPrefs*
+  name: ObjToPrefs
+  href: api/Global.PrefsTool.html#Global_PrefsTool_ObjToPrefs_
+  commentId: Overload:Global.PrefsTool.ObjToPrefs
+  isSpec: "True"
+  fullName: PrefsTool.ObjToPrefs
+  nameWithType: PrefsTool.ObjToPrefs
+- uid: Global.PrefsTool.ObjToPrefs``1(``0,System.String)
+  name: ObjToPrefs<T>(T, string)
+  href: api/Global.PrefsTool.html#Global_PrefsTool_ObjToPrefs__1___0_System_String_
+  commentId: M:Global.PrefsTool.ObjToPrefs``1(``0,System.String)
+  name.vb: ObjToPrefs(Of T)(T, String)
+  fullName: PrefsTool.ObjToPrefs<T>(T, string)
+  fullName.vb: PrefsTool.ObjToPrefs(Of T)(T, String)
+  nameWithType: PrefsTool.ObjToPrefs<T>(T, string)
+  nameWithType.vb: PrefsTool.ObjToPrefs(Of T)(T, String)
+- uid: Global.ThirdPersonController
+  name: ThirdPersonController
+  href: api/Global.ThirdPersonController.html
+  commentId: T:Global.ThirdPersonController
+  fullName: ThirdPersonController
+  nameWithType: ThirdPersonController
+- uid: Global.ThirdPersonController.BottomClamp
+  name: BottomClamp
+  href: api/Global.ThirdPersonController.html#Global_ThirdPersonController_BottomClamp
+  commentId: F:Global.ThirdPersonController.BottomClamp
+  fullName: ThirdPersonController.BottomClamp
+  nameWithType: ThirdPersonController.BottomClamp
+- uid: Global.ThirdPersonController.CameraAngleOverride
+  name: CameraAngleOverride
+  href: api/Global.ThirdPersonController.html#Global_ThirdPersonController_CameraAngleOverride
+  commentId: F:Global.ThirdPersonController.CameraAngleOverride
+  fullName: ThirdPersonController.CameraAngleOverride
+  nameWithType: ThirdPersonController.CameraAngleOverride
+- uid: Global.ThirdPersonController.CinemachineCameraTarget
+  name: CinemachineCameraTarget
+  href: api/Global.ThirdPersonController.html#Global_ThirdPersonController_CinemachineCameraTarget
+  commentId: F:Global.ThirdPersonController.CinemachineCameraTarget
+  fullName: ThirdPersonController.CinemachineCameraTarget
+  nameWithType: ThirdPersonController.CinemachineCameraTarget
+- uid: Global.ThirdPersonController.FallTimeout
+  name: FallTimeout
+  href: api/Global.ThirdPersonController.html#Global_ThirdPersonController_FallTimeout
+  commentId: F:Global.ThirdPersonController.FallTimeout
+  fullName: ThirdPersonController.FallTimeout
+  nameWithType: ThirdPersonController.FallTimeout
+- uid: Global.ThirdPersonController.FootstepAudioClips
+  name: FootstepAudioClips
+  href: api/Global.ThirdPersonController.html#Global_ThirdPersonController_FootstepAudioClips
+  commentId: F:Global.ThirdPersonController.FootstepAudioClips
+  fullName: ThirdPersonController.FootstepAudioClips
+  nameWithType: ThirdPersonController.FootstepAudioClips
+- uid: Global.ThirdPersonController.FootstepAudioVolume
+  name: FootstepAudioVolume
+  href: api/Global.ThirdPersonController.html#Global_ThirdPersonController_FootstepAudioVolume
+  commentId: F:Global.ThirdPersonController.FootstepAudioVolume
+  fullName: ThirdPersonController.FootstepAudioVolume
+  nameWithType: ThirdPersonController.FootstepAudioVolume
+- uid: Global.ThirdPersonController.Gravity
+  name: Gravity
+  href: api/Global.ThirdPersonController.html#Global_ThirdPersonController_Gravity
+  commentId: F:Global.ThirdPersonController.Gravity
+  fullName: ThirdPersonController.Gravity
+  nameWithType: ThirdPersonController.Gravity
+- uid: Global.ThirdPersonController.GroundLayers
+  name: GroundLayers
+  href: api/Global.ThirdPersonController.html#Global_ThirdPersonController_GroundLayers
+  commentId: F:Global.ThirdPersonController.GroundLayers
+  fullName: ThirdPersonController.GroundLayers
+  nameWithType: ThirdPersonController.GroundLayers
+- uid: Global.ThirdPersonController.Grounded
+  name: Grounded
+  href: api/Global.ThirdPersonController.html#Global_ThirdPersonController_Grounded
+  commentId: F:Global.ThirdPersonController.Grounded
+  fullName: ThirdPersonController.Grounded
+  nameWithType: ThirdPersonController.Grounded
+- uid: Global.ThirdPersonController.GroundedOffset
+  name: GroundedOffset
+  href: api/Global.ThirdPersonController.html#Global_ThirdPersonController_GroundedOffset
+  commentId: F:Global.ThirdPersonController.GroundedOffset
+  fullName: ThirdPersonController.GroundedOffset
+  nameWithType: ThirdPersonController.GroundedOffset
+- uid: Global.ThirdPersonController.GroundedRadius
+  name: GroundedRadius
+  href: api/Global.ThirdPersonController.html#Global_ThirdPersonController_GroundedRadius
+  commentId: F:Global.ThirdPersonController.GroundedRadius
+  fullName: ThirdPersonController.GroundedRadius
+  nameWithType: ThirdPersonController.GroundedRadius
+- uid: Global.ThirdPersonController.JumpHeight
+  name: JumpHeight
+  href: api/Global.ThirdPersonController.html#Global_ThirdPersonController_JumpHeight
+  commentId: F:Global.ThirdPersonController.JumpHeight
+  fullName: ThirdPersonController.JumpHeight
+  nameWithType: ThirdPersonController.JumpHeight
+- uid: Global.ThirdPersonController.JumpTimeout
+  name: JumpTimeout
+  href: api/Global.ThirdPersonController.html#Global_ThirdPersonController_JumpTimeout
+  commentId: F:Global.ThirdPersonController.JumpTimeout
+  fullName: ThirdPersonController.JumpTimeout
+  nameWithType: ThirdPersonController.JumpTimeout
+- uid: Global.ThirdPersonController.LandingAudioClip
+  name: LandingAudioClip
+  href: api/Global.ThirdPersonController.html#Global_ThirdPersonController_LandingAudioClip
+  commentId: F:Global.ThirdPersonController.LandingAudioClip
+  fullName: ThirdPersonController.LandingAudioClip
+  nameWithType: ThirdPersonController.LandingAudioClip
+- uid: Global.ThirdPersonController.LockCameraPosition
+  name: LockCameraPosition
+  href: api/Global.ThirdPersonController.html#Global_ThirdPersonController_LockCameraPosition
+  commentId: F:Global.ThirdPersonController.LockCameraPosition
+  fullName: ThirdPersonController.LockCameraPosition
+  nameWithType: ThirdPersonController.LockCameraPosition
+- uid: Global.ThirdPersonController.MoveSpeed
+  name: MoveSpeed
+  href: api/Global.ThirdPersonController.html#Global_ThirdPersonController_MoveSpeed
+  commentId: F:Global.ThirdPersonController.MoveSpeed
+  fullName: ThirdPersonController.MoveSpeed
+  nameWithType: ThirdPersonController.MoveSpeed
+- uid: Global.ThirdPersonController.RotationSmoothTime
+  name: RotationSmoothTime
+  href: api/Global.ThirdPersonController.html#Global_ThirdPersonController_RotationSmoothTime
+  commentId: F:Global.ThirdPersonController.RotationSmoothTime
+  fullName: ThirdPersonController.RotationSmoothTime
+  nameWithType: ThirdPersonController.RotationSmoothTime
+- uid: Global.ThirdPersonController.SpeedChangeRate
+  name: SpeedChangeRate
+  href: api/Global.ThirdPersonController.html#Global_ThirdPersonController_SpeedChangeRate
+  commentId: F:Global.ThirdPersonController.SpeedChangeRate
+  fullName: ThirdPersonController.SpeedChangeRate
+  nameWithType: ThirdPersonController.SpeedChangeRate
+- uid: Global.ThirdPersonController.SprintSpeed
+  name: SprintSpeed
+  href: api/Global.ThirdPersonController.html#Global_ThirdPersonController_SprintSpeed
+  commentId: F:Global.ThirdPersonController.SprintSpeed
+  fullName: ThirdPersonController.SprintSpeed
+  nameWithType: ThirdPersonController.SprintSpeed
+- uid: Global.ThirdPersonController.TopClamp
+  name: TopClamp
+  href: api/Global.ThirdPersonController.html#Global_ThirdPersonController_TopClamp
+  commentId: F:Global.ThirdPersonController.TopClamp
+  fullName: ThirdPersonController.TopClamp
+  nameWithType: ThirdPersonController.TopClamp
+- uid: Global.UIVirtualTouchZone
+  name: UIVirtualTouchZone
+  href: api/Global.UIVirtualTouchZone.html
+  commentId: T:Global.UIVirtualTouchZone
+  fullName: UIVirtualTouchZone
+  nameWithType: UIVirtualTouchZone
+- uid: Global.UIVirtualTouchZone.Event
+  name: UIVirtualTouchZone.Event
+  href: api/Global.UIVirtualTouchZone.Event.html
+  commentId: T:Global.UIVirtualTouchZone.Event
+  fullName: UIVirtualTouchZone.Event
+  nameWithType: UIVirtualTouchZone.Event
+- uid: Global.UIVirtualTouchZone.OnDrag(PointerEventData)
+  name: OnDrag(PointerEventData)
+  href: api/Global.UIVirtualTouchZone.html#Global_UIVirtualTouchZone_OnDrag_PointerEventData_
+  commentId: M:Global.UIVirtualTouchZone.OnDrag(PointerEventData)
+  fullName: UIVirtualTouchZone.OnDrag(PointerEventData)
+  nameWithType: UIVirtualTouchZone.OnDrag(PointerEventData)
+- uid: Global.UIVirtualTouchZone.OnDrag*
+  name: OnDrag
+  href: api/Global.UIVirtualTouchZone.html#Global_UIVirtualTouchZone_OnDrag_
+  commentId: Overload:Global.UIVirtualTouchZone.OnDrag
+  isSpec: "True"
+  fullName: UIVirtualTouchZone.OnDrag
+  nameWithType: UIVirtualTouchZone.OnDrag
+- uid: Global.UIVirtualTouchZone.OnPointerDown(PointerEventData)
+  name: OnPointerDown(PointerEventData)
+  href: api/Global.UIVirtualTouchZone.html#Global_UIVirtualTouchZone_OnPointerDown_PointerEventData_
+  commentId: M:Global.UIVirtualTouchZone.OnPointerDown(PointerEventData)
+  fullName: UIVirtualTouchZone.OnPointerDown(PointerEventData)
+  nameWithType: UIVirtualTouchZone.OnPointerDown(PointerEventData)
+- uid: Global.UIVirtualTouchZone.OnPointerDown*
+  name: OnPointerDown
+  href: api/Global.UIVirtualTouchZone.html#Global_UIVirtualTouchZone_OnPointerDown_
+  commentId: Overload:Global.UIVirtualTouchZone.OnPointerDown
+  isSpec: "True"
+  fullName: UIVirtualTouchZone.OnPointerDown
+  nameWithType: UIVirtualTouchZone.OnPointerDown
+- uid: Global.UIVirtualTouchZone.OnPointerUp(PointerEventData)
+  name: OnPointerUp(PointerEventData)
+  href: api/Global.UIVirtualTouchZone.html#Global_UIVirtualTouchZone_OnPointerUp_PointerEventData_
+  commentId: M:Global.UIVirtualTouchZone.OnPointerUp(PointerEventData)
+  fullName: UIVirtualTouchZone.OnPointerUp(PointerEventData)
+  nameWithType: UIVirtualTouchZone.OnPointerUp(PointerEventData)
+- uid: Global.UIVirtualTouchZone.OnPointerUp*
+  name: OnPointerUp
+  href: api/Global.UIVirtualTouchZone.html#Global_UIVirtualTouchZone_OnPointerUp_
+  commentId: Overload:Global.UIVirtualTouchZone.OnPointerUp
+  isSpec: "True"
+  fullName: UIVirtualTouchZone.OnPointerUp
+  nameWithType: UIVirtualTouchZone.OnPointerUp
+- uid: Global.UIVirtualTouchZone.clampToMagnitude
+  name: clampToMagnitude
+  href: api/Global.UIVirtualTouchZone.html#Global_UIVirtualTouchZone_clampToMagnitude
+  commentId: F:Global.UIVirtualTouchZone.clampToMagnitude
+  fullName: UIVirtualTouchZone.clampToMagnitude
+  nameWithType: UIVirtualTouchZone.clampToMagnitude
+- uid: Global.UIVirtualTouchZone.containerRect
+  name: containerRect
+  href: api/Global.UIVirtualTouchZone.html#Global_UIVirtualTouchZone_containerRect
+  commentId: F:Global.UIVirtualTouchZone.containerRect
+  fullName: UIVirtualTouchZone.containerRect
+  nameWithType: UIVirtualTouchZone.containerRect
+- uid: Global.UIVirtualTouchZone.coreRect
+  name: coreRect
+  href: api/Global.UIVirtualTouchZone.html#Global_UIVirtualTouchZone_coreRect
+  commentId: F:Global.UIVirtualTouchZone.coreRect
+  fullName: UIVirtualTouchZone.coreRect
+  nameWithType: UIVirtualTouchZone.coreRect
+- uid: Global.UIVirtualTouchZone.handleRect
+  name: handleRect
+  href: api/Global.UIVirtualTouchZone.html#Global_UIVirtualTouchZone_handleRect
+  commentId: F:Global.UIVirtualTouchZone.handleRect
+  fullName: UIVirtualTouchZone.handleRect
+  nameWithType: UIVirtualTouchZone.handleRect
+- uid: Global.UIVirtualTouchZone.invertXOutputValue
+  name: invertXOutputValue
+  href: api/Global.UIVirtualTouchZone.html#Global_UIVirtualTouchZone_invertXOutputValue
+  commentId: F:Global.UIVirtualTouchZone.invertXOutputValue
+  fullName: UIVirtualTouchZone.invertXOutputValue
+  nameWithType: UIVirtualTouchZone.invertXOutputValue
+- uid: Global.UIVirtualTouchZone.invertYOutputValue
+  name: invertYOutputValue
+  href: api/Global.UIVirtualTouchZone.html#Global_UIVirtualTouchZone_invertYOutputValue
+  commentId: F:Global.UIVirtualTouchZone.invertYOutputValue
+  fullName: UIVirtualTouchZone.invertYOutputValue
+  nameWithType: UIVirtualTouchZone.invertYOutputValue
+- uid: Global.UIVirtualTouchZone.magnitudeMultiplier
+  name: magnitudeMultiplier
+  href: api/Global.UIVirtualTouchZone.html#Global_UIVirtualTouchZone_magnitudeMultiplier
+  commentId: F:Global.UIVirtualTouchZone.magnitudeMultiplier
+  fullName: UIVirtualTouchZone.magnitudeMultiplier
+  nameWithType: UIVirtualTouchZone.magnitudeMultiplier
+- uid: Global.UIVirtualTouchZone.touchZoneOutputEvent
+  name: touchZoneOutputEvent
+  href: api/Global.UIVirtualTouchZone.html#Global_UIVirtualTouchZone_touchZoneOutputEvent
+  commentId: F:Global.UIVirtualTouchZone.touchZoneOutputEvent
+  fullName: UIVirtualTouchZone.touchZoneOutputEvent
+  nameWithType: UIVirtualTouchZone.touchZoneOutputEvent
+- uid: Global.UploadReturnInfo
+  name: UploadReturnInfo
+  href: api/Global.UploadReturnInfo.html
+  commentId: T:Global.UploadReturnInfo
+  fullName: UploadReturnInfo
+  nameWithType: UploadReturnInfo
+- uid: Global.UploadReturnInfo.code
+  name: code
+  href: api/Global.UploadReturnInfo.html#Global_UploadReturnInfo_code
+  commentId: P:Global.UploadReturnInfo.code
+  fullName: UploadReturnInfo.code
+  nameWithType: UploadReturnInfo.code
+- uid: Global.UploadReturnInfo.code*
+  name: code
+  href: api/Global.UploadReturnInfo.html#Global_UploadReturnInfo_code_
+  commentId: Overload:Global.UploadReturnInfo.code
+  isSpec: "True"
+  fullName: UploadReturnInfo.code
+  nameWithType: UploadReturnInfo.code
+- uid: Global.UploadReturnInfo.data
+  name: data
+  href: api/Global.UploadReturnInfo.html#Global_UploadReturnInfo_data
+  commentId: P:Global.UploadReturnInfo.data
+  fullName: UploadReturnInfo.data
+  nameWithType: UploadReturnInfo.data
+- uid: Global.UploadReturnInfo.data*
+  name: data
+  href: api/Global.UploadReturnInfo.html#Global_UploadReturnInfo_data_
+  commentId: Overload:Global.UploadReturnInfo.data
+  isSpec: "True"
+  fullName: UploadReturnInfo.data
+  nameWithType: UploadReturnInfo.data
 - uid: IngameDebugConsole
   name: IngameDebugConsole
   href: api/IngameDebugConsole.html
@@ -4124,3 +5295,79 @@ references:
   commentId: F:IngameDebugConsole.QueuedDebugLogEntry.stackTrace
   fullName: IngameDebugConsole.QueuedDebugLogEntry.stackTrace
   nameWithType: QueuedDebugLogEntry.stackTrace
+- uid: StarterAssets
+  name: StarterAssets
+  href: api/StarterAssets.html
+  commentId: N:StarterAssets
+  fullName: StarterAssets
+  nameWithType: StarterAssets
+- uid: StarterAssets.UICanvasControllerInput
+  name: UICanvasControllerInput
+  href: api/StarterAssets.UICanvasControllerInput.html
+  commentId: T:StarterAssets.UICanvasControllerInput
+  fullName: StarterAssets.UICanvasControllerInput
+  nameWithType: UICanvasControllerInput
+- uid: StarterAssets.UICanvasControllerInput.VirtualJumpInput(System.Boolean)
+  name: VirtualJumpInput(bool)
+  href: api/StarterAssets.UICanvasControllerInput.html#StarterAssets_UICanvasControllerInput_VirtualJumpInput_System_Boolean_
+  commentId: M:StarterAssets.UICanvasControllerInput.VirtualJumpInput(System.Boolean)
+  name.vb: VirtualJumpInput(Boolean)
+  fullName: StarterAssets.UICanvasControllerInput.VirtualJumpInput(bool)
+  fullName.vb: StarterAssets.UICanvasControllerInput.VirtualJumpInput(Boolean)
+  nameWithType: UICanvasControllerInput.VirtualJumpInput(bool)
+  nameWithType.vb: UICanvasControllerInput.VirtualJumpInput(Boolean)
+- uid: StarterAssets.UICanvasControllerInput.VirtualJumpInput*
+  name: VirtualJumpInput
+  href: api/StarterAssets.UICanvasControllerInput.html#StarterAssets_UICanvasControllerInput_VirtualJumpInput_
+  commentId: Overload:StarterAssets.UICanvasControllerInput.VirtualJumpInput
+  isSpec: "True"
+  fullName: StarterAssets.UICanvasControllerInput.VirtualJumpInput
+  nameWithType: UICanvasControllerInput.VirtualJumpInput
+- uid: StarterAssets.UICanvasControllerInput.VirtualLookInput(Vector2)
+  name: VirtualLookInput(Vector2)
+  href: api/StarterAssets.UICanvasControllerInput.html#StarterAssets_UICanvasControllerInput_VirtualLookInput_Vector2_
+  commentId: M:StarterAssets.UICanvasControllerInput.VirtualLookInput(Vector2)
+  fullName: StarterAssets.UICanvasControllerInput.VirtualLookInput(Vector2)
+  nameWithType: UICanvasControllerInput.VirtualLookInput(Vector2)
+- uid: StarterAssets.UICanvasControllerInput.VirtualLookInput*
+  name: VirtualLookInput
+  href: api/StarterAssets.UICanvasControllerInput.html#StarterAssets_UICanvasControllerInput_VirtualLookInput_
+  commentId: Overload:StarterAssets.UICanvasControllerInput.VirtualLookInput
+  isSpec: "True"
+  fullName: StarterAssets.UICanvasControllerInput.VirtualLookInput
+  nameWithType: UICanvasControllerInput.VirtualLookInput
+- uid: StarterAssets.UICanvasControllerInput.VirtualMoveInput(Vector2)
+  name: VirtualMoveInput(Vector2)
+  href: api/StarterAssets.UICanvasControllerInput.html#StarterAssets_UICanvasControllerInput_VirtualMoveInput_Vector2_
+  commentId: M:StarterAssets.UICanvasControllerInput.VirtualMoveInput(Vector2)
+  fullName: StarterAssets.UICanvasControllerInput.VirtualMoveInput(Vector2)
+  nameWithType: UICanvasControllerInput.VirtualMoveInput(Vector2)
+- uid: StarterAssets.UICanvasControllerInput.VirtualMoveInput*
+  name: VirtualMoveInput
+  href: api/StarterAssets.UICanvasControllerInput.html#StarterAssets_UICanvasControllerInput_VirtualMoveInput_
+  commentId: Overload:StarterAssets.UICanvasControllerInput.VirtualMoveInput
+  isSpec: "True"
+  fullName: StarterAssets.UICanvasControllerInput.VirtualMoveInput
+  nameWithType: UICanvasControllerInput.VirtualMoveInput
+- uid: StarterAssets.UICanvasControllerInput.VirtualSprintInput(System.Boolean)
+  name: VirtualSprintInput(bool)
+  href: api/StarterAssets.UICanvasControllerInput.html#StarterAssets_UICanvasControllerInput_VirtualSprintInput_System_Boolean_
+  commentId: M:StarterAssets.UICanvasControllerInput.VirtualSprintInput(System.Boolean)
+  name.vb: VirtualSprintInput(Boolean)
+  fullName: StarterAssets.UICanvasControllerInput.VirtualSprintInput(bool)
+  fullName.vb: StarterAssets.UICanvasControllerInput.VirtualSprintInput(Boolean)
+  nameWithType: UICanvasControllerInput.VirtualSprintInput(bool)
+  nameWithType.vb: UICanvasControllerInput.VirtualSprintInput(Boolean)
+- uid: StarterAssets.UICanvasControllerInput.VirtualSprintInput*
+  name: VirtualSprintInput
+  href: api/StarterAssets.UICanvasControllerInput.html#StarterAssets_UICanvasControllerInput_VirtualSprintInput_
+  commentId: Overload:StarterAssets.UICanvasControllerInput.VirtualSprintInput
+  isSpec: "True"
+  fullName: StarterAssets.UICanvasControllerInput.VirtualSprintInput
+  nameWithType: UICanvasControllerInput.VirtualSprintInput
+- uid: StarterAssets.UICanvasControllerInput.characterInputData
+  name: characterInputData
+  href: api/StarterAssets.UICanvasControllerInput.html#StarterAssets_UICanvasControllerInput_characterInputData
+  commentId: F:StarterAssets.UICanvasControllerInput.characterInputData
+  fullName: StarterAssets.UICanvasControllerInput.characterInputData
+  nameWithType: UICanvasControllerInput.characterInputData

@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Ant_Metaverse_ICommonService" data-uid="Ant.Metaverse.ICommonService" class="text-break">
-Interface ICommonService  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/RunTime/AntService/Interfaces/ICommonService.cs/#L7"><i class="bi bi-code-slash"></i></a>
+Interface ICommonService  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/RunTime/AntService/Interfaces/ICommonService.cs/#L8"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -124,7 +124,7 @@ Interface ICommonService  <a class="header-action link-secondary" title="View so
 
   <h3 id="Ant_Metaverse_ICommonService_AddOnHideListener_System_Action_" data-uid="Ant.Metaverse.ICommonService.AddOnHideListener(System.Action)">
   AddOnHideListener(Action)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/RunTime/AntService/Interfaces/ICommonService.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/RunTime/AntService/Interfaces/ICommonService.cs/#L32"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -155,7 +155,7 @@ Interface ICommonService  <a class="header-action link-secondary" title="View so
 
   <h3 id="Ant_Metaverse_ICommonService_AddOnShowListener_System_Action_System_String__" data-uid="Ant.Metaverse.ICommonService.AddOnShowListener(System.Action{System.String})">
   AddOnShowListener(Action&lt;string&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/RunTime/AntService/Interfaces/ICommonService.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/RunTime/AntService/Interfaces/ICommonService.cs/#L30"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -186,7 +186,7 @@ Interface ICommonService  <a class="header-action link-secondary" title="View so
 
   <h3 id="Ant_Metaverse_ICommonService_GetCompressedAvatarUrl_System_String_System_Int32_" data-uid="Ant.Metaverse.ICommonService.GetCompressedAvatarUrl(System.String,System.Int32)">
   GetCompressedAvatarUrl(string, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/RunTime/AntService/Interfaces/ICommonService.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/RunTime/AntService/Interfaces/ICommonService.cs/#L68"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>根据原始头像Url生成压缩后的头像Url</p>
@@ -228,7 +228,7 @@ Interface ICommonService  <a class="header-action link-secondary" title="View so
 
   <h3 id="Ant_Metaverse_ICommonService_GetLaunchOptions_System_String___System_Action_System_Exception_System_String__" data-uid="Ant.Metaverse.ICommonService.GetLaunchOptions(System.String[],System.Action{System.Exception,System.String})">
   GetLaunchOptions(string[], Action&lt;Exception, string&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/RunTime/AntService/Interfaces/ICommonService.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/RunTime/AntService/Interfaces/ICommonService.cs/#L25"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -257,18 +257,18 @@ Interface ICommonService  <a class="header-action link-secondary" title="View so
 
 
 
-  <a id="Ant_Metaverse_ICommonService_GetOrientation_" data-uid="Ant.Metaverse.ICommonService.GetOrientation*"></a>
+  <a id="Ant_Metaverse_ICommonService_GetScreenOrientation_" data-uid="Ant.Metaverse.ICommonService.GetScreenOrientation*"></a>
 
-  <h3 id="Ant_Metaverse_ICommonService_GetOrientation_System_Action_System_Exception_System_String__" data-uid="Ant.Metaverse.ICommonService.GetOrientation(System.Action{System.Exception,System.String})">
-  GetOrientation(Action&lt;Exception, string&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/RunTime/AntService/Interfaces/ICommonService.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Ant_Metaverse_ICommonService_GetScreenOrientation_System_Action_System_Exception_System_String__" data-uid="Ant.Metaverse.ICommonService.GetScreenOrientation(System.Action{System.Exception,System.String})">
+  GetScreenOrientation(Action&lt;Exception, string&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/RunTime/AntService/Interfaces/ICommonService.cs/#L21"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void GetOrientation(Action&lt;Exception, string&gt; callback)</code></pre>
+    <pre><code class="lang-csharp hljs">void GetScreenOrientation(Action&lt;Exception, string&gt; callback)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -292,7 +292,7 @@ Interface ICommonService  <a class="header-action link-secondary" title="View so
 
   <h3 id="Ant_Metaverse_ICommonService_GetSystemInfo_System_Action_System_Exception_System_String__" data-uid="Ant.Metaverse.ICommonService.GetSystemInfo(System.Action{System.Exception,System.String})">
   GetSystemInfo(Action&lt;Exception, string&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/RunTime/AntService/Interfaces/ICommonService.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/RunTime/AntService/Interfaces/ICommonService.cs/#L19"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>获取环境检查信息。</p>
@@ -324,7 +324,7 @@ Interface ICommonService  <a class="header-action link-secondary" title="View so
 
   <h3 id="Ant_Metaverse_ICommonService_HideLoadingView" data-uid="Ant.Metaverse.ICommonService.HideLoadingView">
   HideLoadingView()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/RunTime/AntService/Interfaces/ICommonService.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/RunTime/AntService/Interfaces/ICommonService.cs/#L13"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>隐藏默认的 loading 界面。</p>
@@ -347,11 +347,44 @@ Interface ICommonService  <a class="header-action link-secondary" title="View so
 
 
 
+  <a id="Ant_Metaverse_ICommonService_NavigateToJTSpringBoard_" data-uid="Ant.Metaverse.ICommonService.NavigateToJTSpringBoard*"></a>
+
+  <h3 id="Ant_Metaverse_ICommonService_NavigateToJTSpringBoard_JObject_System_Action_System_Exception_System_String__" data-uid="Ant.Metaverse.ICommonService.NavigateToJTSpringBoard(JObject,System.Action{System.Exception,System.String})">
+  NavigateToJTSpringBoard(JObject, Action&lt;Exception, string&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/RunTime/AntService/Interfaces/ICommonService.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void NavigateToJTSpringBoard(JObject param, Action&lt;Exception, string&gt; callback)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>param</code> <span class="xref">JObject</span></dt>
+    <dd></dd>
+    <dt><code>callback</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="Ant_Metaverse_ICommonService_NavigateToMiniProgram_" data-uid="Ant.Metaverse.ICommonService.NavigateToMiniProgram*"></a>
 
   <h3 id="Ant_Metaverse_ICommonService_NavigateToMiniProgram_JObject_System_Action_System_Exception_System_String__" data-uid="Ant.Metaverse.ICommonService.NavigateToMiniProgram(JObject,System.Action{System.Exception,System.String})">
   NavigateToMiniProgram(JObject, Action&lt;Exception, string&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/RunTime/AntService/Interfaces/ICommonService.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/RunTime/AntService/Interfaces/ICommonService.cs/#L26"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -380,48 +413,11 @@ Interface ICommonService  <a class="header-action link-secondary" title="View so
 
 
 
-  <a id="Ant_Metaverse_ICommonService_RegisterEventMonitor_" data-uid="Ant.Metaverse.ICommonService.RegisterEventMonitor*"></a>
-
-  <h3 id="Ant_Metaverse_ICommonService_RegisterEventMonitor_System_String_JObject_System_Action_System_Exception_System_String__" data-uid="Ant.Metaverse.ICommonService.RegisterEventMonitor(System.String,JObject,System.Action{System.Exception,System.String})">
-  RegisterEventMonitor(string, JObject, Action&lt;Exception, string&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/RunTime/AntService/Interfaces/ICommonService.cs/#L38"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>埋点
-(支付宝：10.5.70版本以上使用）</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void RegisterEventMonitor(string eventId, JObject extParam, Action&lt;Exception, string&gt; callback)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>eventId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-    <dt><code>extParam</code> <span class="xref">JObject</span></dt>
-    <dd></dd>
-    <dt><code>callback</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
   <a id="Ant_Metaverse_ICommonService_RemoOnHideListener_" data-uid="Ant.Metaverse.ICommonService.RemoOnHideListener*"></a>
 
   <h3 id="Ant_Metaverse_ICommonService_RemoOnHideListener_System_Action_" data-uid="Ant.Metaverse.ICommonService.RemoOnHideListener(System.Action)">
   RemoOnHideListener(Action)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/RunTime/AntService/Interfaces/ICommonService.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/RunTime/AntService/Interfaces/ICommonService.cs/#L33"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -452,7 +448,7 @@ Interface ICommonService  <a class="header-action link-secondary" title="View so
 
   <h3 id="Ant_Metaverse_ICommonService_RemoveOnShowListener_System_Action_System_String__" data-uid="Ant.Metaverse.ICommonService.RemoveOnShowListener(System.Action{System.String})">
   RemoveOnShowListener(Action&lt;string&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/RunTime/AntService/Interfaces/ICommonService.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/RunTime/AntService/Interfaces/ICommonService.cs/#L31"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -479,18 +475,57 @@ Interface ICommonService  <a class="header-action link-secondary" title="View so
 
 
 
-  <a id="Ant_Metaverse_ICommonService_SetOrientation_" data-uid="Ant.Metaverse.ICommonService.SetOrientation*"></a>
+  <a id="Ant_Metaverse_ICommonService_ReportLog_" data-uid="Ant.Metaverse.ICommonService.ReportLog*"></a>
 
-  <h3 id="Ant_Metaverse_ICommonService_SetOrientation_ScreenOrientation_" data-uid="Ant.Metaverse.ICommonService.SetOrientation(ScreenOrientation)">
-  SetOrientation(ScreenOrientation)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/RunTime/AntService/Interfaces/ICommonService.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Ant_Metaverse_ICommonService_ReportLog_System_String_System_String_JObject_System_Action_System_Exception_System_String__" data-uid="Ant.Metaverse.ICommonService.ReportLog(System.String,System.String,JObject,System.Action{System.Exception,System.String})">
+  ReportLog(string, string, JObject, Action&lt;Exception, string&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/RunTime/AntService/Interfaces/ICommonService.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>埋点
+(支付宝：10.5.70版本以上使用）</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ReportLog(string JTEventId, string AlipayEventId, JObject extParam, Action&lt;Exception, string&gt; callback)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>JTEventId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>AlipayEventId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>extParam</code> <span class="xref">JObject</span></dt>
+    <dd></dd>
+    <dt><code>callback</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ant_Metaverse_ICommonService_SetScreenOrientation_" data-uid="Ant.Metaverse.ICommonService.SetScreenOrientation*"></a>
+
+  <h3 id="Ant_Metaverse_ICommonService_SetScreenOrientation_ScreenOrientation_" data-uid="Ant.Metaverse.ICommonService.SetScreenOrientation(ScreenOrientation)">
+  SetScreenOrientation(ScreenOrientation)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/RunTime/AntService/Interfaces/ICommonService.cs/#L23"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void SetOrientation(ScreenOrientation orientation)</code></pre>
+    <pre><code class="lang-csharp hljs">void SetScreenOrientation(ScreenOrientation orientation)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -514,7 +549,7 @@ Interface ICommonService  <a class="header-action link-secondary" title="View so
 
   <h3 id="Ant_Metaverse_ICommonService_SetTransparentTitle_System_String_System_Action_System_Exception_System_String__" data-uid="Ant.Metaverse.ICommonService.SetTransparentTitle(System.String,System.Action{System.Exception,System.String})">
   SetTransparentTitle(string, Action&lt;Exception, string&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/RunTime/AntService/Interfaces/ICommonService.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/RunTime/AntService/Interfaces/ICommonService.cs/#L54"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>设置透明导航栏
@@ -545,11 +580,55 @@ Interface ICommonService  <a class="header-action link-secondary" title="View so
 
 
 
+  <a id="Ant_Metaverse_ICommonService_Share_" data-uid="Ant.Metaverse.ICommonService.Share*"></a>
+
+  <h3 id="Ant_Metaverse_ICommonService_Share_System_String_System_String_System_String_System_String_System_Action_System_Exception_System_String__" data-uid="Ant.Metaverse.ICommonService.Share(System.String,System.String,System.String,System.String,System.Action{System.Exception,System.String})">
+  Share(string, string, string, string, Action&lt;Exception, string&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/RunTime/AntService/Interfaces/ICommonService.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>分享</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Share(string title, string desc, string link, string imgUrl, Action&lt;Exception, string&gt; callback)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>title</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>分享标题</p>
+</dd>
+    <dt><code>desc</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>分享描述</p>
+</dd>
+    <dt><code>link</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>imgUrl</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>分享图片Url，必须是https链接</p>
+</dd>
+    <dt><code>callback</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>回调</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="Ant_Metaverse_ICommonService_StartAPP_" data-uid="Ant.Metaverse.ICommonService.StartAPP*"></a>
 
   <h3 id="Ant_Metaverse_ICommonService_StartAPP_System_String_System_String_System_Action_System_Exception_System_String__" data-uid="Ant.Metaverse.ICommonService.StartAPP(System.String,System.String,System.Action{System.Exception,System.String})">
   StartAPP(string, string, Action&lt;Exception, string&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/RunTime/AntService/Interfaces/ICommonService.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/RunTime/AntService/Interfaces/ICommonService.cs/#L59"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>StartAPP
@@ -586,7 +665,7 @@ Interface ICommonService  <a class="header-action link-secondary" title="View so
 
   <h3 id="Ant_Metaverse_ICommonService_StartBizService_JObject_System_Action_System_Exception_System_String__" data-uid="Ant.Metaverse.ICommonService.StartBizService(JObject,System.Action{System.Exception,System.String})">
   StartBizService(JObject, Action&lt;Exception, string&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/RunTime/AntService/Interfaces/ICommonService.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/RunTime/AntService/Interfaces/ICommonService.cs/#L27"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>

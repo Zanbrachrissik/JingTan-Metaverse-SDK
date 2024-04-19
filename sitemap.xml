@@ -2,355 +2,487 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/AlipaySdk.Bridge.AlipayWebGLInterface.html</loc>
-    <lastmod>2024-03-25T07:28:58+00:00</lastmod>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/AlipaySdk.Bridge.html</loc>
-    <lastmod>2024-03-25T07:28:58+00:00</lastmod>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/Ant.Metaverse.AccountType.html</loc>
-    <lastmod>2024-03-25T07:28:58+00:00</lastmod>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/Ant.Metaverse.AntLog.html</loc>
-    <lastmod>2024-03-25T07:28:58+00:00</lastmod>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/Ant.Metaverse.AntMetaverseUtil.html</loc>
-    <lastmod>2024-03-25T07:28:58+00:00</lastmod>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/Ant.Metaverse.AuthResponse.html</loc>
-    <lastmod>2024-03-25T07:28:58+00:00</lastmod>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/Ant.Metaverse.Avatar.html</loc>
-    <lastmod>2024-03-25T07:28:58+00:00</lastmod>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/Ant.Metaverse.AvatarViewObject.html</loc>
-    <lastmod>2024-03-25T07:28:58+00:00</lastmod>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/Ant.Metaverse.BaseManager-1.html</loc>
-    <lastmod>2024-03-25T07:28:58+00:00</lastmod>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/Ant.Metaverse.CameraManager.html</loc>
-    <lastmod>2024-03-25T07:28:58+00:00</lastmod>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/Ant.Metaverse.CommonService.html</loc>
-    <lastmod>2024-03-25T07:28:58+00:00</lastmod>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/Ant.Metaverse.Editor.ABData.html</loc>
-    <lastmod>2024-03-25T07:28:58+00:00</lastmod>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/Ant.Metaverse.Editor.DllConfig.html</loc>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/Ant.Metaverse.Editor.JingZaoEditor.html</loc>
-    <lastmod>2024-03-25T07:28:58+00:00</lastmod>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/Ant.Metaverse.Editor.ResponseData.html</loc>
-    <lastmod>2024-03-25T07:28:58+00:00</lastmod>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/Ant.Metaverse.Editor.html</loc>
-    <lastmod>2024-03-25T07:28:58+00:00</lastmod>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/Ant.Metaverse.Factory.html</loc>
-    <lastmod>2024-03-25T07:28:58+00:00</lastmod>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/Ant.Metaverse.FileOperateResponse.html</loc>
-    <lastmod>2024-03-25T07:28:58+00:00</lastmod>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/Ant.Metaverse.FileService.html</loc>
-    <lastmod>2024-03-25T07:28:58+00:00</lastmod>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/Ant.Metaverse.Friend.html</loc>
-    <lastmod>2024-03-25T07:28:58+00:00</lastmod>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/Ant.Metaverse.GameEntry.html</loc>
-    <lastmod>2024-03-25T07:28:58+00:00</lastmod>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/Ant.Metaverse.IAvatarService.html</loc>
-    <lastmod>2024-03-25T07:28:58+00:00</lastmod>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/Ant.Metaverse.ICommonService.html</loc>
-    <lastmod>2024-03-25T07:28:58+00:00</lastmod>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/Ant.Metaverse.IFileService.html</loc>
-    <lastmod>2024-03-25T07:28:58+00:00</lastmod>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/Ant.Metaverse.IPaymentService.html</loc>
-    <lastmod>2024-03-25T07:28:58+00:00</lastmod>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/Ant.Metaverse.IService.html</loc>
-    <lastmod>2024-03-25T07:28:58+00:00</lastmod>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/Ant.Metaverse.IUserService.html</loc>
-    <lastmod>2024-03-25T07:28:58+00:00</lastmod>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/Ant.Metaverse.MetaSDK.html</loc>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/Ant.Metaverse.NativeMsgManager.html</loc>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/Ant.Metaverse.PaymentService.html</loc>
-    <lastmod>2024-03-25T07:28:58+00:00</lastmod>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/Ant.Metaverse.ResourceManager.html</loc>
-    <lastmod>2024-03-25T07:28:58+00:00</lastmod>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/Ant.Metaverse.TemplateGameEntry.html</loc>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/Ant.Metaverse.UIManager.html</loc>
-    <lastmod>2024-03-25T07:28:58+00:00</lastmod>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/Ant.Metaverse.UserService.html</loc>
-    <lastmod>2024-03-25T07:28:58+00:00</lastmod>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/Ant.Metaverse.html</loc>
-    <lastmod>2024-03-25T07:28:58+00:00</lastmod>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/Ant.Metaverse.iOSGeneralBehaviour.html</loc>
-    <lastmod>2024-03-25T07:28:58+00:00</lastmod>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/AntChain.SDK.Sample.Client.html</loc>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/AntChain.SDK.Sample.html</loc>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/Global.CharacterInputData.html</loc>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/Global.Data.html</loc>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/Global.JTAppInfo.html</loc>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/Global.JTBindFile.html</loc>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/Global.JTLogin.html</loc>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/Global.JingTanNFTCUpload.html</loc>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/Global.PrefsTool.html</loc>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/Global.ThirdPersonController.html</loc>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/Global.UIVirtualTouchZone.Event.html</loc>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/Global.UIVirtualTouchZone.html</loc>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/Global.UploadReturnInfo.html</loc>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/Global.html</loc>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/IngameDebugConsole.CircularBuffer-1.html</loc>
-    <lastmod>2024-03-25T07:28:58+00:00</lastmod>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/IngameDebugConsole.Commands.PlayerPrefsCommands.html</loc>
-    <lastmod>2024-03-25T07:28:58+00:00</lastmod>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/IngameDebugConsole.Commands.SceneCommands.html</loc>
-    <lastmod>2024-03-25T07:28:58+00:00</lastmod>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/IngameDebugConsole.Commands.TimeCommands.html</loc>
-    <lastmod>2024-03-25T07:28:58+00:00</lastmod>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/IngameDebugConsole.Commands.html</loc>
-    <lastmod>2024-03-25T07:28:58+00:00</lastmod>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/IngameDebugConsole.ConsoleMethodAttribute.html</loc>
-    <lastmod>2024-03-25T07:28:58+00:00</lastmod>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/IngameDebugConsole.ConsoleMethodInfo.html</loc>
-    <lastmod>2024-03-25T07:28:58+00:00</lastmod>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/IngameDebugConsole.DebugLogConsole.ParseFunction.html</loc>
-    <lastmod>2024-03-25T07:28:58+00:00</lastmod>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/IngameDebugConsole.DebugLogConsole.ParseFunction_1.html</loc>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/IngameDebugConsole.DebugLogConsole.html</loc>
-    <lastmod>2024-03-25T07:28:58+00:00</lastmod>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/IngameDebugConsole.DebugLogEntry.html</loc>
-    <lastmod>2024-03-25T07:28:58+00:00</lastmod>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/IngameDebugConsole.DebugLogEntryTimestamp.html</loc>
-    <lastmod>2024-03-25T07:28:58+00:00</lastmod>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/IngameDebugConsole.DebugLogFilter.html</loc>
-    <lastmod>2024-03-25T07:28:58+00:00</lastmod>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/IngameDebugConsole.DebugLogFilter_1.html</loc>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/IngameDebugConsole.DebugLogIndexList-1.html</loc>
-    <lastmod>2024-03-25T07:28:58+00:00</lastmod>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/IngameDebugConsole.DebugLogItem.html</loc>
-    <lastmod>2024-03-25T07:28:58+00:00</lastmod>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/IngameDebugConsole.DebugLogManager.html</loc>
-    <lastmod>2024-03-25T07:28:58+00:00</lastmod>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/IngameDebugConsole.DebugLogManagerEditor.html</loc>
-    <lastmod>2024-03-25T07:28:58+00:00</lastmod>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/IngameDebugConsole.DebugLogPopup.html</loc>
-    <lastmod>2024-03-25T07:28:58+00:00</lastmod>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/IngameDebugConsole.DebugLogRecycledListView.html</loc>
-    <lastmod>2024-03-25T07:28:58+00:00</lastmod>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/IngameDebugConsole.DebugLogResizeListener.html</loc>
-    <lastmod>2024-03-25T07:28:58+00:00</lastmod>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/IngameDebugConsole.DebugsOnScrollListener.html</loc>
-    <lastmod>2024-03-25T07:28:58+00:00</lastmod>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/IngameDebugConsole.DynamicCircularBuffer-1.html</loc>
-    <lastmod>2024-03-25T07:28:58+00:00</lastmod>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/IngameDebugConsole.EventSystemHandler.html</loc>
-    <lastmod>2024-03-25T07:28:58+00:00</lastmod>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/IngameDebugConsole.QueuedDebugLogEntry.html</loc>
-    <lastmod>2024-03-25T07:28:58+00:00</lastmod>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/IngameDebugConsole.html</loc>
-    <lastmod>2024-03-25T07:28:58+00:00</lastmod>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/StarterAssets.UICanvasControllerInput.html</loc>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/StarterAssets.html</loc>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/api/index.html</loc>
-    <lastmod>2024-03-25T07:28:58+00:00</lastmod>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/index.html</loc>
-    <lastmod>2024-03-25T07:28:58+00:00</lastmod>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://zanbrachrissik.github.io/JingTan-Metaverse-SDK/manual/index.html</loc>
-    <lastmod>2024-03-25T07:28:58+00:00</lastmod>
+    <lastmod>2024-04-19T01:57:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>

@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Ant_Metaverse_AntMetaverseUtil" data-uid="Ant.Metaverse.AntMetaverseUtil" class="text-break">
-Class AntMetaverseUtil  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/RunTime/AntService/Utils/AntMetaverseUtil.cs/#L7"><i class="bi bi-code-slash"></i></a>
+Class AntMetaverseUtil  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/RunTime/AntService/Utils/AntMetaverseUtil.cs/#L10"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -148,15 +148,173 @@ Class AntMetaverseUtil  <a class="header-action link-secondary" title="View sour
 
 
 
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Ant_Metaverse_AntMetaverseUtil_AssemblyDic" data-uid="Ant.Metaverse.AntMetaverseUtil.AssemblyDic">
+  AssemblyDic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/RunTime/AntService/Utils/AntMetaverseUtil.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, Assembly&gt; AssemblyDic</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.assembly">Assembly</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Ant_Metaverse_AntMetaverseUtil_MethodInfoDic" data-uid="Ant.Metaverse.AntMetaverseUtil.MethodInfoDic">
+  MethodInfoDic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/RunTime/AntService/Utils/AntMetaverseUtil.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;int, MethodInfo&gt; MethodInfoDic</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo">MethodInfo</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Ant_Metaverse_AntMetaverseUtil_TypeDic" data-uid="Ant.Metaverse.AntMetaverseUtil.TypeDic">
+  TypeDic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/RunTime/AntService/Utils/AntMetaverseUtil.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;int, Type&gt; TypeDic</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
   <h2 class="section" id="methods">Methods
 </h2>
+
+
+  <a id="Ant_Metaverse_AntMetaverseUtil_Dispose_" data-uid="Ant.Metaverse.AntMetaverseUtil.Dispose*"></a>
+
+  <h3 id="Ant_Metaverse_AntMetaverseUtil_Dispose" data-uid="Ant.Metaverse.AntMetaverseUtil.Dispose">
+  Dispose()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/RunTime/AntService/Utils/AntMetaverseUtil.cs/#L128"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Dispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ant_Metaverse_AntMetaverseUtil_GetJtokenByKey_" data-uid="Ant.Metaverse.AntMetaverseUtil.GetJtokenByKey*"></a>
+
+  <h3 id="Ant_Metaverse_AntMetaverseUtil_GetJtokenByKey_JObject_System_String_" data-uid="Ant.Metaverse.AntMetaverseUtil.GetJtokenByKey(JObject,System.String)">
+  GetJtokenByKey(JObject, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/RunTime/AntService/Utils/AntMetaverseUtil.cs/#L89"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static JToken GetJtokenByKey(JObject jObject, string key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>jObject</code> <span class="xref">JObject</span></dt>
+    <dd></dd>
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">JToken</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
 
 
   <a id="Ant_Metaverse_AntMetaverseUtil_GetLoadedAssembly_" data-uid="Ant.Metaverse.AntMetaverseUtil.GetLoadedAssembly*"></a>
 
   <h3 id="Ant_Metaverse_AntMetaverseUtil_GetLoadedAssembly_System_String_" data-uid="Ant.Metaverse.AntMetaverseUtil.GetLoadedAssembly(System.String)">
   GetLoadedAssembly(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/RunTime/AntService/Utils/AntMetaverseUtil.cs/#L8"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/RunTime/AntService/Utils/AntMetaverseUtil.cs/#L15"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -177,6 +335,110 @@ Class AntMetaverseUtil  <a class="header-action link-secondary" title="View sour
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.assembly">Assembly</a></dt>
     <dd></dd>
   </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ant_Metaverse_AntMetaverseUtil_GetLoadedType_" data-uid="Ant.Metaverse.AntMetaverseUtil.GetLoadedType*"></a>
+
+  <h3 id="Ant_Metaverse_AntMetaverseUtil_GetLoadedType_System_Reflection_Assembly_System_String_" data-uid="Ant.Metaverse.AntMetaverseUtil.GetLoadedType(System.Reflection.Assembly,System.String)">
+  GetLoadedType(Assembly, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/RunTime/AntService/Utils/AntMetaverseUtil.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Type GetLoadedType(Assembly assembly, string typeName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>assembly</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.assembly">Assembly</a></dt>
+    <dd></dd>
+    <dt><code>typeName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ant_Metaverse_AntMetaverseUtil_GetMethodInfo_" data-uid="Ant.Metaverse.AntMetaverseUtil.GetMethodInfo*"></a>
+
+  <h3 id="Ant_Metaverse_AntMetaverseUtil_GetMethodInfo_System_String_System_String_System_String_" data-uid="Ant.Metaverse.AntMetaverseUtil.GetMethodInfo(System.String,System.String,System.String)">
+  GetMethodInfo(string, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/RunTime/AntService/Utils/AntMetaverseUtil.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MethodInfo GetMethodInfo(string assemblyName, string typeName, string methodName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>assemblyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>typeName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>methodName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo">MethodInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ant_Metaverse_AntMetaverseUtil_InitAssemblyDic_" data-uid="Ant.Metaverse.AntMetaverseUtil.InitAssemblyDic*"></a>
+
+  <h3 id="Ant_Metaverse_AntMetaverseUtil_InitAssemblyDic" data-uid="Ant.Metaverse.AntMetaverseUtil.InitAssemblyDic">
+  InitAssemblyDic()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/RunTime/AntService/Utils/AntMetaverseUtil.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void InitAssemblyDic()</code></pre>
+  </div>
+
+
 
 
 

@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -101,7 +101,7 @@ Class DebugLogManager  <a class="header-action link-secondary" title="View sourc
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class DebugLogManager : MonoBehaviour</code></pre>
+    <pre><code class="lang-csharp hljs">public class DebugLogManager : MonoBehaviour, MonoBehaviour</code></pre>
   </div>
 
 
@@ -115,6 +115,12 @@ Class DebugLogManager  <a class="header-action link-secondary" title="View sourc
     </dd>
   </dl>
 
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><span class="xref">MonoBehaviour</span></div>
+    </dd>
+  </dl>
 
 
 
@@ -138,6 +144,66 @@ Class DebugLogManager  <a class="header-action link-secondary" title="View sourc
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Action OnLogWindowHidden</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="IngameDebugConsole_DebugLogManager_OnLogWindowHidden" data-uid="IngameDebugConsole.DebugLogManager.OnLogWindowHidden">
+  OnLogWindowHidden
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/DebugLogManager.cs/#L396"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action OnLogWindowHidden</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="IngameDebugConsole_DebugLogManager_OnLogWindowShown" data-uid="IngameDebugConsole.DebugLogManager.OnLogWindowShown">
+  OnLogWindowShown
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/DebugLogManager.cs/#L396"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action OnLogWindowShown</code></pre>
   </div>
 
 
@@ -222,6 +288,37 @@ Class DebugLogManager  <a class="header-action link-secondary" title="View sourc
 
 
 
+  <a id="IngameDebugConsole_DebugLogManager_Instance_" data-uid="IngameDebugConsole.DebugLogManager.Instance*"></a>
+
+  <h3 id="IngameDebugConsole_DebugLogManager_Instance" data-uid="IngameDebugConsole.DebugLogManager.Instance">
+  Instance
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/DebugLogManager.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DebugLogManager Instance { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="IngameDebugConsole.DebugLogManager.html">DebugLogManager</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="IngameDebugConsole_DebugLogManager_IsLogWindowVisible_" data-uid="IngameDebugConsole.DebugLogManager.IsLogWindowVisible*"></a>
 
   <h3 id="IngameDebugConsole_DebugLogManager_IsLogWindowVisible" data-uid="IngameDebugConsole.DebugLogManager.IsLogWindowVisible">
@@ -234,6 +331,68 @@ Class DebugLogManager  <a class="header-action link-secondary" title="View sourc
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool IsLogWindowVisible { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IngameDebugConsole_DebugLogManager_IsLogWindowVisible_" data-uid="IngameDebugConsole.DebugLogManager.IsLogWindowVisible*"></a>
+
+  <h3 id="IngameDebugConsole_DebugLogManager_IsLogWindowVisible" data-uid="IngameDebugConsole.DebugLogManager.IsLogWindowVisible">
+  IsLogWindowVisible
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/DebugLogManager.cs/#L294"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsLogWindowVisible { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IngameDebugConsole_DebugLogManager_PopupEnabled_" data-uid="IngameDebugConsole.DebugLogManager.PopupEnabled*"></a>
+
+  <h3 id="IngameDebugConsole_DebugLogManager_PopupEnabled" data-uid="IngameDebugConsole.DebugLogManager.PopupEnabled">
+  PopupEnabled
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/DebugLogManager.cs/#L296"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool PopupEnabled { get; set; }</code></pre>
   </div>
 
 
@@ -321,6 +480,65 @@ Class DebugLogManager  <a class="header-action link-secondary" title="View sourc
 
 
 
+  <a id="IngameDebugConsole_DebugLogManager_AdjustLatestPendingLog_" data-uid="IngameDebugConsole.DebugLogManager.AdjustLatestPendingLog*"></a>
+
+  <h3 id="IngameDebugConsole_DebugLogManager_AdjustLatestPendingLog_System_Boolean_System_Boolean_" data-uid="IngameDebugConsole.DebugLogManager.AdjustLatestPendingLog(System.Boolean,System.Boolean)">
+  AdjustLatestPendingLog(bool, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/DebugLogManager.cs/#L1195"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AdjustLatestPendingLog(bool autoExpand, bool stripStackTrace)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>autoExpand</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>stripStackTrace</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IngameDebugConsole_DebugLogManager_ClearLogs_" data-uid="IngameDebugConsole.DebugLogManager.ClearLogs*"></a>
+
+  <h3 id="IngameDebugConsole_DebugLogManager_ClearLogs" data-uid="IngameDebugConsole.DebugLogManager.ClearLogs">
+  ClearLogs()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/DebugLogManager.cs/#L1214"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearLogs()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="IngameDebugConsole_DebugLogManager_ClearLogs_" data-uid="IngameDebugConsole.DebugLogManager.ClearLogs*"></a>
 
   <h3 id="IngameDebugConsole_DebugLogManager_ClearLogs" data-uid="IngameDebugConsole.DebugLogManager.ClearLogs">
@@ -367,6 +585,63 @@ Class DebugLogManager  <a class="header-action link-secondary" title="View sourc
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IngameDebugConsole_DebugLogManager_GetAllLogs_" data-uid="IngameDebugConsole.DebugLogManager.GetAllLogs*"></a>
+
+  <h3 id="IngameDebugConsole_DebugLogManager_GetAllLogs" data-uid="IngameDebugConsole.DebugLogManager.GetAllLogs">
+  GetAllLogs()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/DebugLogManager.cs/#L1635"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetAllLogs()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IngameDebugConsole_DebugLogManager_HideLogWindow_" data-uid="IngameDebugConsole.DebugLogManager.HideLogWindow*"></a>
+
+  <h3 id="IngameDebugConsole_DebugLogManager_HideLogWindow" data-uid="IngameDebugConsole.DebugLogManager.HideLogWindow">
+  HideLogWindow()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/DebugLogManager.cs/#L913"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void HideLogWindow()</code></pre>
+  </div>
+
+
 
 
 
@@ -439,6 +714,41 @@ Class DebugLogManager  <a class="header-action link-secondary" title="View sourc
 
 
 
+  <a id="IngameDebugConsole_DebugLogManager_ReceivedLog_" data-uid="IngameDebugConsole.DebugLogManager.ReceivedLog*"></a>
+
+  <h3 id="IngameDebugConsole_DebugLogManager_ReceivedLog_System_String_System_String_LogType_" data-uid="IngameDebugConsole.DebugLogManager.ReceivedLog(System.String,System.String,LogType)">
+  ReceivedLog(string, string, LogType)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/DebugLogManager.cs/#L978"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReceivedLog(string logString, string stackTrace, LogType logType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>logString</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>stackTrace</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>logType</code> <span class="xref">LogType</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="IngameDebugConsole_DebugLogManager_SetSnapToBottom_" data-uid="IngameDebugConsole.DebugLogManager.SetSnapToBottom*"></a>
 
   <h3 id="IngameDebugConsole_DebugLogManager_SetSnapToBottom_System_Boolean_" data-uid="IngameDebugConsole.DebugLogManager.SetSnapToBottom(System.Boolean)">
@@ -458,6 +768,63 @@ Class DebugLogManager  <a class="header-action link-secondary" title="View sourc
     <dt><code>snapToBottom</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd></dd>
   </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IngameDebugConsole_DebugLogManager_SetSnapToBottom_" data-uid="IngameDebugConsole.DebugLogManager.SetSnapToBottom*"></a>
+
+  <h3 id="IngameDebugConsole_DebugLogManager_SetSnapToBottom_System_Boolean_" data-uid="IngameDebugConsole.DebugLogManager.SetSnapToBottom(System.Boolean)">
+  SetSnapToBottom(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/DebugLogManager.cs/#L1179"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSnapToBottom(bool snapToBottom)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>snapToBottom</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IngameDebugConsole_DebugLogManager_ShowLogWindow_" data-uid="IngameDebugConsole.DebugLogManager.ShowLogWindow*"></a>
+
+  <h3 id="IngameDebugConsole_DebugLogManager_ShowLogWindow" data-uid="IngameDebugConsole.DebugLogManager.ShowLogWindow">
+  ShowLogWindow()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/DebugLogManager.cs/#L880"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShowLogWindow()</code></pre>
+  </div>
+
 
 
 

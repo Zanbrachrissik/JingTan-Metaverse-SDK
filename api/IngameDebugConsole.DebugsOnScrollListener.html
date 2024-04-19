@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -101,7 +101,7 @@ Class DebugsOnScrollListener  <a class="header-action link-secondary" title="Vie
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class DebugsOnScrollListener : MonoBehaviour, IScrollHandler, IBeginDragHandler, IEndDragHandler</code></pre>
+    <pre><code class="lang-csharp hljs">public class DebugsOnScrollListener : MonoBehaviour, IScrollHandler, IBeginDragHandler, IEndDragHandler, MonoBehaviour</code></pre>
   </div>
 
 
@@ -121,6 +121,7 @@ Class DebugsOnScrollListener  <a class="header-action link-secondary" title="Vie
       <div><span class="xref">IScrollHandler</span></div>
       <div><span class="xref">IBeginDragHandler</span></div>
       <div><span class="xref">IEndDragHandler</span></div>
+      <div><span class="xref">MonoBehaviour</span></div>
     </dd>
   </dl>
 
@@ -133,6 +134,36 @@ Class DebugsOnScrollListener  <a class="header-action link-secondary" title="Vie
 
   <h2 class="section" id="fields">Fields
 </h2>
+
+
+
+  <h3 id="IngameDebugConsole_DebugsOnScrollListener_debugLogManager" data-uid="IngameDebugConsole.DebugsOnScrollListener.debugLogManager">
+  debugLogManager
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/DebugsOnScrollListener.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DebugLogManager debugLogManager</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="IngameDebugConsole.DebugLogManager.html">DebugLogManager</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
 
 
 
@@ -195,6 +226,36 @@ Class DebugsOnScrollListener  <a class="header-action link-secondary" title="Vie
 
 
 
+
+  <h3 id="IngameDebugConsole_DebugsOnScrollListener_debugsScrollRect" data-uid="IngameDebugConsole.DebugsOnScrollListener.debugsScrollRect">
+  debugsScrollRect
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/DebugsOnScrollListener.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScrollRect debugsScrollRect</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ScrollRect</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
   <h2 class="section" id="methods">Methods
 </h2>
 
@@ -211,6 +272,68 @@ Class DebugsOnScrollListener  <a class="header-action link-secondary" title="Vie
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void OnBeginDrag(PointerEventData data)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>data</code> <span class="xref">PointerEventData</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IngameDebugConsole_DebugsOnScrollListener_OnBeginDrag_" data-uid="IngameDebugConsole.DebugsOnScrollListener.OnBeginDrag*"></a>
+
+  <h3 id="IngameDebugConsole_DebugsOnScrollListener_OnBeginDrag_PointerEventData_" data-uid="IngameDebugConsole.DebugsOnScrollListener.OnBeginDrag(PointerEventData)">
+  OnBeginDrag(PointerEventData)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/DebugsOnScrollListener.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnBeginDrag(PointerEventData data)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>data</code> <span class="xref">PointerEventData</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IngameDebugConsole_DebugsOnScrollListener_OnEndDrag_" data-uid="IngameDebugConsole.DebugsOnScrollListener.OnEndDrag*"></a>
+
+  <h3 id="IngameDebugConsole_DebugsOnScrollListener_OnEndDrag_PointerEventData_" data-uid="IngameDebugConsole.DebugsOnScrollListener.OnEndDrag(PointerEventData)">
+  OnEndDrag(PointerEventData)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/DebugsOnScrollListener.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnEndDrag(PointerEventData data)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -292,6 +415,37 @@ Class DebugsOnScrollListener  <a class="header-action link-secondary" title="Vie
 
 
 
+  <a id="IngameDebugConsole_DebugsOnScrollListener_OnScroll_" data-uid="IngameDebugConsole.DebugsOnScrollListener.OnScroll*"></a>
+
+  <h3 id="IngameDebugConsole_DebugsOnScrollListener_OnScroll_PointerEventData_" data-uid="IngameDebugConsole.DebugsOnScrollListener.OnScroll(PointerEventData)">
+  OnScroll(PointerEventData)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/DebugsOnScrollListener.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnScroll(PointerEventData data)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>data</code> <span class="xref">PointerEventData</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="IngameDebugConsole_DebugsOnScrollListener_OnScrollbarDragEnd_" data-uid="IngameDebugConsole.DebugsOnScrollListener.OnScrollbarDragEnd*"></a>
 
   <h3 id="IngameDebugConsole_DebugsOnScrollListener_OnScrollbarDragEnd_BaseEventData_" data-uid="IngameDebugConsole.DebugsOnScrollListener.OnScrollbarDragEnd(BaseEventData)">
@@ -304,6 +458,68 @@ Class DebugsOnScrollListener  <a class="header-action link-secondary" title="Vie
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void OnScrollbarDragEnd(BaseEventData data)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>data</code> <span class="xref">BaseEventData</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IngameDebugConsole_DebugsOnScrollListener_OnScrollbarDragEnd_" data-uid="IngameDebugConsole.DebugsOnScrollListener.OnScrollbarDragEnd*"></a>
+
+  <h3 id="IngameDebugConsole_DebugsOnScrollListener_OnScrollbarDragEnd_BaseEventData_" data-uid="IngameDebugConsole.DebugsOnScrollListener.OnScrollbarDragEnd(BaseEventData)">
+  OnScrollbarDragEnd(BaseEventData)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/DebugsOnScrollListener.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnScrollbarDragEnd(BaseEventData data)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>data</code> <span class="xref">BaseEventData</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IngameDebugConsole_DebugsOnScrollListener_OnScrollbarDragStart_" data-uid="IngameDebugConsole.DebugsOnScrollListener.OnScrollbarDragStart*"></a>
+
+  <h3 id="IngameDebugConsole_DebugsOnScrollListener_OnScrollbarDragStart_BaseEventData_" data-uid="IngameDebugConsole.DebugsOnScrollListener.OnScrollbarDragStart(BaseEventData)">
+  OnScrollbarDragStart(BaseEventData)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/DebugsOnScrollListener.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnScrollbarDragStart(BaseEventData data)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>

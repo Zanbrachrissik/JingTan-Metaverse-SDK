@@ -135,6 +135,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Ant.Metaverse.Editor.DllConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ant.Metaverse.Editor.DllConfig.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Ant.Metaverse.Editor.JingZaoEditor.yml",
       "output": {
         ".html": {
@@ -275,6 +285,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Ant.Metaverse.MetaSDK.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ant.Metaverse.MetaSDK.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ant.Metaverse.NativeMsgManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ant.Metaverse.NativeMsgManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Ant.Metaverse.PaymentService.yml",
       "output": {
         ".html": {
@@ -289,6 +319,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Ant.Metaverse.ResourceManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ant.Metaverse.TemplateGameEntry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ant.Metaverse.TemplateGameEntry.html"
         }
       },
       "version": ""
@@ -329,6 +369,146 @@
       "output": {
         ".html": {
           "relative_path": "api/Ant.Metaverse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AntChain.SDK.Sample.Client.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AntChain.SDK.Sample.Client.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AntChain.SDK.Sample.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AntChain.SDK.Sample.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.CharacterInputData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.CharacterInputData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.Data.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.Data.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.JTAppInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.JTAppInfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.JTBindFile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.JTBindFile.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.JTLogin.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.JTLogin.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.JingTanNFTCUpload.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.JingTanNFTCUpload.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.PrefsTool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.PrefsTool.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.ThirdPersonController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.ThirdPersonController.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.UIVirtualTouchZone.Event.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.UIVirtualTouchZone.Event.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.UIVirtualTouchZone.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.UIVirtualTouchZone.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.UploadReturnInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.UploadReturnInfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.html"
         }
       },
       "version": ""
@@ -415,6 +595,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/IngameDebugConsole.DebugLogConsole.ParseFunction_1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IngameDebugConsole.DebugLogConsole.ParseFunction_1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/IngameDebugConsole.DebugLogConsole.yml",
       "output": {
         ".html": {
@@ -449,6 +639,16 @@
       "output": {
         ".html": {
           "relative_path": "api/IngameDebugConsole.DebugLogFilter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IngameDebugConsole.DebugLogFilter_1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IngameDebugConsole.DebugLogFilter_1.html"
         }
       },
       "version": ""
@@ -569,6 +769,26 @@
       "output": {
         ".html": {
           "relative_path": "api/IngameDebugConsole.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StarterAssets.UICanvasControllerInput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StarterAssets.UICanvasControllerInput.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StarterAssets.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StarterAssets.html"
         }
       },
       "version": ""

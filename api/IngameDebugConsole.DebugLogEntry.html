@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -183,6 +183,36 @@ Class DebugLogEntry  <a class="header-action link-secondary" title="View source"
 
 
 
+  <h3 id="IngameDebugConsole_DebugLogEntry_count" data-uid="IngameDebugConsole.DebugLogEntry.count">
+  count
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/DebugLogEntry.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int count</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
   <h3 id="IngameDebugConsole_DebugLogEntry_logString" data-uid="IngameDebugConsole.DebugLogEntry.logString">
   logString
   <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/DebugLogEntry.cs/#L12"><i class="bi bi-code-slash"></i></a>
@@ -201,6 +231,66 @@ Class DebugLogEntry  <a class="header-action link-secondary" title="View source"
   <h4 class="section">Field Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="IngameDebugConsole_DebugLogEntry_logString" data-uid="IngameDebugConsole.DebugLogEntry.logString">
+  logString
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/DebugLogEntry.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string logString</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="IngameDebugConsole_DebugLogEntry_logTypeSpriteRepresentation" data-uid="IngameDebugConsole.DebugLogEntry.logTypeSpriteRepresentation">
+  logTypeSpriteRepresentation
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/DebugLogEntry.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Sprite logTypeSpriteRepresentation</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Sprite</span></dt>
     <dd></dd>
   </dl>
 
@@ -272,6 +362,36 @@ Class DebugLogEntry  <a class="header-action link-secondary" title="View source"
 
 
 
+
+  <h3 id="IngameDebugConsole_DebugLogEntry_stackTrace" data-uid="IngameDebugConsole.DebugLogEntry.stackTrace">
+  stackTrace
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/DebugLogEntry.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string stackTrace</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
   <h2 class="section" id="methods">Methods
 </h2>
 
@@ -283,8 +403,7 @@ Class DebugLogEntry  <a class="header-action link-secondary" title="View source"
   <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/DebugLogEntry.cs/#L36"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -294,14 +413,81 @@ Class DebugLogEntry  <a class="header-action link-secondary" title="View source"
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>other</code> <a class="xref" href="IngameDebugConsole.DebugLogEntry.html">DebugLogEntry</a></dt>
-    <dd><p>An object to compare with this object.</p>
-</dd>
+    <dd></dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IngameDebugConsole_DebugLogEntry_Equals_" data-uid="IngameDebugConsole.DebugLogEntry.Equals*"></a>
+
+  <h3 id="IngameDebugConsole_DebugLogEntry_Equals_IngameDebugConsole_DebugLogEntry_" data-uid="IngameDebugConsole.DebugLogEntry.Equals(IngameDebugConsole.DebugLogEntry)">
+  Equals(DebugLogEntry)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/DebugLogEntry.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(DebugLogEntry other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="IngameDebugConsole.DebugLogEntry.html">DebugLogEntry</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IngameDebugConsole_DebugLogEntry_GetHashCode_" data-uid="IngameDebugConsole.DebugLogEntry.GetHashCode*"></a>
+
+  <h3 id="IngameDebugConsole_DebugLogEntry_GetHashCode" data-uid="IngameDebugConsole.DebugLogEntry.GetHashCode">
+  GetHashCode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/DebugLogEntry.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Serves as the default hash function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A hash code for the current object.</p>
 </dd>
   </dl>
 
@@ -381,6 +567,39 @@ Class DebugLogEntry  <a class="header-action link-secondary" title="View source"
 
 
 
+  <a id="IngameDebugConsole_DebugLogEntry_Initialize_" data-uid="IngameDebugConsole.DebugLogEntry.Initialize*"></a>
+
+  <h3 id="IngameDebugConsole_DebugLogEntry_Initialize_System_String_System_String_" data-uid="IngameDebugConsole.DebugLogEntry.Initialize(System.String,System.String)">
+  Initialize(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/DebugLogEntry.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Initialize(string logString, string stackTrace)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>logString</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>stackTrace</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="IngameDebugConsole_DebugLogEntry_MatchesSearchTerm_" data-uid="IngameDebugConsole.DebugLogEntry.MatchesSearchTerm*"></a>
 
   <h3 id="IngameDebugConsole_DebugLogEntry_MatchesSearchTerm_System_String_" data-uid="IngameDebugConsole.DebugLogEntry.MatchesSearchTerm(System.String)">
@@ -405,6 +624,75 @@ Class DebugLogEntry  <a class="header-action link-secondary" title="View source"
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IngameDebugConsole_DebugLogEntry_MatchesSearchTerm_" data-uid="IngameDebugConsole.DebugLogEntry.MatchesSearchTerm*"></a>
+
+  <h3 id="IngameDebugConsole_DebugLogEntry_MatchesSearchTerm_System_String_" data-uid="IngameDebugConsole.DebugLogEntry.MatchesSearchTerm(System.String)">
+  MatchesSearchTerm(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/DebugLogEntry.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MatchesSearchTerm(string searchTerm)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>searchTerm</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IngameDebugConsole_DebugLogEntry_ToString_" data-uid="IngameDebugConsole.DebugLogEntry.ToString*"></a>
+
+  <h3 id="IngameDebugConsole_DebugLogEntry_ToString" data-uid="IngameDebugConsole.DebugLogEntry.ToString">
+  ToString()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/DebugLogEntry.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a string that represents the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A string that represents the current object.</p>
+</dd>
   </dl>
 
 

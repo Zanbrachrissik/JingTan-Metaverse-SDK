@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Ant_Metaverse_FileOperateResponse" data-uid="Ant.Metaverse.FileOperateResponse" class="text-break">
-Class FileOperateResponse  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/RunTime/AntService/Implements/Services.cs/#L528"><i class="bi bi-code-slash"></i></a>
+Class FileOperateResponse  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/RunTime/AntService/Implements/Services.cs/#L693"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -156,7 +156,7 @@ public class FileOperateResponse</code></pre>
 
   <h3 id="Ant_Metaverse_FileOperateResponse_error" data-uid="Ant.Metaverse.FileOperateResponse.error">
   error
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/RunTime/AntService/Implements/Services.cs/#L532"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/RunTime/AntService/Implements/Services.cs/#L697"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -186,7 +186,7 @@ public class FileOperateResponse</code></pre>
 
   <h3 id="Ant_Metaverse_FileOperateResponse_errorMessage" data-uid="Ant.Metaverse.FileOperateResponse.errorMessage">
   errorMessage
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/RunTime/AntService/Implements/Services.cs/#L533"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/RunTime/AntService/Implements/Services.cs/#L698"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -216,7 +216,7 @@ public class FileOperateResponse</code></pre>
 
   <h3 id="Ant_Metaverse_FileOperateResponse_success" data-uid="Ant.Metaverse.FileOperateResponse.success">
   success
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/RunTime/AntService/Implements/Services.cs/#L531"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/RunTime/AntService/Implements/Services.cs/#L696"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>

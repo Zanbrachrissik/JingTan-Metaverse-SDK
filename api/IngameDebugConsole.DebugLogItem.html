@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -101,7 +101,7 @@ Class DebugLogItem  <a class="header-action link-secondary" title="View source" 
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class DebugLogItem : MonoBehaviour, IPointerClickHandler</code></pre>
+    <pre><code class="lang-csharp hljs">public class DebugLogItem : MonoBehaviour, IPointerClickHandler, MonoBehaviour</code></pre>
   </div>
 
 
@@ -119,6 +119,7 @@ Class DebugLogItem  <a class="header-action link-secondary" title="View source" 
     <dt>Implements</dt>
     <dd>
       <div><span class="xref">IPointerClickHandler</span></div>
+      <div><span class="xref">MonoBehaviour</span></div>
     </dd>
   </dl>
 
@@ -154,6 +155,68 @@ Class DebugLogItem  <a class="header-action link-secondary" title="View source" 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
     <dt><span class="xref">CanvasGroup</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IngameDebugConsole_DebugLogItem_CanvasGroup_" data-uid="IngameDebugConsole.DebugLogItem.CanvasGroup*"></a>
+
+  <h3 id="IngameDebugConsole_DebugLogItem_CanvasGroup" data-uid="IngameDebugConsole.DebugLogItem.CanvasGroup">
+  CanvasGroup
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/DebugLogItem.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CanvasGroup CanvasGroup { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">CanvasGroup</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IngameDebugConsole_DebugLogItem_Entry_" data-uid="IngameDebugConsole.DebugLogItem.Entry*"></a>
+
+  <h3 id="IngameDebugConsole_DebugLogItem_Entry" data-uid="IngameDebugConsole.DebugLogItem.Entry">
+  Entry
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/DebugLogItem.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DebugLogEntry Entry { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="IngameDebugConsole.DebugLogEntry.html">DebugLogEntry</a></dt>
     <dd></dd>
   </dl>
 
@@ -226,6 +289,68 @@ Class DebugLogItem  <a class="header-action link-secondary" title="View source" 
 
 
 
+  <a id="IngameDebugConsole_DebugLogItem_Expanded_" data-uid="IngameDebugConsole.DebugLogItem.Expanded*"></a>
+
+  <h3 id="IngameDebugConsole_DebugLogItem_Expanded" data-uid="IngameDebugConsole.DebugLogItem.Expanded">
+  Expanded
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/DebugLogItem.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Expanded { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IngameDebugConsole_DebugLogItem_Image_" data-uid="IngameDebugConsole.DebugLogItem.Image*"></a>
+
+  <h3 id="IngameDebugConsole_DebugLogItem_Image" data-uid="IngameDebugConsole.DebugLogItem.Image">
+  Image
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/DebugLogItem.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Image Image { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Image</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="IngameDebugConsole_DebugLogItem_Image_" data-uid="IngameDebugConsole.DebugLogItem.Image*"></a>
 
   <h3 id="IngameDebugConsole_DebugLogItem_Image" data-uid="IngameDebugConsole.DebugLogItem.Image">
@@ -288,6 +413,37 @@ Class DebugLogItem  <a class="header-action link-secondary" title="View source" 
 
 
 
+  <a id="IngameDebugConsole_DebugLogItem_Index_" data-uid="IngameDebugConsole.DebugLogItem.Index*"></a>
+
+  <h3 id="IngameDebugConsole_DebugLogItem_Index" data-uid="IngameDebugConsole.DebugLogItem.Index">
+  Index
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/DebugLogItem.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Index { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="IngameDebugConsole_DebugLogItem_Timestamp_" data-uid="IngameDebugConsole.DebugLogItem.Timestamp*"></a>
 
   <h3 id="IngameDebugConsole_DebugLogItem_Timestamp" data-uid="IngameDebugConsole.DebugLogItem.Timestamp">
@@ -309,6 +465,68 @@ Class DebugLogItem  <a class="header-action link-secondary" title="View source" 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="IngameDebugConsole.DebugLogEntryTimestamp.html">DebugLogEntryTimestamp</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IngameDebugConsole_DebugLogItem_Timestamp_" data-uid="IngameDebugConsole.DebugLogItem.Timestamp*"></a>
+
+  <h3 id="IngameDebugConsole_DebugLogItem_Timestamp" data-uid="IngameDebugConsole.DebugLogItem.Timestamp">
+  Timestamp
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/DebugLogItem.cs/#L87"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DebugLogEntryTimestamp? Timestamp { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="IngameDebugConsole.DebugLogEntryTimestamp.html">DebugLogEntryTimestamp</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IngameDebugConsole_DebugLogItem_Transform_" data-uid="IngameDebugConsole.DebugLogItem.Transform*"></a>
+
+  <h3 id="IngameDebugConsole_DebugLogItem_Transform" data-uid="IngameDebugConsole.DebugLogItem.Transform">
+  Transform
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/DebugLogItem.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RectTransform Transform { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">RectTransform</span></dt>
     <dd></dd>
   </dl>
 
@@ -392,6 +610,44 @@ Class DebugLogItem  <a class="header-action link-secondary" title="View source" 
 
 
 
+  <a id="IngameDebugConsole_DebugLogItem_CalculateExpandedHeight_" data-uid="IngameDebugConsole.DebugLogItem.CalculateExpandedHeight*"></a>
+
+  <h3 id="IngameDebugConsole_DebugLogItem_CalculateExpandedHeight_IngameDebugConsole_DebugLogEntry_System_Nullable_IngameDebugConsole_DebugLogEntryTimestamp__" data-uid="IngameDebugConsole.DebugLogItem.CalculateExpandedHeight(IngameDebugConsole.DebugLogEntry,System.Nullable{IngameDebugConsole.DebugLogEntryTimestamp})">
+  CalculateExpandedHeight(DebugLogEntry, DebugLogEntryTimestamp?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/DebugLogItem.cs/#L261"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float CalculateExpandedHeight(DebugLogEntry logEntry, DebugLogEntryTimestamp? logEntryTimestamp)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>logEntry</code> <a class="xref" href="IngameDebugConsole.DebugLogEntry.html">DebugLogEntry</a></dt>
+    <dd></dd>
+    <dt><code>logEntryTimestamp</code> <a class="xref" href="IngameDebugConsole.DebugLogEntryTimestamp.html">DebugLogEntryTimestamp</a>?</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="IngameDebugConsole_DebugLogItem_CopyLog_" data-uid="IngameDebugConsole.DebugLogItem.CopyLog*"></a>
 
   <h3 id="IngameDebugConsole_DebugLogItem_CopyLog" data-uid="IngameDebugConsole.DebugLogItem.CopyLog">
@@ -404,6 +660,58 @@ Class DebugLogItem  <a class="header-action link-secondary" title="View source" 
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void CopyLog()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IngameDebugConsole_DebugLogItem_CopyLog_" data-uid="IngameDebugConsole.DebugLogItem.CopyLog*"></a>
+
+  <h3 id="IngameDebugConsole_DebugLogItem_CopyLog" data-uid="IngameDebugConsole.DebugLogItem.CopyLog">
+  CopyLog()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/DebugLogItem.cs/#L228"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyLog()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IngameDebugConsole_DebugLogItem_HideCount_" data-uid="IngameDebugConsole.DebugLogItem.HideCount*"></a>
+
+  <h3 id="IngameDebugConsole_DebugLogItem_HideCount" data-uid="IngameDebugConsole.DebugLogItem.HideCount">
+  HideCount()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/DebugLogItem.cs/#L166"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void HideCount()</code></pre>
   </div>
 
 
@@ -461,6 +769,68 @@ Class DebugLogItem  <a class="header-action link-secondary" title="View source" 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>listView</code> <a class="xref" href="IngameDebugConsole.DebugLogRecycledListView.html">DebugLogRecycledListView</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IngameDebugConsole_DebugLogItem_Initialize_" data-uid="IngameDebugConsole.DebugLogItem.Initialize*"></a>
+
+  <h3 id="IngameDebugConsole_DebugLogItem_Initialize_IngameDebugConsole_DebugLogRecycledListView_" data-uid="IngameDebugConsole.DebugLogItem.Initialize(IngameDebugConsole.DebugLogRecycledListView)">
+  Initialize(DebugLogRecycledListView)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/DebugLogItem.cs/#L102"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Initialize(DebugLogRecycledListView listView)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>listView</code> <a class="xref" href="IngameDebugConsole.DebugLogRecycledListView.html">DebugLogRecycledListView</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IngameDebugConsole_DebugLogItem_OnPointerClick_" data-uid="IngameDebugConsole.DebugLogItem.OnPointerClick*"></a>
+
+  <h3 id="IngameDebugConsole_DebugLogItem_OnPointerClick_PointerEventData_" data-uid="IngameDebugConsole.DebugLogItem.OnPointerClick(PointerEventData)">
+  OnPointerClick(PointerEventData)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/DebugLogItem.cs/#L206"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnPointerClick(PointerEventData eventData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventData</code> <span class="xref">PointerEventData</span></dt>
     <dd></dd>
   </dl>
 
@@ -543,6 +913,69 @@ Class DebugLogItem  <a class="header-action link-secondary" title="View source" 
 
 
 
+  <a id="IngameDebugConsole_DebugLogItem_SetContent_" data-uid="IngameDebugConsole.DebugLogItem.SetContent*"></a>
+
+  <h3 id="IngameDebugConsole_DebugLogItem_SetContent_IngameDebugConsole_DebugLogEntry_System_Nullable_IngameDebugConsole_DebugLogEntryTimestamp__System_Int32_System_Boolean_" data-uid="IngameDebugConsole.DebugLogItem.SetContent(IngameDebugConsole.DebugLogEntry,System.Nullable{IngameDebugConsole.DebugLogEntryTimestamp},System.Int32,System.Boolean)">
+  SetContent(DebugLogEntry, DebugLogEntryTimestamp?, int, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/DebugLogItem.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetContent(DebugLogEntry logEntry, DebugLogEntryTimestamp? logEntryTimestamp, int entryIndex, bool isExpanded)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>logEntry</code> <a class="xref" href="IngameDebugConsole.DebugLogEntry.html">DebugLogEntry</a></dt>
+    <dd></dd>
+    <dt><code>logEntryTimestamp</code> <a class="xref" href="IngameDebugConsole.DebugLogEntryTimestamp.html">DebugLogEntryTimestamp</a>?</dt>
+    <dd></dd>
+    <dt><code>entryIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>isExpanded</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IngameDebugConsole_DebugLogItem_ShowCount_" data-uid="IngameDebugConsole.DebugLogItem.ShowCount*"></a>
+
+  <h3 id="IngameDebugConsole_DebugLogItem_ShowCount" data-uid="IngameDebugConsole.DebugLogItem.ShowCount">
+  ShowCount()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/DebugLogItem.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShowCount()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="IngameDebugConsole_DebugLogItem_ShowCount_" data-uid="IngameDebugConsole.DebugLogItem.ShowCount*"></a>
 
   <h3 id="IngameDebugConsole_DebugLogItem_ShowCount" data-uid="IngameDebugConsole.DebugLogItem.ShowCount">
@@ -589,6 +1022,68 @@ Class DebugLogItem  <a class="header-action link-secondary" title="View source" 
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IngameDebugConsole_DebugLogItem_ToString_" data-uid="IngameDebugConsole.DebugLogItem.ToString*"></a>
+
+  <h3 id="IngameDebugConsole_DebugLogItem_ToString" data-uid="IngameDebugConsole.DebugLogItem.ToString">
+  ToString()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/DebugLogItem.cs/#L278"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IngameDebugConsole_DebugLogItem_UpdateTimestamp_" data-uid="IngameDebugConsole.DebugLogItem.UpdateTimestamp*"></a>
+
+  <h3 id="IngameDebugConsole_DebugLogItem_UpdateTimestamp_IngameDebugConsole_DebugLogEntryTimestamp_" data-uid="IngameDebugConsole.DebugLogItem.UpdateTimestamp(IngameDebugConsole.DebugLogEntryTimestamp)">
+  UpdateTimestamp(DebugLogEntryTimestamp)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/DebugLogItem.cs/#L173"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateTimestamp(DebugLogEntryTimestamp timestamp)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>timestamp</code> <a class="xref" href="IngameDebugConsole.DebugLogEntryTimestamp.html">DebugLogEntryTimestamp</a></dt>
+    <dd></dd>
+  </dl>
+
 
 
 

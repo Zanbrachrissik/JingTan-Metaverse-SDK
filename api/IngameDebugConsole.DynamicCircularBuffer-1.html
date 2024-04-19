@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -188,6 +188,37 @@ Class DynamicCircularBuffer&lt;T&gt;  <a class="header-action link-secondary" ti
 
 
 
+  <a id="IngameDebugConsole_DynamicCircularBuffer_1__ctor_" data-uid="IngameDebugConsole.DynamicCircularBuffer`1.#ctor*"></a>
+
+  <h3 id="IngameDebugConsole_DynamicCircularBuffer_1__ctor_System_Int32_" data-uid="IngameDebugConsole.DynamicCircularBuffer`1.#ctor(System.Int32)">
+  DynamicCircularBuffer(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/CircularBuffer.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DynamicCircularBuffer(int initialCapacity = 2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>initialCapacity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <h2 class="section" id="properties">Properties
 </h2>
 
@@ -204,6 +235,68 @@ Class DynamicCircularBuffer&lt;T&gt;  <a class="header-action link-secondary" ti
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public int Capacity { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IngameDebugConsole_DynamicCircularBuffer_1_Capacity_" data-uid="IngameDebugConsole.DynamicCircularBuffer`1.Capacity*"></a>
+
+  <h3 id="IngameDebugConsole_DynamicCircularBuffer_1_Capacity" data-uid="IngameDebugConsole.DynamicCircularBuffer`1.Capacity">
+  Capacity
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/CircularBuffer.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Capacity { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IngameDebugConsole_DynamicCircularBuffer_1_Count_" data-uid="IngameDebugConsole.DynamicCircularBuffer`1.Count*"></a>
+
+  <h3 id="IngameDebugConsole_DynamicCircularBuffer_1_Count" data-uid="IngameDebugConsole.DynamicCircularBuffer`1.Count">
+  Count
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/CircularBuffer.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
   </div>
 
 
@@ -290,8 +383,75 @@ Class DynamicCircularBuffer&lt;T&gt;  <a class="header-action link-secondary" ti
 
 
 
+  <a id="IngameDebugConsole_DynamicCircularBuffer_1_Item_" data-uid="IngameDebugConsole.DynamicCircularBuffer`1.Item*"></a>
+
+  <h3 id="IngameDebugConsole_DynamicCircularBuffer_1_Item_System_Int32_" data-uid="IngameDebugConsole.DynamicCircularBuffer`1.Item(System.Int32)">
+  this[int]
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/CircularBuffer.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T this[int index] { get; set; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <h2 class="section" id="methods">Methods
 </h2>
+
+
+  <a id="IngameDebugConsole_DynamicCircularBuffer_1_Add_" data-uid="IngameDebugConsole.DynamicCircularBuffer`1.Add*"></a>
+
+  <h3 id="IngameDebugConsole_DynamicCircularBuffer_1_Add__0_" data-uid="IngameDebugConsole.DynamicCircularBuffer`1.Add(`0)">
+  Add(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/CircularBuffer.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(T value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
 
 
   <a id="IngameDebugConsole_DynamicCircularBuffer_1_Add_" data-uid="IngameDebugConsole.DynamicCircularBuffer`1.Add*"></a>
@@ -337,6 +497,68 @@ Class DynamicCircularBuffer&lt;T&gt;  <a class="header-action link-secondary" ti
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public T RemoveFirst()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IngameDebugConsole_DynamicCircularBuffer_1_RemoveFirst_" data-uid="IngameDebugConsole.DynamicCircularBuffer`1.RemoveFirst*"></a>
+
+  <h3 id="IngameDebugConsole_DynamicCircularBuffer_1_RemoveFirst" data-uid="IngameDebugConsole.DynamicCircularBuffer`1.RemoveFirst">
+  RemoveFirst()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/CircularBuffer.cs/#L93"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T RemoveFirst()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IngameDebugConsole_DynamicCircularBuffer_1_RemoveLast_" data-uid="IngameDebugConsole.DynamicCircularBuffer`1.RemoveLast*"></a>
+
+  <h3 id="IngameDebugConsole_DynamicCircularBuffer_1_RemoveLast" data-uid="IngameDebugConsole.DynamicCircularBuffer`1.RemoveLast">
+  RemoveLast()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/CircularBuffer.cs/#L107"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T RemoveLast()</code></pre>
   </div>
 
 

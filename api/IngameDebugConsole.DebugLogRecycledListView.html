@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -101,7 +101,7 @@ Class DebugLogRecycledListView  <a class="header-action link-secondary" title="V
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class DebugLogRecycledListView : MonoBehaviour</code></pre>
+    <pre><code class="lang-csharp hljs">public class DebugLogRecycledListView : MonoBehaviour, MonoBehaviour</code></pre>
   </div>
 
 
@@ -115,6 +115,12 @@ Class DebugLogRecycledListView  <a class="header-action link-secondary" title="V
     </dd>
   </dl>
 
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><span class="xref">MonoBehaviour</span></div>
+    </dd>
+  </dl>
 
 
 
@@ -139,6 +145,68 @@ Class DebugLogRecycledListView  <a class="header-action link-secondary" title="V
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public float ItemHeight { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IngameDebugConsole_DebugLogRecycledListView_ItemHeight_" data-uid="IngameDebugConsole.DebugLogRecycledListView.ItemHeight*"></a>
+
+  <h3 id="IngameDebugConsole_DebugLogRecycledListView_ItemHeight" data-uid="IngameDebugConsole.DebugLogRecycledListView.ItemHeight">
+  ItemHeight
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/DebugLogRecycledListView.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ItemHeight { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="IngameDebugConsole_DebugLogRecycledListView_SelectedItemHeight_" data-uid="IngameDebugConsole.DebugLogRecycledListView.SelectedItemHeight*"></a>
+
+  <h3 id="IngameDebugConsole_DebugLogRecycledListView_SelectedItemHeight" data-uid="IngameDebugConsole.DebugLogRecycledListView.SelectedItemHeight">
+  SelectedItemHeight
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/DebugLogRecycledListView.cs/#L53"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SelectedItemHeight { get; }</code></pre>
   </div>
 
 
@@ -207,6 +275,71 @@ Class DebugLogRecycledListView  <a class="header-action link-secondary" title="V
     <pre><code class="lang-csharp hljs">public void DeselectSelectedLogItem()</code></pre>
   </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IngameDebugConsole_DebugLogRecycledListView_DeselectSelectedLogItem_" data-uid="IngameDebugConsole.DebugLogRecycledListView.DeselectSelectedLogItem*"></a>
+
+  <h3 id="IngameDebugConsole_DebugLogRecycledListView_DeselectSelectedLogItem" data-uid="IngameDebugConsole.DebugLogRecycledListView.DeselectSelectedLogItem">
+  DeselectSelectedLogItem()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/DebugLogRecycledListView.cs/#L137"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeselectSelectedLogItem()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IngameDebugConsole_DebugLogRecycledListView_Initialize_" data-uid="IngameDebugConsole.DebugLogRecycledListView.Initialize*"></a>
+
+  <h3 id="IngameDebugConsole_DebugLogRecycledListView_Initialize_IngameDebugConsole_DebugLogManager_System_Collections_Generic_List_IngameDebugConsole_DebugLogEntry__IngameDebugConsole_DebugLogIndexList_System_Int32__IngameDebugConsole_DebugLogIndexList_IngameDebugConsole_DebugLogEntryTimestamp__System_Single_" data-uid="IngameDebugConsole.DebugLogRecycledListView.Initialize(IngameDebugConsole.DebugLogManager,System.Collections.Generic.List{IngameDebugConsole.DebugLogEntry},IngameDebugConsole.DebugLogIndexList{System.Int32},IngameDebugConsole.DebugLogIndexList{IngameDebugConsole.DebugLogEntryTimestamp},System.Single)">
+  Initialize(DebugLogManager, List&lt;DebugLogEntry&gt;, DebugLogIndexList&lt;int&gt;, DebugLogIndexList&lt;DebugLogEntryTimestamp&gt;, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/DebugLogRecycledListView.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Initialize(DebugLogManager manager, List&lt;DebugLogEntry&gt; collapsedLogEntries, DebugLogIndexList&lt;int&gt; indicesOfEntriesToShow, DebugLogIndexList&lt;DebugLogEntryTimestamp&gt; timestampsOfEntriesToShow, float logItemHeight)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>manager</code> <a class="xref" href="IngameDebugConsole.DebugLogManager.html">DebugLogManager</a></dt>
+    <dd></dd>
+    <dt><code>collapsedLogEntries</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="IngameDebugConsole.DebugLogEntry.html">DebugLogEntry</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>indicesOfEntriesToShow</code> <a class="xref" href="IngameDebugConsole.DebugLogIndexList-1.html">DebugLogIndexList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>timestampsOfEntriesToShow</code> <a class="xref" href="IngameDebugConsole.DebugLogIndexList-1.html">DebugLogIndexList</a>&lt;<a class="xref" href="IngameDebugConsole.DebugLogEntryTimestamp.html">DebugLogEntryTimestamp</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>logItemHeight</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
 
 
 
@@ -289,6 +422,37 @@ Class DebugLogRecycledListView  <a class="header-action link-secondary" title="V
 
 
 
+  <a id="IngameDebugConsole_DebugLogRecycledListView_OnCollapsedLogEntryAtIndexUpdated_" data-uid="IngameDebugConsole.DebugLogRecycledListView.OnCollapsedLogEntryAtIndexUpdated*"></a>
+
+  <h3 id="IngameDebugConsole_DebugLogRecycledListView_OnCollapsedLogEntryAtIndexUpdated_System_Int32_" data-uid="IngameDebugConsole.DebugLogRecycledListView.OnCollapsedLogEntryAtIndexUpdated(System.Int32)">
+  OnCollapsedLogEntryAtIndexUpdated(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/DebugLogRecycledListView.cs/#L162"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnCollapsedLogEntryAtIndexUpdated(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="IngameDebugConsole_DebugLogRecycledListView_OnLogEntriesUpdated_" data-uid="IngameDebugConsole.DebugLogRecycledListView.OnLogEntriesUpdated*"></a>
 
   <h3 id="IngameDebugConsole_DebugLogRecycledListView_OnLogEntriesUpdated_System_Boolean_" data-uid="IngameDebugConsole.DebugLogRecycledListView.OnLogEntriesUpdated(System.Boolean)">
@@ -306,6 +470,68 @@ Class DebugLogRecycledListView  <a class="header-action link-secondary" title="V
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>updateAllVisibleItemContents</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IngameDebugConsole_DebugLogRecycledListView_OnLogEntriesUpdated_" data-uid="IngameDebugConsole.DebugLogRecycledListView.OnLogEntriesUpdated*"></a>
+
+  <h3 id="IngameDebugConsole_DebugLogRecycledListView_OnLogEntriesUpdated_System_Boolean_" data-uid="IngameDebugConsole.DebugLogRecycledListView.OnLogEntriesUpdated(System.Boolean)">
+  OnLogEntriesUpdated(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/DebugLogRecycledListView.cs/#L150"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnLogEntriesUpdated(bool updateAllVisibleItemContents)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>updateAllVisibleItemContents</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IngameDebugConsole_DebugLogRecycledListView_OnLogItemClicked_" data-uid="IngameDebugConsole.DebugLogRecycledListView.OnLogItemClicked*"></a>
+
+  <h3 id="IngameDebugConsole_DebugLogRecycledListView_OnLogItemClicked_IngameDebugConsole_DebugLogItem_" data-uid="IngameDebugConsole.DebugLogRecycledListView.OnLogItemClicked(IngameDebugConsole.DebugLogItem)">
+  OnLogItemClicked(DebugLogItem)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/DebugLogRecycledListView.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnLogItemClicked(DebugLogItem item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>item</code> <a class="xref" href="IngameDebugConsole.DebugLogItem.html">DebugLogItem</a></dt>
     <dd></dd>
   </dl>
 
@@ -377,6 +603,32 @@ Class DebugLogRecycledListView  <a class="header-action link-secondary" title="V
 
 
 
+  <a id="IngameDebugConsole_DebugLogRecycledListView_OnViewportHeightChanged_" data-uid="IngameDebugConsole.DebugLogRecycledListView.OnViewportHeightChanged*"></a>
+
+  <h3 id="IngameDebugConsole_DebugLogRecycledListView_OnViewportHeightChanged" data-uid="IngameDebugConsole.DebugLogRecycledListView.OnViewportHeightChanged">
+  OnViewportHeightChanged()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/DebugLogRecycledListView.cs/#L201"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnViewportHeightChanged()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="IngameDebugConsole_DebugLogRecycledListView_OnViewportWidthChanged_" data-uid="IngameDebugConsole.DebugLogRecycledListView.OnViewportWidthChanged*"></a>
 
   <h3 id="IngameDebugConsole_DebugLogRecycledListView_OnViewportWidthChanged" data-uid="IngameDebugConsole.DebugLogRecycledListView.OnViewportWidthChanged">
@@ -391,6 +643,63 @@ Class DebugLogRecycledListView  <a class="header-action link-secondary" title="V
     <pre><code class="lang-csharp hljs">public void OnViewportWidthChanged()</code></pre>
   </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IngameDebugConsole_DebugLogRecycledListView_OnViewportWidthChanged_" data-uid="IngameDebugConsole.DebugLogRecycledListView.OnViewportWidthChanged*"></a>
+
+  <h3 id="IngameDebugConsole_DebugLogRecycledListView_OnViewportWidthChanged" data-uid="IngameDebugConsole.DebugLogRecycledListView.OnViewportWidthChanged">
+  OnViewportWidthChanged()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/DebugLogRecycledListView.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnViewportWidthChanged()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IngameDebugConsole_DebugLogRecycledListView_SelectAndFocusOnLogItemAtIndex_" data-uid="IngameDebugConsole.DebugLogRecycledListView.SelectAndFocusOnLogItemAtIndex*"></a>
+
+  <h3 id="IngameDebugConsole_DebugLogRecycledListView_SelectAndFocusOnLogItemAtIndex_System_Int32_" data-uid="IngameDebugConsole.DebugLogRecycledListView.SelectAndFocusOnLogItemAtIndex(System.Int32)">
+  SelectAndFocusOnLogItemAtIndex(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/DebugLogRecycledListView.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SelectAndFocusOnLogItemAtIndex(int itemIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>itemIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
 
 
 
@@ -451,6 +760,68 @@ Class DebugLogRecycledListView  <a class="header-action link-secondary" title="V
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>collapse</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IngameDebugConsole_DebugLogRecycledListView_SetCollapseMode_" data-uid="IngameDebugConsole.DebugLogRecycledListView.SetCollapseMode*"></a>
+
+  <h3 id="IngameDebugConsole_DebugLogRecycledListView_SetCollapseMode_System_Boolean_" data-uid="IngameDebugConsole.DebugLogRecycledListView.SetCollapseMode(System.Boolean)">
+  SetCollapseMode(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/DebugLogRecycledListView.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCollapseMode(bool collapse)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>collapse</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="IngameDebugConsole_DebugLogRecycledListView_UpdateItemsInTheList_" data-uid="IngameDebugConsole.DebugLogRecycledListView.UpdateItemsInTheList*"></a>
+
+  <h3 id="IngameDebugConsole_DebugLogRecycledListView_UpdateItemsInTheList_System_Boolean_" data-uid="IngameDebugConsole.DebugLogRecycledListView.UpdateItemsInTheList(System.Boolean)">
+  UpdateItemsInTheList(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Zanbrachrissik/JingTan-Metaverse-SDK/blob/main/Alipaysdk/IngameDebugConsole/Scripts/DebugLogRecycledListView.cs/#L224"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateItemsInTheList(bool updateAllVisibleItemContents)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>updateAllVisibleItemContents</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd></dd>
   </dl>
 
